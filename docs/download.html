@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>下载FFmpeg &mdash; ffmpeg-docs v2019.06.09 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="关于这些文档" href="about.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="联系我们" href="contact.html" />
+    <link rel="prev" title="新闻" href="news.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="contents.html" class="icon icon-home"> ffmpeg-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">关于FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/index.html">Tools Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/index.html">LIbraries Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">新闻</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">下载FFmpeg</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#more-releases">More releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-the-packages">Get the packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-the-sources">Get the Sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-repositories">Git Repositories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#releases">Releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-4-1-3-al-khwarizmi">FFmpeg 4.1.3 “al-Khwarizmi”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-4-0-4-wu">FFmpeg 4.0.4 “Wu”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-3-4-6-cantor">FFmpeg 3.4.6 “Cantor”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-3-3-9-hilbert">FFmpeg 3.3.9 “Hilbert”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-3-2-14-hypatia">FFmpeg 3.2.14 “Hypatia”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-2-8-15-feynman">FFmpeg 2.8.15 “Feynman”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#old-releases">Old Releases</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreports.html">Bug Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wiki.html">Welcome to the FFmpeg Bug Tracker and Wiki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">开发者文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="donations.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="consulting.html">与FFmpeg相关的咨询和就业机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">FFmpeg安全</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">FFmpeg许可和法律注意事项</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html">ffmpeg-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html">Docs</a> &raquo;</li>
+        
+      <li>下载FFmpeg</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/download.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="download-ffmpeg">
+<h1>下载FFmpeg<a class="headerlink" href="#download-ffmpeg" title="永久链接至标题">¶</a></h1>
+<div class="section" id="more-releases">
+<h2>More releases<a class="headerlink" href="#more-releases" title="永久链接至标题">¶</a></h2>
+<p>If you find FFmpeg useful, you are welcome to contribute by donating.  More downloading options</p>
+</div>
+<div class="section" id="get-the-packages">
+<h2>Get the packages<a class="headerlink" href="#get-the-packages" title="永久链接至标题">¶</a></h2>
+<p>Linux Packages</p>
+<ul class="simple">
+<li><p>Debian – Official packages for Stable-Backports, Testing, Unstable</p></li>
+<li><p>Debian – deb-multimedia packages for Oldstable, Stable, Testing, Unstable</p></li>
+<li><p>Ubuntu – Official packages for Vivid, Wily, Xenial</p></li>
+<li><p>Ubuntu – Ubuntu Multimedia for Trusty PPA. Provides static binaries from most recent release branch.</p></li>
+</ul>
+<p>Fedora and Red Hat Enterprise Linux packages</p>
+<p>Linux Static Builds</p>
+<p>32-bit and 64-bit for kernel 2.6.32 and above</p>
+</div>
+<div class="section" id="get-the-sources">
+<h2>Get the Sources<a class="headerlink" href="#get-the-sources" title="永久链接至标题">¶</a></h2>
+<p>You can retrieve the source code through Git by using the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">git</span><span class="o">.</span><span class="n">ffmpeg</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">ffmpeg</span><span class="o">.</span><span class="n">git</span> <span class="n">ffmpeg</span>
+</pre></div>
+</div>
+<p>Cannot access Git or wish to speed up the cloning and reduce the bandwidth usage?</p>
+<p>FFmpeg has always been a very experimental and developer-driven project.
+It is a key component in many multimedia projects and has new features added constantly.
+Development branch snapshots work really well 99% of the time so people are not afraid to use them.</p>
+</div>
+<div class="section" id="git-repositories">
+<h2>Git Repositories<a class="headerlink" href="#git-repositories" title="永久链接至标题">¶</a></h2>
+<p>Since FFmpeg is developed with Git, multiple repositories from developers and groups of developers are available.</p>
+<p>Clone URL       Description</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git.ffmpeg.org/ffmpeg.git">https://git.ffmpeg.org/ffmpeg.git</a>     Main FFmpeg Git repository</p></li>
+<li><p><a class="reference external" href="https://git.ffmpeg.org/ffmpeg-web">https://git.ffmpeg.org/ffmpeg-web</a>     Main ffmpeg.org website repository</p></li>
+<li><p><a class="reference external" href="https://git.ffmpeg.org/fateserver">https://git.ffmpeg.org/fateserver</a>     fate.ffmpeg.org server software repository</p></li>
+</ul>
+<p>Mirrors</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/FFmpeg/FFmpeg">https://github.com/FFmpeg/FFmpeg</a>      Mirror of the main repository</p></li>
+<li><p><a class="reference external" href="https://github.com/FFmpeg/web">https://github.com/FFmpeg/web</a>         Mirror of the website repository</p></li>
+<li><p><a class="reference external" href="https://github.com/FFmpeg/fateserver">https://github.com/FFmpeg/fateserver</a>          Mirror of the FATE server repository</p></li>
+</ul>
+</div>
+<div class="section" id="releases">
+<h2>Releases<a class="headerlink" href="#releases" title="永久链接至标题">¶</a></h2>
+<p>Approximately every 6 months the FFmpeg project makes a new major release. Between major releases point releases will appear that add important bug fixes but no new features. Note that these releases are intended for distributors and system integrators. Users that wish to compile from source themselves are strongly encouraged to consider using the development branch (see above), this is the only version on which FFmpeg developers actively work. The release branches only cherry pick selected changes from the development branch, which therefore receives much more and much faster bug fixes such as additional features and security patches.</p>
+</div>
+<div class="section" id="ffmpeg-4-1-3-al-khwarizmi">
+<h2>FFmpeg 4.1.3 “al-Khwarizmi”<a class="headerlink" href="#ffmpeg-4-1-3-al-khwarizmi" title="永久链接至标题">¶</a></h2>
+<p>4.1.3 was released on 2019-04-01. It is the latest stable FFmpeg release from the 4.1 release branch, which was cut from master on 2018-11-02.</p>
+<p>It includes the following library versions:</p>
+<ul class="simple">
+<li><p>libavutil      56. 22.100</p></li>
+<li><p>libavcodec     58. 35.100</p></li>
+<li><p>libavformat    58. 20.100</p></li>
+<li><p>libavdevice    58.  5.100</p></li>
+<li><p>libavfilter     7. 40.101</p></li>
+<li><p>libswscale      5.  3.100</p></li>
+<li><p>libswresample   3.  3.100</p></li>
+<li><p>libpostproc    55.  3.100</p></li>
+</ul>
+<p>PGP signature  PGP signature  PGP signature Changelog</p>
+</div>
+<div class="section" id="ffmpeg-4-0-4-wu">
+<h2>FFmpeg 4.0.4 “Wu”<a class="headerlink" href="#ffmpeg-4-0-4-wu" title="永久链接至标题">¶</a></h2>
+<p>4.0.4 was released on 2019-03-28. It is the latest stable FFmpeg release from the 4.0 release branch, which was cut from master on 2018-04-16.</p>
+<p>It includes the following library versions:</p>
+<ul class="simple">
+<li><p>libavutil      56. 14.100</p></li>
+<li><p>libavcodec     58. 18.100</p></li>
+<li><p>libavformat    58. 12.100</p></li>
+<li><p>libavdevice    58.  3.100</p></li>
+<li><p>libavfilter     7. 16.100</p></li>
+<li><p>libswscale      5.  1.100</p></li>
+<li><p>libswresample   3.  1.100</p></li>
+<li><p>libpostproc    55.  1.100</p></li>
+</ul>
+<p>PGP signature  PGP signature  PGP signature Changelog</p>
+</div>
+<div class="section" id="ffmpeg-3-4-6-cantor">
+<h2>FFmpeg 3.4.6 “Cantor”<a class="headerlink" href="#ffmpeg-3-4-6-cantor" title="永久链接至标题">¶</a></h2>
+<p>3.4.6 was released on 2019-03-29. It is the latest stable FFmpeg release from the 3.4 release branch, which was cut from master on 2017-10-11.</p>
+<p>It includes the following library versions:</p>
+<ul class="simple">
+<li><p>libavutil      55. 78.100</p></li>
+<li><p>libavcodec     57.107.100</p></li>
+<li><p>libavformat    57. 83.100</p></li>
+<li><p>libavdevice    57. 10.100</p></li>
+<li><p>libavfilter     6.107.100</p></li>
+<li><p>libavresample   3.  7.  0</p></li>
+<li><p>libswscale      4.  8.100</p></li>
+<li><p>libswresample   2.  9.100</p></li>
+<li><p>libpostproc    54.  7.100</p></li>
+</ul>
+<p>GP signature  PGP signature  PGP signature Changelog</p>
+</div>
+<div class="section" id="ffmpeg-3-3-9-hilbert">
+<h2>FFmpeg 3.3.9 “Hilbert”<a class="headerlink" href="#ffmpeg-3-3-9-hilbert" title="永久链接至标题">¶</a></h2>
+<p>3.3.9 was released on 2018-11-18. It is the latest stable FFmpeg release from the 3.3 release branch, which was cut from master on 2017-04-02.</p>
+<p>It includes the following library versions:</p>
+<ul class="simple">
+<li><p>libavutil      55. 58.100</p></li>
+<li><p>libavcodec     57. 89.100</p></li>
+<li><p>libavformat    57. 71.100</p></li>
+<li><p>libavdevice    57.  6.100</p></li>
+<li><p>libavfilter     6. 82.100</p></li>
+<li><p>libavresample   3.  5.  0</p></li>
+<li><p>libswscale      4.  6.100</p></li>
+<li><p>libswresample   2.  7.100</p></li>
+<li><p>libpostproc    54.  5.100</p></li>
+</ul>
+<p>PGP signature  PGP signature  PGP signature Changelog</p>
+</div>
+<div class="section" id="ffmpeg-3-2-14-hypatia">
+<h2>FFmpeg 3.2.14 “Hypatia”<a class="headerlink" href="#ffmpeg-3-2-14-hypatia" title="永久链接至标题">¶</a></h2>
+<p>3.2.14 was released on 2019-05-14. It is the latest stable FFmpeg release from the 3.2 release branch, which was cut from master on 2016-10-26.</p>
+<p>It includes the following library versions:</p>
+<ul class="simple">
+<li><p>libavutil      55. 34.100</p></li>
+<li><p>libavcodec     57. 64.101</p></li>
+<li><p>libavformat    57. 56.100</p></li>
+<li><p>libavdevice    57.  1.100</p></li>
+<li><p>libavfilter     6. 65.100</p></li>
+<li><p>libavresample   3.  1.  0</p></li>
+<li><p>libswscale      4.  2.100</p></li>
+<li><p>libswresample   2.  3.100</p></li>
+<li><p>libpostproc    54.  1.100</p></li>
+</ul>
+<p>PGP signature  PGP signature  PGP signature Changelog</p>
+</div>
+<div class="section" id="ffmpeg-2-8-15-feynman">
+<h2>FFmpeg 2.8.15 “Feynman”<a class="headerlink" href="#ffmpeg-2-8-15-feynman" title="永久链接至标题">¶</a></h2>
+<p>2.8.15 was released on 2018-07-16. It is the latest stable FFmpeg release from the 2.8 release branch, which was cut from master on 2015-09-05. Amongst lots of other changes, it includes all changes from ffmpeg-mt, libav master of 2015-08-28, libav 11 as of 2015-08-28.</p>
+<p>It includes the following library versions:</p>
+<ul class="simple">
+<li><p>libavutil      54. 31.100</p></li>
+<li><p>libavcodec     56. 60.100</p></li>
+<li><p>libavformat    56. 40.101</p></li>
+<li><p>libavdevice    56.  4.100</p></li>
+<li><p>libavfilter     5. 40.101</p></li>
+<li><p>libavresample   2.  1.  0</p></li>
+<li><p>libswscale      3.  1.101</p></li>
+<li><p>libswresample   1.  2.101</p></li>
+<li><p>libpostproc    53.  3.100</p></li>
+</ul>
+<p>PGP signature  PGP signature  PGP signature Changelog</p>
+</div>
+<div class="section" id="old-releases">
+<h2>Old Releases<a class="headerlink" href="#old-releases" title="永久链接至标题">¶</a></h2>
+<p>Older versions are available at the Old Releases page.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contact.html" class="btn btn-neutral float-right" title="联系我们" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="news.html" class="btn btn-neutral float-left" title="新闻" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

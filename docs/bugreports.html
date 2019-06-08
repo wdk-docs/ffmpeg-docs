@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Bug Reports &mdash; ffmpeg-docs v2019.06.09 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="关于这些文档" href="about.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="Welcome to the FFmpeg Bug Tracker and Wiki" href="wiki.html" />
+    <link rel="prev" title="联系我们" href="contact.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="contents.html" class="icon icon-home"> ffmpeg-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">关于FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/index.html">Tools Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/index.html">LIbraries Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">新闻</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">下载FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bug Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wiki.html">Welcome to the FFmpeg Bug Tracker and Wiki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">开发者文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="donations.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="consulting.html">与FFmpeg相关的咨询和就业机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">FFmpeg安全</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">FFmpeg许可和法律注意事项</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html">ffmpeg-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html">Docs</a> &raquo;</li>
+        
+      <li>Bug Reports</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bugreports.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bug-reports">
+<h1>Bug Reports<a class="headerlink" href="#bug-reports" title="永久链接至标题">¶</a></h1>
+<p>Before reporting a bug, please consider the following:</p>
+<p>FFmpeg is in a state of perpetual development.
+As such, if you wish to query or report a bug, you must try with the latest development branch revision of FFmpeg to confirm the issue still exists.</p>
+<p>When writing your bug report, please include (uncompressed):
+What you were trying to accomplish (e.g., “I am trying to transcode from this format to that format…”)
+The problem you encountered (e.g., “ffmpeg crashed, see the gdb and valgrind output below” or “The output video was all green”)
+The exact command line you were using (e.g., “ffmpeg -i input.mov -an -vcodec foo output.avi”)
+The full, uncut console output provided by ffmpeg -v 9 -loglevel 99 -i  followed by the name of your input file (copy/pasted from the console, including the banner that indicates version and configuration options), paste ffplay or ffprobe output only if your problem is not reproducible with ffmpeg.
+Sufficient information, including any required input files, to reproduce the bug and confirm a potential fix.</p>
+<p>You can use the -report option or define the FFREPORT environment variable (to any value) to get the exact command line and the full verbose console output in a file named ffmpeg-<a href="#id1"><span class="problematic" id="id2">*</span></a>.log in the current directory.</p>
+<p>If you encounter a crash bug, please provide the gdb output, backtrace and disassembly, and if possible the valgrind output, using the the ffmpeg_g debug binary.
+For gdb, proceed as follows:</p>
+<p>gdb ffmpeg_g
+In gdb, type ‘r’ for run, along with the rest of the ffmpeg command line:</p>
+<p>r &lt;rest of command line&gt;
+Alternatively, you can run gdb –args ffmpeg_g &lt;rest of command line&gt; and just type ‘r’ at the gdb prompt.
+When gdb encounters its problem, run the following commands and copy/paste the output into your bug report:</p>
+<p>bt
+disass $pc-32,$pc+32
+info all-registers
+With older gdb versions, use disass $pc-32 $pc+32.</p>
+<p>For valgrind, run the following command and copy/paste the output into your bug report:</p>
+<p>valgrind ffmpeg_g &lt;rest of command line&gt;
+If you encounter a regression, please use git bisect to find the revission that caused the regression. Having this information available can greatly speed up correcting the bug.</p>
+<blockquote>
+<div><p>Bug Tracker</p>
+</div></blockquote>
+<p>Once you have gathered this information, you can submit a report to the FFmpeg bug tracker.</p>
+<p>Note, you must register there first before you can submit a report.</p>
+<p>You should provide all information so that anyone can reproduce the bug.
+Please do not report your problem on the developer mailing list:
+Only send bug reports there if you also intend to provide a fix.</p>
+<blockquote>
+<div><p>Submitting Sample Media</p>
+</div></blockquote>
+<p>The developers may ask you to provide a sample media file illustrating your problem. In this case, please follow these steps:</p>
+<p>If the sample file is too large ( &gt; 10 megabytes), cut it down to size with the Unix ‘dd’ command:</p>
+<p>dd if=sample-file of=small-sample-file bs=1024 count=10000
+and then upload small-sample-file rather than sample-file</p>
+<p>Please choose descriptive names like h264_green_tint.mov or block_artifacts_after_seeking.mkv. We already have plenty of bug.rm and sample.avi.</p>
+<p>Upload the sample to the FTP server. Note that our FTP server is write-only. Even though you cannot see the files that you upload, it will be there and the FFmpeg developers will have access.</p>
+<p>Log into upload.ffmpeg.org with an anonymous FTP login.
+cd -&gt; incoming
+Upload a brief text file describing the sample and what is wrong. This is important! If you leave out the text file, your sample will most likely be deleted without further examination.
+Upload the sample.</p>
+<p>Email the ffmpeg mailing list and indicate the filename of the sample.</p>
+<p>Movie files which have been compressed (rar,7z,gzip,…) will be deleted without being examined unless they are raw RGB/YUV/PCM.
+Furthermore movie files uploaded to services like rapidshare or any other similar service will be ignored. We are not willing to spend our time fighting with this ridiculous, bloated and spam-filled crap.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="wiki.html" class="btn btn-neutral float-right" title="Welcome to the FFmpeg Bug Tracker and Wiki" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contact.html" class="btn btn-neutral float-left" title="联系我们" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

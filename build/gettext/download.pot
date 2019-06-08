@@ -1,0 +1,415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the ffmpeg-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ffmpeg-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/download.rst:2
+msgid "Download FFmpeg"
+msgstr ""
+
+#: ../../source/download.rst:5
+msgid "More releases"
+msgstr ""
+
+#: ../../source/download.rst:7
+msgid "If you find FFmpeg useful, you are welcome to contribute by donating.  More downloading options"
+msgstr ""
+
+#: ../../source/download.rst:10
+msgid "Get the packages"
+msgstr ""
+
+#: ../../source/download.rst:12
+msgid "Linux Packages"
+msgstr ""
+
+#: ../../source/download.rst:14
+msgid "Debian – Official packages for Stable-Backports, Testing, Unstable"
+msgstr ""
+
+#: ../../source/download.rst:15
+msgid "Debian – deb-multimedia packages for Oldstable, Stable, Testing, Unstable"
+msgstr ""
+
+#: ../../source/download.rst:16
+msgid "Ubuntu – Official packages for Vivid, Wily, Xenial"
+msgstr ""
+
+#: ../../source/download.rst:17
+msgid "Ubuntu – Ubuntu Multimedia for Trusty PPA. Provides static binaries from most recent release branch."
+msgstr ""
+
+#: ../../source/download.rst:19
+msgid "Fedora and Red Hat Enterprise Linux packages"
+msgstr ""
+
+#: ../../source/download.rst:21
+msgid "Linux Static Builds"
+msgstr ""
+
+#: ../../source/download.rst:23
+msgid "32-bit and 64-bit for kernel 2.6.32 and above"
+msgstr ""
+
+#: ../../source/download.rst:26
+msgid "Get the Sources"
+msgstr ""
+
+#: ../../source/download.rst:28
+msgid "You can retrieve the source code through Git by using the command::"
+msgstr ""
+
+#: ../../source/download.rst:32
+msgid "Cannot access Git or wish to speed up the cloning and reduce the bandwidth usage?"
+msgstr ""
+
+#: ../../source/download.rst:34
+msgid "FFmpeg has always been a very experimental and developer-driven project. It is a key component in many multimedia projects and has new features added constantly. Development branch snapshots work really well 99% of the time so people are not afraid to use them."
+msgstr ""
+
+#: ../../source/download.rst:39
+msgid "Git Repositories"
+msgstr ""
+
+#: ../../source/download.rst:41
+msgid "Since FFmpeg is developed with Git, multiple repositories from developers and groups of developers are available."
+msgstr ""
+
+#: ../../source/download.rst:43
+msgid "Clone URL       Description"
+msgstr ""
+
+#: ../../source/download.rst:45
+msgid "https://git.ffmpeg.org/ffmpeg.git     Main FFmpeg Git repository"
+msgstr ""
+
+#: ../../source/download.rst:46
+msgid "https://git.ffmpeg.org/ffmpeg-web     Main ffmpeg.org website repository"
+msgstr ""
+
+#: ../../source/download.rst:47
+msgid "https://git.ffmpeg.org/fateserver     fate.ffmpeg.org server software repository"
+msgstr ""
+
+#: ../../source/download.rst:49
+msgid "Mirrors"
+msgstr ""
+
+#: ../../source/download.rst:51
+msgid "https://github.com/FFmpeg/FFmpeg      Mirror of the main repository"
+msgstr ""
+
+#: ../../source/download.rst:52
+msgid "https://github.com/FFmpeg/web         Mirror of the website repository"
+msgstr ""
+
+#: ../../source/download.rst:53
+msgid "https://github.com/FFmpeg/fateserver          Mirror of the FATE server repository"
+msgstr ""
+
+#: ../../source/download.rst:56
+msgid "Releases"
+msgstr ""
+
+#: ../../source/download.rst:58
+msgid "Approximately every 6 months the FFmpeg project makes a new major release. Between major releases point releases will appear that add important bug fixes but no new features. Note that these releases are intended for distributors and system integrators. Users that wish to compile from source themselves are strongly encouraged to consider using the development branch (see above), this is the only version on which FFmpeg developers actively work. The release branches only cherry pick selected changes from the development branch, which therefore receives much more and much faster bug fixes such as additional features and security patches."
+msgstr ""
+
+#: ../../source/download.rst:61
+msgid "FFmpeg 4.1.3 \"al-Khwarizmi\""
+msgstr ""
+
+#: ../../source/download.rst:63
+msgid "4.1.3 was released on 2019-04-01. It is the latest stable FFmpeg release from the 4.1 release branch, which was cut from master on 2018-11-02."
+msgstr ""
+
+#: ../../source/download.rst:65
+#: ../../source/download.rst:83
+#: ../../source/download.rst:102
+#: ../../source/download.rst:121
+#: ../../source/download.rst:140
+#: ../../source/download.rst:159
+msgid "It includes the following library versions:"
+msgstr ""
+
+#: ../../source/download.rst:67
+msgid "libavutil      56. 22.100"
+msgstr ""
+
+#: ../../source/download.rst:68
+msgid "libavcodec     58. 35.100"
+msgstr ""
+
+#: ../../source/download.rst:69
+msgid "libavformat    58. 20.100"
+msgstr ""
+
+#: ../../source/download.rst:70
+msgid "libavdevice    58.  5.100"
+msgstr ""
+
+#: ../../source/download.rst:71
+msgid "libavfilter     7. 40.101"
+msgstr ""
+
+#: ../../source/download.rst:72
+msgid "libswscale      5.  3.100"
+msgstr ""
+
+#: ../../source/download.rst:73
+msgid "libswresample   3.  3.100"
+msgstr ""
+
+#: ../../source/download.rst:74
+msgid "libpostproc    55.  3.100"
+msgstr ""
+
+#: ../../source/download.rst:76
+#: ../../source/download.rst:94
+#: ../../source/download.rst:133
+#: ../../source/download.rst:152
+#: ../../source/download.rst:171
+msgid "PGP signature  PGP signature  PGP signature Changelog"
+msgstr ""
+
+#: ../../source/download.rst:79
+msgid "FFmpeg 4.0.4 \"Wu\""
+msgstr ""
+
+#: ../../source/download.rst:81
+msgid "4.0.4 was released on 2019-03-28. It is the latest stable FFmpeg release from the 4.0 release branch, which was cut from master on 2018-04-16."
+msgstr ""
+
+#: ../../source/download.rst:85
+msgid "libavutil      56. 14.100"
+msgstr ""
+
+#: ../../source/download.rst:86
+msgid "libavcodec     58. 18.100"
+msgstr ""
+
+#: ../../source/download.rst:87
+msgid "libavformat    58. 12.100"
+msgstr ""
+
+#: ../../source/download.rst:88
+msgid "libavdevice    58.  3.100"
+msgstr ""
+
+#: ../../source/download.rst:89
+msgid "libavfilter     7. 16.100"
+msgstr ""
+
+#: ../../source/download.rst:90
+msgid "libswscale      5.  1.100"
+msgstr ""
+
+#: ../../source/download.rst:91
+msgid "libswresample   3.  1.100"
+msgstr ""
+
+#: ../../source/download.rst:92
+msgid "libpostproc    55.  1.100"
+msgstr ""
+
+#: ../../source/download.rst:98
+msgid "FFmpeg 3.4.6 \"Cantor\""
+msgstr ""
+
+#: ../../source/download.rst:100
+msgid "3.4.6 was released on 2019-03-29. It is the latest stable FFmpeg release from the 3.4 release branch, which was cut from master on 2017-10-11."
+msgstr ""
+
+#: ../../source/download.rst:104
+msgid "libavutil      55. 78.100"
+msgstr ""
+
+#: ../../source/download.rst:105
+msgid "libavcodec     57.107.100"
+msgstr ""
+
+#: ../../source/download.rst:106
+msgid "libavformat    57. 83.100"
+msgstr ""
+
+#: ../../source/download.rst:107
+msgid "libavdevice    57. 10.100"
+msgstr ""
+
+#: ../../source/download.rst:108
+msgid "libavfilter     6.107.100"
+msgstr ""
+
+#: ../../source/download.rst:109
+msgid "libavresample   3.  7.  0"
+msgstr ""
+
+#: ../../source/download.rst:110
+msgid "libswscale      4.  8.100"
+msgstr ""
+
+#: ../../source/download.rst:111
+msgid "libswresample   2.  9.100"
+msgstr ""
+
+#: ../../source/download.rst:112
+msgid "libpostproc    54.  7.100"
+msgstr ""
+
+#: ../../source/download.rst:114
+msgid "GP signature  PGP signature  PGP signature Changelog"
+msgstr ""
+
+#: ../../source/download.rst:117
+msgid "FFmpeg 3.3.9 \"Hilbert\""
+msgstr ""
+
+#: ../../source/download.rst:119
+msgid "3.3.9 was released on 2018-11-18. It is the latest stable FFmpeg release from the 3.3 release branch, which was cut from master on 2017-04-02."
+msgstr ""
+
+#: ../../source/download.rst:123
+msgid "libavutil      55. 58.100"
+msgstr ""
+
+#: ../../source/download.rst:124
+msgid "libavcodec     57. 89.100"
+msgstr ""
+
+#: ../../source/download.rst:125
+msgid "libavformat    57. 71.100"
+msgstr ""
+
+#: ../../source/download.rst:126
+msgid "libavdevice    57.  6.100"
+msgstr ""
+
+#: ../../source/download.rst:127
+msgid "libavfilter     6. 82.100"
+msgstr ""
+
+#: ../../source/download.rst:128
+msgid "libavresample   3.  5.  0"
+msgstr ""
+
+#: ../../source/download.rst:129
+msgid "libswscale      4.  6.100"
+msgstr ""
+
+#: ../../source/download.rst:130
+msgid "libswresample   2.  7.100"
+msgstr ""
+
+#: ../../source/download.rst:131
+msgid "libpostproc    54.  5.100"
+msgstr ""
+
+#: ../../source/download.rst:136
+msgid "FFmpeg 3.2.14 \"Hypatia\""
+msgstr ""
+
+#: ../../source/download.rst:138
+msgid "3.2.14 was released on 2019-05-14. It is the latest stable FFmpeg release from the 3.2 release branch, which was cut from master on 2016-10-26."
+msgstr ""
+
+#: ../../source/download.rst:142
+msgid "libavutil      55. 34.100"
+msgstr ""
+
+#: ../../source/download.rst:143
+msgid "libavcodec     57. 64.101"
+msgstr ""
+
+#: ../../source/download.rst:144
+msgid "libavformat    57. 56.100"
+msgstr ""
+
+#: ../../source/download.rst:145
+msgid "libavdevice    57.  1.100"
+msgstr ""
+
+#: ../../source/download.rst:146
+msgid "libavfilter     6. 65.100"
+msgstr ""
+
+#: ../../source/download.rst:147
+msgid "libavresample   3.  1.  0"
+msgstr ""
+
+#: ../../source/download.rst:148
+msgid "libswscale      4.  2.100"
+msgstr ""
+
+#: ../../source/download.rst:149
+msgid "libswresample   2.  3.100"
+msgstr ""
+
+#: ../../source/download.rst:150
+msgid "libpostproc    54.  1.100"
+msgstr ""
+
+#: ../../source/download.rst:155
+msgid "FFmpeg 2.8.15 \"Feynman\""
+msgstr ""
+
+#: ../../source/download.rst:157
+msgid "2.8.15 was released on 2018-07-16. It is the latest stable FFmpeg release from the 2.8 release branch, which was cut from master on 2015-09-05. Amongst lots of other changes, it includes all changes from ffmpeg-mt, libav master of 2015-08-28, libav 11 as of 2015-08-28."
+msgstr ""
+
+#: ../../source/download.rst:161
+msgid "libavutil      54. 31.100"
+msgstr ""
+
+#: ../../source/download.rst:162
+msgid "libavcodec     56. 60.100"
+msgstr ""
+
+#: ../../source/download.rst:163
+msgid "libavformat    56. 40.101"
+msgstr ""
+
+#: ../../source/download.rst:164
+msgid "libavdevice    56.  4.100"
+msgstr ""
+
+#: ../../source/download.rst:165
+msgid "libavfilter     5. 40.101"
+msgstr ""
+
+#: ../../source/download.rst:166
+msgid "libavresample   2.  1.  0"
+msgstr ""
+
+#: ../../source/download.rst:167
+msgid "libswscale      3.  1.101"
+msgstr ""
+
+#: ../../source/download.rst:168
+msgid "libswresample   1.  2.101"
+msgstr ""
+
+#: ../../source/download.rst:169
+msgid "libpostproc    53.  3.100"
+msgstr ""
+
+#: ../../source/download.rst:174
+msgid "Old Releases"
+msgstr ""
+
+#: ../../source/download.rst:176
+msgid "Older versions are available at the Old Releases page."
+msgstr ""
+

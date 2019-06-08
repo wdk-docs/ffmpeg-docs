@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the ffmpeg-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ffmpeg-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/about.rst:2
+msgid "About FFmpeg"
+msgstr "关于FFmpeg"
+
+#: ../../source/about.rst:4
+msgid ""
+"FFmpeg is the leading multimedia framework, able to decode, encode, "
+"transcode, mux, demux, stream, filter and play pretty much anything that "
+"humans and machines have created. It supports the most obscure ancient "
+"formats up to the cutting edge. No matter if they were designed by some "
+"standards committee, the community or a corporation. It is also highly "
+"portable: FFmpeg compiles, runs, and passes our testing infrastructure "
+"FATE across Linux, Mac OS X, Microsoft Windows, the BSDs, Solaris, etc. "
+"under a wide variety of build environments, machine architectures, and "
+"configurations."
+msgstr "FFmpeg是领先的多媒体框架，能够解码，编码，转码，复用，解复用，流式传输，过滤和播放人类和机器创建的任何内容。它支持最晦涩的古代格式，直至最前沿。无论它们是由某些标准委员会，社区还是公司设计的。它还具有高度可移植性：FFmpeg在各种构建环境，机器架构和配置下编译，运行并通过Linux，Mac OS X，Microsoft Windows，BSD，Solaris等测试基础架构FATE。"
+
+#: ../../source/about.rst:10
+msgid ""
+"It contains libavcodec, libavutil, libavformat, libavfilter, libavdevice,"
+" libswscale and libswresample which can be used by applications. As well "
+"as ffmpeg, ffplay and ffprobe which can be used by end users for "
+"transcoding and playing."
+msgstr "它包含可供应用程序使用的libavcodec，libavutil，libavformat，libavfilter，libavdevice，libswscale和libswresample。以及最终用户可用于转码和播放的ffmpeg，ffplay和ffprobe。"
+
+#: ../../source/about.rst:13
+msgid ""
+"The FFmpeg project tries to provide the best technically possible "
+"solution for developers of applications and end users alike. To achieve "
+"this we combine the best free software options available. We slightly "
+"favor our own code to keep the dependencies on other libs low and to "
+"maximize code sharing between parts of FFmpeg. Wherever the question of "
+"\"best\" cannot be answered we support both options so the end user can "
+"choose."
+msgstr "FFmpeg项目试图为应用程序和最终用户的开发人员提供最佳技术可能的解决方案。为此，我们结合了最好的免费软件选项。我们稍微倾向于使用我们自己的代码来保持对其他库的依赖性较低，并最大化FFmpeg部分之间的代码共享。无论何处“最佳”问题都无法解决，我们都支持这两个选项，以便最终用户可以选择。"
+
+#: ../../source/about.rst:18
+msgid ""
+"Everyone is welcome in FFmpeg and all contributions are welcome too. We "
+"are happy to receive patches, pull requests, bug reports, donations or "
+"any other type of contribution."
+msgstr "在FFmpeg欢迎每个人，也欢迎所有的贡献。我们很高兴收到补丁，拉取请求，错误报告，捐赠或任何其他类型的贡献。"
+
+#: ../../source/about.rst:21
+msgid ""
+"Security is a high priority and code review is always done with security "
+"in mind. Though due to the very large amounts of code touching untrusted "
+"data security issues are unavoidable and thus we provide as quick as "
+"possible updates to our last stable releases when new security issues are"
+" found."
+msgstr "安全性是一个高优先级，代码审查始终考虑到安全性。虽然由于大量代码涉及不受信任的数据安全问题是不可避免的，因此我们会在发现新的安全问题时尽快为我们上一个稳定版本提供更新。"
+
+#: ../../source/about.rst:25
+msgid "FFmpeg Tools"
+msgstr "FFmpeg工具"
+
+#: ../../source/about.rst:27
+msgid ""
+":ref:`ffmpeg <ffmpeg>`: A command line tool to convert multimedia files "
+"between formats"
+msgstr ":ref:`ffmpeg <ffmpeg>`: 用于在格式之间转换多媒体文件的命令行工具"
+
+#: ../../source/about.rst:28
+msgid ""
+":ref:`ffplay <ffplay>`: A simple media player based on SDL and the FFmpeg"
+" libraries"
+msgstr ":ref:`ffplay <ffplay>`: 一个基于SDL和FFmpeg库的简单媒体播放器"
+
+#: ../../source/about.rst:29
+msgid ":ref:`ffprobe <ffprobe>`: A simple multimedia stream analyzer"
+msgstr ":ref:`ffprobe <ffprobe>`: 简单的多媒体流分析器"
+
+#: ../../source/about.rst:32
+msgid "FFmpeg Libraries for developers"
+msgstr "FFmpeg为开发人员提供的库"
+
+#: ../../source/about.rst:34
+msgid ""
+":ref:`libavutil <libavutil>` is a library containing functions for "
+"simplifying programming, including random number generators, data "
+"structures, mathematics routines, core multimedia utilities, and much "
+"more."
+msgstr ":ref:`libavutil <libavutil>` 是一个包含简化编程功能的库，包括随机数生成器，数据结构，数学例程，核心多媒体实用程序等等。"
+
+#: ../../source/about.rst:35
+msgid ""
+":ref:`libavcodec <libavcodec>` is a library containing decoders and "
+"encoders for audio/video codecs."
+msgstr ":ref:`libavcodec <libavcodec>` 是一个包含音频/视频编解码器的解码器和编码器的库。"
+
+#: ../../source/about.rst:36
+msgid ""
+":ref:`libavformat <libavformat>` is a library containing demuxers and "
+"muxers for multimedia container formats."
+msgstr ":ref:`libavformat <libavformat>` 是一个包含多媒体容器格式的解复用器和复用器的库。"
+
+#: ../../source/about.rst:37
+msgid ""
+":ref:`libavdevice <libavdevice>` is a library containing input and output"
+" devices for grabbing from and rendering to many common multimedia "
+"input/output software frameworks, including Video4Linux, Video4Linux2, "
+"VfW, and ALSA."
+msgstr ":ref:`libavdevice <libavdevice>` 是一个包含输入和输出设备的库，用于从许多常见的多媒体输入/输出软件框架中获取和渲染，包括Video4Linux，Video4Linux2，VfW和ALSA。"
+
+#: ../../source/about.rst:38
+msgid ":ref:`libavfilter <libavfilter>` is a library containing media filters."
+msgstr ":ref:`libavfilter <libavfilter>` 是一个包含媒体过滤器的库。"
+
+#: ../../source/about.rst:39
+msgid ""
+":ref:`libswscale <libswscale>` is a library performing highly optimized "
+"image scaling and color space/pixel format conversion operations."
+msgstr ":ref:`libswscale <libswscale>` 是一个执行高度优化的图像缩放和色彩空间/像素格式转换操作的库。"
+
+#: ../../source/about.rst:40
+msgid ""
+":ref:`libswresample <libswresample>` is a library performing highly "
+"optimized audio resampling, rematrixing and sample format conversion "
+"operations."
+msgstr ":ref:`libswresample <libswresample>` 是一个执行高度优化的音频重采样，重新矩阵和样本格式转换操作的库。"
+
+#~ msgid "ffmpeg A command line tool to convert multimedia files between formats"
+#~ msgstr ""
+
+#~ msgid "ffplay A simple media player based on SDL and the FFmpeg libraries"
+#~ msgstr ""
+
+#~ msgid "ffprobe A simple multimedia stream analyzer"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "libavutil is a library containing "
+#~ "functions for simplifying programming, "
+#~ "including random number generators, data "
+#~ "structures, mathematics routines, core "
+#~ "multimedia utilities, and much more. "
+#~ "libavcodec is a library containing "
+#~ "decoders and encoders for audio/video "
+#~ "codecs. libavformat is a library "
+#~ "containing demuxers and muxers for "
+#~ "multimedia container formats. libavdevice is"
+#~ " a library containing input and "
+#~ "output devices for grabbing from and "
+#~ "rendering to many common multimedia "
+#~ "input/output software frameworks, including "
+#~ "Video4Linux, Video4Linux2, VfW, and ALSA. "
+#~ "libavfilter is a library containing "
+#~ "media filters. libswscale is a library"
+#~ " performing highly optimized image scaling"
+#~ " and color space/pixel format conversion"
+#~ " operations. libswresample is a library "
+#~ "performing highly optimized audio resampling,"
+#~ " rematrixing and sample format conversion"
+#~ " operations."
+#~ msgstr ""
+

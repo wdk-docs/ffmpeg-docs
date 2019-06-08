@@ -1,0 +1,1685 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the ffmpeg-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ffmpeg-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/news.rst:2
+msgid "News"
+msgstr ""
+
+#: ../../source/news.rst:5
+msgid "November 6th, 2018, FFmpeg 4.1 \"al-Khwarizmi\""
+msgstr ""
+
+#: ../../source/news.rst:7
+msgid "FFmpeg 4.1 \"al-Khwarizmi\", a new major release, is now available! Some of the highlights:"
+msgstr ""
+
+#: ../../source/news.rst:9
+msgid "deblock filter"
+msgstr ""
+
+#: ../../source/news.rst:10
+msgid "tmix filter"
+msgstr ""
+
+#: ../../source/news.rst:11
+msgid "amplify filter"
+msgstr ""
+
+#: ../../source/news.rst:12
+msgid "fftdnoiz filter"
+msgstr ""
+
+#: ../../source/news.rst:13
+msgid "aderivative and aintegral audio filters"
+msgstr ""
+
+#: ../../source/news.rst:14
+msgid "pal75bars and pal100bars video filter sources"
+msgstr ""
+
+#: ../../source/news.rst:15
+msgid "mbedTLS based TLS support"
+msgstr ""
+
+#: ../../source/news.rst:16
+msgid "adeclick and adeclip filters"
+msgstr ""
+
+#: ../../source/news.rst:17
+msgid "libtensorflow backend for DNN based filters like srcnn"
+msgstr ""
+
+#: ../../source/news.rst:18
+msgid "VC1 decoder is now bit-exact"
+msgstr ""
+
+#: ../../source/news.rst:19
+msgid "ATRAC9 decoder"
+msgstr ""
+
+#: ../../source/news.rst:20
+msgid "lensfun wrapper filter"
+msgstr ""
+
+#: ../../source/news.rst:21
+msgid "colorconstancy filter"
+msgstr ""
+
+#: ../../source/news.rst:22
+msgid "AVS2 video decoder via libdavs2"
+msgstr ""
+
+#: ../../source/news.rst:23
+msgid "IMM4 video decoder"
+msgstr ""
+
+#: ../../source/news.rst:24
+msgid "Brooktree ProSumer video decoder"
+msgstr ""
+
+#: ../../source/news.rst:25
+msgid "MatchWare Screen Capture Codec decoder"
+msgstr ""
+
+#: ../../source/news.rst:26
+msgid "WinCam Motion Video decoder"
+msgstr ""
+
+#: ../../source/news.rst:27
+msgid "1D LUT filter (lut1d)"
+msgstr ""
+
+#: ../../source/news.rst:28
+msgid "RemotelyAnywhere Screen Capture decoder"
+msgstr ""
+
+#: ../../source/news.rst:29
+msgid "cue and acue filters"
+msgstr ""
+
+#: ../../source/news.rst:30
+msgid "Support for AV1 in MP4 and Matroska/WebM"
+msgstr ""
+
+#: ../../source/news.rst:31
+msgid "transpose_npp filter"
+msgstr ""
+
+#: ../../source/news.rst:32
+msgid "AVS2 video encoder via libxavs2"
+msgstr ""
+
+#: ../../source/news.rst:33
+msgid "amultiply filter"
+msgstr ""
+
+#: ../../source/news.rst:34
+msgid "Block-Matching 3d (bm3d) denoising filter"
+msgstr ""
+
+#: ../../source/news.rst:35
+msgid "acrossover filter"
+msgstr ""
+
+#: ../../source/news.rst:36
+msgid "ilbc decoder"
+msgstr ""
+
+#: ../../source/news.rst:37
+msgid "audio denoiser as afftdn filter"
+msgstr ""
+
+#: ../../source/news.rst:38
+msgid "AV1 parser"
+msgstr ""
+
+#: ../../source/news.rst:39
+msgid "sinc audio filter source"
+msgstr ""
+
+#: ../../source/news.rst:40
+msgid "chromahold filter"
+msgstr ""
+
+#: ../../source/news.rst:41
+msgid "setparams filter"
+msgstr ""
+
+#: ../../source/news.rst:42
+msgid "vibrance filter"
+msgstr ""
+
+#: ../../source/news.rst:43
+msgid "S12M timecode decoding in h264"
+msgstr ""
+
+#: ../../source/news.rst:44
+msgid "xstack filter"
+msgstr ""
+
+#: ../../source/news.rst:45
+msgid "(a)graphmonitor filter"
+msgstr ""
+
+#: ../../source/news.rst:46
+msgid "yadif_cuda filter"
+msgstr ""
+
+#: ../../source/news.rst:48
+#: ../../source/news.rst:94
+#: ../../source/news.rst:142
+#: ../../source/news.rst:181
+#: ../../source/news.rst:282
+msgid "We strongly recommend users, distributors, and system integrators to upgrade unless they use current git master."
+msgstr ""
+
+#: ../../source/news.rst:51
+msgid "April 20th, 2018, FFmpeg 4.0 \"Wu\""
+msgstr ""
+
+#: ../../source/news.rst:53
+msgid "FFmpeg 4.0 \"Wu\", a new major release, is now available! Some of the highlights:"
+msgstr ""
+
+#: ../../source/news.rst:55
+msgid "Bitstream filters for editing metadata in H.264, HEVC and MPEG-2 streams"
+msgstr ""
+
+#: ../../source/news.rst:56
+msgid "Experimental MagicYUV encoder"
+msgstr ""
+
+#: ../../source/news.rst:57
+msgid "TiVo ty/ty+ demuxer"
+msgstr ""
+
+#: ../../source/news.rst:58
+msgid "Intel QSV-accelerated MJPEG encoding"
+msgstr ""
+
+#: ../../source/news.rst:59
+msgid "native aptX and aptX HD encoder and decoder"
+msgstr ""
+
+#: ../../source/news.rst:60
+msgid "NVIDIA NVDEC-accelerated H.264, HEVC, MJPEG, MPEG-1/2/4, VC1, VP8/9 hwaccel decoding"
+msgstr ""
+
+#: ../../source/news.rst:61
+msgid "Intel QSV-accelerated overlay filter"
+msgstr ""
+
+#: ../../source/news.rst:62
+msgid "mcompand audio filter"
+msgstr ""
+
+#: ../../source/news.rst:63
+msgid "acontrast audio filter"
+msgstr ""
+
+#: ../../source/news.rst:64
+msgid "OpenCL overlay filter"
+msgstr ""
+
+#: ../../source/news.rst:65
+msgid "video mix filter"
+msgstr ""
+
+#: ../../source/news.rst:66
+msgid "video normalize filter"
+msgstr ""
+
+#: ../../source/news.rst:67
+msgid "audio lv2 wrapper filter"
+msgstr ""
+
+#: ../../source/news.rst:68
+msgid "VAAPI MJPEG and VP8 decoding"
+msgstr ""
+
+#: ../../source/news.rst:69
+msgid "AMD AMF H.264 and HEVC encoders"
+msgstr ""
+
+#: ../../source/news.rst:70
+msgid "video fillborders filter"
+msgstr ""
+
+#: ../../source/news.rst:71
+msgid "video setrange filter"
+msgstr ""
+
+#: ../../source/news.rst:72
+msgid "support LibreSSL (via libtls)"
+msgstr ""
+
+#: ../../source/news.rst:73
+msgid "Dropped support for building for Windows XP. The minimum supported Windows version is Windows Vista."
+msgstr ""
+
+#: ../../source/news.rst:74
+msgid "deconvolve video filter"
+msgstr ""
+
+#: ../../source/news.rst:75
+msgid "entropy video filter"
+msgstr ""
+
+#: ../../source/news.rst:76
+msgid "hilbert audio filter source"
+msgstr ""
+
+#: ../../source/news.rst:77
+msgid "aiir audio filter"
+msgstr ""
+
+#: ../../source/news.rst:78
+msgid "Removed the ffserver program"
+msgstr ""
+
+#: ../../source/news.rst:79
+msgid "Removed the ffmenc and ffmdec muxer and demuxer"
+msgstr ""
+
+#: ../../source/news.rst:80
+msgid "VideoToolbox HEVC encoder and hwaccel"
+msgstr ""
+
+#: ../../source/news.rst:81
+msgid "VAAPI-accelerated ProcAmp (color balance), denoise and sharpness filters"
+msgstr ""
+
+#: ../../source/news.rst:82
+msgid "Add android_camera indev"
+msgstr ""
+
+#: ../../source/news.rst:83
+msgid "codec2 en/decoding via libcodec2"
+msgstr ""
+
+#: ../../source/news.rst:84
+msgid "native SBC encoder and decoder"
+msgstr ""
+
+#: ../../source/news.rst:85
+msgid "drmeter audio filter"
+msgstr ""
+
+#: ../../source/news.rst:86
+msgid "hapqa_extract bitstream filter"
+msgstr ""
+
+#: ../../source/news.rst:87
+msgid "filter_units bitstream filter"
+msgstr ""
+
+#: ../../source/news.rst:88
+msgid "AV1 Support through libaom"
+msgstr ""
+
+#: ../../source/news.rst:89
+msgid "E-AC-3 dependent frames support"
+msgstr ""
+
+#: ../../source/news.rst:90
+msgid "bitstream filter for extracting E-AC-3 core"
+msgstr ""
+
+#: ../../source/news.rst:91
+msgid "Haivision SRT protocol via libsrt"
+msgstr ""
+
+#: ../../source/news.rst:92
+msgid "vfrdet filter"
+msgstr ""
+
+#: ../../source/news.rst:97
+msgid "October 15th, 2017, FFmpeg 3.4 \"Cantor\""
+msgstr ""
+
+#: ../../source/news.rst:99
+msgid "FFmpeg 3.4 \"Cantor\", a new major release, is now available! Some of the highlights:"
+msgstr ""
+
+#: ../../source/news.rst:101
+msgid "deflicker video filter"
+msgstr ""
+
+#: ../../source/news.rst:102
+msgid "doubleweave video filter"
+msgstr ""
+
+#: ../../source/news.rst:103
+msgid "lumakey video filter"
+msgstr ""
+
+#: ../../source/news.rst:104
+msgid "pixscope video filter"
+msgstr ""
+
+#: ../../source/news.rst:105
+msgid "oscilloscope video filter"
+msgstr ""
+
+#: ../../source/news.rst:106
+msgid "update cuvid/nvenc headers to Video Codec SDK 8.0.14"
+msgstr ""
+
+#: ../../source/news.rst:107
+msgid "afir audio filter"
+msgstr ""
+
+#: ../../source/news.rst:108
+msgid "scale_cuda CUDA based video scale filter"
+msgstr ""
+
+#: ../../source/news.rst:109
+msgid "librsvg support for svg rasterization"
+msgstr ""
+
+#: ../../source/news.rst:110
+msgid "crossfeed audio filter"
+msgstr ""
+
+#: ../../source/news.rst:111
+msgid "spec compliant VP9 muxing support in MP4"
+msgstr ""
+
+#: ../../source/news.rst:112
+msgid "surround audio filter"
+msgstr ""
+
+#: ../../source/news.rst:113
+msgid "sofalizer filter switched to libmysofa"
+msgstr ""
+
+#: ../../source/news.rst:114
+msgid "Gremlin Digital Video demuxer and decoder"
+msgstr ""
+
+#: ../../source/news.rst:115
+msgid "headphone audio filter"
+msgstr ""
+
+#: ../../source/news.rst:116
+msgid "superequalizer audio filter"
+msgstr ""
+
+#: ../../source/news.rst:117
+msgid "roberts video filter"
+msgstr ""
+
+#: ../../source/news.rst:118
+msgid "additional frame format support for Interplay MVE movies"
+msgstr ""
+
+#: ../../source/news.rst:119
+msgid "support for decoding through D3D11VA in ffmpeg"
+msgstr ""
+
+#: ../../source/news.rst:120
+msgid "limiter video filter"
+msgstr ""
+
+#: ../../source/news.rst:121
+msgid "libvmaf video filter"
+msgstr ""
+
+#: ../../source/news.rst:122
+msgid "Dolby E decoder and SMPTE 337M demuxer"
+msgstr ""
+
+#: ../../source/news.rst:123
+msgid "unpremultiply video filter"
+msgstr ""
+
+#: ../../source/news.rst:124
+msgid "tlut2 video filter"
+msgstr ""
+
+#: ../../source/news.rst:125
+msgid "floodfill video filter"
+msgstr ""
+
+#: ../../source/news.rst:126
+msgid "pseudocolor video filter"
+msgstr ""
+
+#: ../../source/news.rst:127
+msgid "raw G.726 muxer and demuxer, left- and right-justified"
+msgstr ""
+
+#: ../../source/news.rst:128
+msgid "NewTek NDI input/output device"
+msgstr ""
+
+#: ../../source/news.rst:129
+msgid "FITS demuxer and decoder"
+msgstr ""
+
+#: ../../source/news.rst:130
+msgid "FITS muxer and encoder"
+msgstr ""
+
+#: ../../source/news.rst:131
+msgid "despill video filter"
+msgstr ""
+
+#: ../../source/news.rst:132
+msgid "haas audio filter"
+msgstr ""
+
+#: ../../source/news.rst:133
+msgid "SUP/PGS subtitle muxer"
+msgstr ""
+
+#: ../../source/news.rst:134
+msgid "convolve video filter"
+msgstr ""
+
+#: ../../source/news.rst:135
+msgid "VP9 tile threading support"
+msgstr ""
+
+#: ../../source/news.rst:136
+msgid "KMS screen grabber"
+msgstr ""
+
+#: ../../source/news.rst:137
+msgid "CUDA thumbnail filter"
+msgstr ""
+
+#: ../../source/news.rst:138
+msgid "V4L2 mem2mem HW assisted codecs"
+msgstr ""
+
+#: ../../source/news.rst:139
+msgid "Rockchip MPP hardware decoding"
+msgstr ""
+
+#: ../../source/news.rst:140
+msgid "vmafmotion video filter"
+msgstr ""
+
+#: ../../source/news.rst:145
+msgid "April 13th, 2017, FFmpeg 3.3 \"Hilbert\""
+msgstr ""
+
+#: ../../source/news.rst:147
+msgid "FFmpeg 3.3 \"Hilbert\", a new major release, is now available! Some of the highlights:"
+msgstr ""
+
+#: ../../source/news.rst:149
+msgid "Apple Pixlet decoder"
+msgstr ""
+
+#: ../../source/news.rst:150
+msgid "NewTek SpeedHQ decoder"
+msgstr ""
+
+#: ../../source/news.rst:151
+msgid "QDMC audio decoder"
+msgstr ""
+
+#: ../../source/news.rst:152
+msgid "PSD (Photoshop Document) decoder"
+msgstr ""
+
+#: ../../source/news.rst:153
+msgid "FM Screen Capture decoder"
+msgstr ""
+
+#: ../../source/news.rst:154
+msgid "ScreenPressor decoder"
+msgstr ""
+
+#: ../../source/news.rst:155
+msgid "XPM decoder"
+msgstr ""
+
+#: ../../source/news.rst:156
+msgid "DNxHR decoder fixes for HQX and high resolution videos"
+msgstr ""
+
+#: ../../source/news.rst:157
+msgid "ClearVideo decoder (partial)"
+msgstr ""
+
+#: ../../source/news.rst:158
+msgid "16.8 and 24.0 floating point PCM decoder"
+msgstr ""
+
+#: ../../source/news.rst:159
+msgid "Intel QSV-accelerated VP8 video decoding"
+msgstr ""
+
+#: ../../source/news.rst:160
+msgid "native Opus encoder"
+msgstr ""
+
+#: ../../source/news.rst:161
+msgid "DNxHR 444 and HQX encoding"
+msgstr ""
+
+#: ../../source/news.rst:162
+msgid "Quality improvements for the (M)JPEG encoder"
+msgstr ""
+
+#: ../../source/news.rst:163
+msgid "VAAPI-accelerated MPEG-2 and VP8 encoding"
+msgstr ""
+
+#: ../../source/news.rst:164
+msgid "premultiply video filter"
+msgstr ""
+
+#: ../../source/news.rst:165
+msgid "abitscope multimedia filter"
+msgstr ""
+
+#: ../../source/news.rst:166
+msgid "readeia608 filter"
+msgstr ""
+
+#: ../../source/news.rst:167
+msgid "threshold filter"
+msgstr ""
+
+#: ../../source/news.rst:168
+msgid "midequalizer filter"
+msgstr ""
+
+#: ../../source/news.rst:169
+msgid "MPEG-7 Video Signature filter"
+msgstr ""
+
+#: ../../source/news.rst:170
+msgid "add internal ebur128 library, remove external libebur128 dependency"
+msgstr ""
+
+#: ../../source/news.rst:171
+msgid "Intel QSV video scaling and deinterlacing filters"
+msgstr ""
+
+#: ../../source/news.rst:172
+msgid "Sample Dump eXchange demuxer"
+msgstr ""
+
+#: ../../source/news.rst:173
+msgid "MIDI Sample Dump Standard demuxer"
+msgstr ""
+
+#: ../../source/news.rst:174
+msgid "Scenarist Closed Captions demuxer and muxer"
+msgstr ""
+
+#: ../../source/news.rst:175
+msgid "Support MOV with multiple sample description tables"
+msgstr ""
+
+#: ../../source/news.rst:176
+msgid "Pro-MPEG CoP #3-R2 FEC protocol"
+msgstr ""
+
+#: ../../source/news.rst:177
+msgid "Support for spherical videos"
+msgstr ""
+
+#: ../../source/news.rst:178
+msgid "CrystalHD decoder moved to new decode API"
+msgstr ""
+
+#: ../../source/news.rst:179
+msgid "configure now fails if autodetect-libraries are requested but not found"
+msgstr ""
+
+#: ../../source/news.rst:184
+msgid "October 30th, 2016, Results: Summer Of Code 2016."
+msgstr ""
+
+#: ../../source/news.rst:186
+msgid "This has been a long time coming but we wanted to give a proper closure to our participation in this run of the program and it takes time. Sometimes it's just to get the final report for each project trimmed down, others, is finalizing whatever was still in progress when the program finished: final patches need to be merged, TODO lists stabilized, future plans agreed; you name it."
+msgstr ""
+
+#: ../../source/news.rst:188
+msgid "Without further ado, here's the silver-lining for each one of the projects we sought to complete during this Summer of Code season:"
+msgstr ""
+
+#: ../../source/news.rst:190
+msgid "FFv1 (Mentor: Michael Niedermayer) Stanislav Dolganov designed and implemented experimental support for motion estimation and compensation in the lossless FFV1 codec. The design and implementation is based on the snow video codec, which uses OBMC. Stanislav's work proved that significant compression gains can be achieved with inter frame compression. FFmpeg welcomes Stanislav to continue working beyond this proof of concept and bring its advances into the official FFV1 specification within the IETF."
+msgstr ""
+
+#: ../../source/news.rst:193
+msgid "Self test coverage (Mentor: Michael Niedermayer) Petru Rares Sincraian added several self-tests to FFmpeg and successfully went through the in-some-cases tedious process of fine tuning tests parameters to avoid known and hard to avoid problems, like checksum mismatches due to rounding errors on the myriad of platforms we support. His work has improved the code coverage of our self tests considerably."
+msgstr ""
+
+#: ../../source/news.rst:196
+msgid "MPEG-4 ALS encoder implementation (Mentor: Thilo Borgmann) Umair Khan updated and integrated the ALS encoder to fit in the current FFmpeg codebase. He also implemented a missing feature for the ALS decoder that enables floating-point sample decoding. FFmpeg support for MPEG-4 ALS has been improved significantly by Umair's work. We welcome him to keep maintaining his improvements and hope for great contributions to come."
+msgstr ""
+
+#: ../../source/news.rst:199
+msgid "Tee muxer improvements (Mentor: Marton Balint) Ján Sebechlebský's generic goal was to improve the tee muxer so it tolerated blocking IO and allowed transparent error recovery. During the design phase it turned out that this functionality called for a separate muxer, so Ján spent his summer working on the so-called FIFO muxer, gradually fixing issues all over the codebase. He succeeded in his task, and the FIFO muxer is now part of the main repository, alongside several other improvements he made in the process."
+msgstr ""
+
+#: ../../source/news.rst:202
+msgid "TrueHD encoder (Mentor: Rostislav Pehlivanov) Jai Luthra's objective was to update the out-of-tree and pretty much abandoned MLP (Meridian Lossless Packing) encoder for libavcodec and improve it to enable encoding to the TrueHD format. For the qualification period the encoder was updated such that it was usable and throughout the summer, successfully improved adding support for multi-channel audio and TrueHD encoding. Jai's code has been merged into the main repository now. While a few problems remain with respect to LFE channel and 32 bit sample handling, these are in the process of being fixed such that effort can be finally put in improving the encoder's speed and efficiency."
+msgstr ""
+
+#: ../../source/news.rst:205
+msgid "Motion interpolation filter (Mentor: Paul B Mahol) Davinder Singh investigated existing motion estimation and interpolation approaches from the available literature and previous work by our own: Michael Niedermayer, and implemented filters based on this research. These filters allow motion interpolating frame rate conversion to be applied to a video, for example, to create a slow motion effect or change the frame rate while smoothly interpolating the video along the motion vectors. There's still work to be done to call these filters 'finished', which is rather hard all things considered, but we are looking optimistically at their future."
+msgstr ""
+
+#: ../../source/news.rst:208
+msgid "And that's it. We are happy with the results of the program and immensely thankful for the opportunity of working with such an amazing set of students. We can be a tough crowd but our mentors did an amazing job at hand holding our interns through their journey. Thanks also to Google for this wonderful program and to everyone that made room in their busy lives to help making GSoC2016 a success. See you in 2017!"
+msgstr ""
+
+#: ../../source/news.rst:210
+msgid "September 24th, 2016, SDL1 support dropped. Support for the SDL1 library has been dropped, due to it no longer being maintained (as of January, 2012) and it being superseded by the SDL2 library. As a result, the SDL1 output device has also been removed and replaced by an SDL2 implementation. Both the ffplay and opengl output devices have been updated to support SDL2."
+msgstr ""
+
+#: ../../source/news.rst:214
+msgid "August 9th, 2016, FFmpeg 3.1.2 \"Laplace\""
+msgstr ""
+
+#: ../../source/news.rst:216
+msgid "FFmpeg 3.1.2, a new point release from the 3.1 release branch, is now available! It fixes several bugs."
+msgstr ""
+
+#: ../../source/news.rst:218
+msgid "We recommend users, distributors, and system integrators, to upgrade unless they use current git master."
+msgstr ""
+
+#: ../../source/news.rst:221
+msgid "July 10th, 2016, ffserver program being dropped"
+msgstr ""
+
+#: ../../source/news.rst:223
+msgid "After thorough deliberation, we're announcing that we're about to drop the ffserver program from the project starting with the next release. ffserver has been a problematic program to maintain due to its use of internal APIs, which complicated the recent cleanups to the libavformat library, and block further cleanups and improvements which are desired by API users and will be easier to maintain. Furthermore the program has been hard for users to deploy and run due to reliability issues, lack of knowledgable people to help and confusing configuration file syntax. Current users and members of the community are invited to write a replacement program to fill the same niche that ffserver did using the new APIs and to contact us so we may point users to test and contribute to its development."
+msgstr ""
+
+#: ../../source/news.rst:226
+msgid "July 1st, 2016, FFmpeg 3.1.1 \"Laplace\""
+msgstr ""
+
+#: ../../source/news.rst:228
+msgid "FFmpeg 3.1.1, a new point release from the 3.1 release branch, is now available! It mainly deals with a few ABI issues introduced in the previous release."
+msgstr ""
+
+#: ../../source/news.rst:230
+msgid "We strongly recommend users, distributors, and system integrators, especially those who experienced issues upgrading from 3.0, to upgrade unless they use current git master."
+msgstr ""
+
+#: ../../source/news.rst:233
+msgid "June 27th, 2016, FFmpeg 3.1 \"Laplace\""
+msgstr ""
+
+#: ../../source/news.rst:235
+msgid "FFmpeg 3.1 \"Laplace\", a new major release, is now available! Some of the highlights:"
+msgstr ""
+
+#: ../../source/news.rst:237
+msgid "DXVA2-accelerated HEVC Main10 decoding"
+msgstr ""
+
+#: ../../source/news.rst:238
+msgid "fieldhint filter"
+msgstr ""
+
+#: ../../source/news.rst:239
+msgid "loop video filter and aloop audio filter"
+msgstr ""
+
+#: ../../source/news.rst:240
+msgid "Bob Weaver deinterlacing filter"
+msgstr ""
+
+#: ../../source/news.rst:241
+msgid "firequalizer filter"
+msgstr ""
+
+#: ../../source/news.rst:242
+msgid "datascope filter"
+msgstr ""
+
+#: ../../source/news.rst:243
+msgid "bench and abench filters"
+msgstr ""
+
+#: ../../source/news.rst:244
+msgid "ciescope filter"
+msgstr ""
+
+#: ../../source/news.rst:245
+msgid "protocol blacklisting API"
+msgstr ""
+
+#: ../../source/news.rst:246
+msgid "MediaCodec H264 decoding"
+msgstr ""
+
+#: ../../source/news.rst:247
+msgid "VC-2 HQ RTP payload format (draft v1) depacketizer and packetizer"
+msgstr ""
+
+#: ../../source/news.rst:248
+msgid "VP9 RTP payload format (draft v2) packetizer"
+msgstr ""
+
+#: ../../source/news.rst:249
+msgid "AudioToolbox audio decoders"
+msgstr ""
+
+#: ../../source/news.rst:250
+msgid "AudioToolbox audio encoders"
+msgstr ""
+
+#: ../../source/news.rst:251
+msgid "coreimage filter (GPU based image filtering on OSX)"
+msgstr ""
+
+#: ../../source/news.rst:252
+msgid "libdcadec removed"
+msgstr ""
+
+#: ../../source/news.rst:253
+msgid "bitstream filter for extracting DTS core"
+msgstr ""
+
+#: ../../source/news.rst:254
+msgid "ADPCM IMA DAT4 decoder"
+msgstr ""
+
+#: ../../source/news.rst:255
+msgid "musx demuxer"
+msgstr ""
+
+#: ../../source/news.rst:256
+msgid "aix demuxer"
+msgstr ""
+
+#: ../../source/news.rst:257
+msgid "remap filter"
+msgstr ""
+
+#: ../../source/news.rst:258
+msgid "hash and framehash muxers"
+msgstr ""
+
+#: ../../source/news.rst:259
+msgid "colorspace filter"
+msgstr ""
+
+#: ../../source/news.rst:260
+msgid "hdcd filter"
+msgstr ""
+
+#: ../../source/news.rst:261
+msgid "readvitc filter"
+msgstr ""
+
+#: ../../source/news.rst:262
+msgid "VAAPI-accelerated format conversion and scaling"
+msgstr ""
+
+#: ../../source/news.rst:263
+msgid "libnpp/CUDA-accelerated format conversion and scaling"
+msgstr ""
+
+#: ../../source/news.rst:264
+msgid "Duck TrueMotion 2.0 Real Time decoder"
+msgstr ""
+
+#: ../../source/news.rst:265
+msgid "Wideband Single-bit Data (WSD) demuxer"
+msgstr ""
+
+#: ../../source/news.rst:266
+msgid "VAAPI-accelerated H.264/HEVC/MJPEG encoding"
+msgstr ""
+
+#: ../../source/news.rst:267
+msgid "DTS Express (LBR) decoder"
+msgstr ""
+
+#: ../../source/news.rst:268
+msgid "Generic OpenMAX IL encoder with support for Raspberry Pi"
+msgstr ""
+
+#: ../../source/news.rst:269
+msgid "IFF ANIM demuxer & decoder"
+msgstr ""
+
+#: ../../source/news.rst:270
+msgid "Direct Stream Transfer (DST) decoder"
+msgstr ""
+
+#: ../../source/news.rst:271
+msgid "loudnorm filter"
+msgstr ""
+
+#: ../../source/news.rst:272
+msgid "MTAF demuxer and decoder"
+msgstr ""
+
+#: ../../source/news.rst:273
+msgid "MagicYUV decoder"
+msgstr ""
+
+#: ../../source/news.rst:274
+msgid "OpenExr improvements (tile data and B44/B44A support)"
+msgstr ""
+
+#: ../../source/news.rst:275
+msgid "BitJazz SheerVideo decoder"
+msgstr ""
+
+#: ../../source/news.rst:276
+msgid "CUDA CUVID H264/HEVC decoder"
+msgstr ""
+
+#: ../../source/news.rst:277
+msgid "10-bit depth support in native utvideo decoder"
+msgstr ""
+
+#: ../../source/news.rst:278
+msgid "libutvideo wrapper removed"
+msgstr ""
+
+#: ../../source/news.rst:279
+msgid "YUY2 Lossless Codec decoder"
+msgstr ""
+
+#: ../../source/news.rst:280
+msgid "VideoToolbox H.264 encoder"
+msgstr ""
+
+#: ../../source/news.rst:285
+msgid "March 16th, 2016, Google Summer of Code"
+msgstr ""
+
+#: ../../source/news.rst:287
+msgid "FFmpeg has been accepted as a Google Summer of Code open source organization. If you wish to participate as a student see our project ideas page. You can already get in contact with mentors and start working on qualification tasks as well as register at google and submit your project proposal draft. Good luck!"
+msgstr ""
+
+#: ../../source/news.rst:290
+msgid "February 15th, 2016, FFmpeg 3.0 \"Einstein\""
+msgstr ""
+
+#: ../../source/news.rst:292
+msgid "FFmpeg 3.0 \"Einstein\", a new major release, is now available! Some of the highlights:"
+msgstr ""
+
+#: ../../source/news.rst:294
+msgid "The native FFmpeg AAC encoder has seen extensive improvements and is no longer considered experimental Removed support for libvo-aacenc and libaacplus Over 30 new filters have been added Many ASM optimizations VP9 Hardware Acceleration (DXVA2 and VA-API) Cineform HD decoder New DCA decoder based on libdcadec with full support for DTS-HD extensions As with all major releases expect major backward incompatible API/ABI changes See the Changelog for a list of more updates We strongly recommend users, distributors, and system integrators to upgrade unless they use current git master."
+msgstr ""
+
+#: ../../source/news.rst:306
+msgid "January 30, 2016, Removing support for two external AAC encoders"
+msgstr ""
+
+#: ../../source/news.rst:308
+msgid "We have just removed support for VisualOn AAC encoder (libvo-aacenc) and libaacplus in FFmpeg master."
+msgstr ""
+
+#: ../../source/news.rst:310
+msgid "Even before marking our internal AAC encoder as stable, it was known that libvo-aacenc was of an inferior quality compared to our native one for most samples. However, the VisualOn encoder was used extensively by the Android Open Source Project, and we would like to have a tested-and-true stable option in our code base."
+msgstr ""
+
+#: ../../source/news.rst:312
+msgid "When first committed in 2011, libaacplus filled in the gap of encoding High Efficiency AAC formats (HE-AAC and HE-AACv2), which was not supported by any of the encoders in FFmpeg at that time."
+msgstr ""
+
+#: ../../source/news.rst:314
+msgid "The circumstances for both have changed. After the work spearheaded by Rostislav Pehlivanov and Claudio Freire, the now-stable FFmpeg native AAC encoder is ready to compete with much more mature encoders. The Fraunhofer FDK AAC Codec Library for Android was added in 2012 as the fourth supported external AAC encoder, and the one with the best quality and the most features supported, including HE-AAC and HE-AACv2."
+msgstr ""
+
+#: ../../source/news.rst:316
+msgid "Therefore, we have decided that it is time to remove libvo-aacenc and libaacplus. If you are currently using libvo-aacenc, prepare to transition to the native encoder (aac) when updating to the next version of FFmpeg. In most cases it is as simple as merely swapping the encoder name. If you are currently using libaacplus, start using FDK AAC (libfdk_aac) with an appropriate profile option to select the exact AAC profile that fits your needs. In both cases, you will enjoy an audible quality improvement and as well as fewer licensing headaches."
+msgstr ""
+
+#: ../../source/news.rst:318
+msgid "Enjoy!"
+msgstr ""
+
+#: ../../source/news.rst:321
+msgid "January 16, 2016, FFmpeg 2.8.5, 2.7.5, 2.6.7, 2.5.10"
+msgstr ""
+
+#: ../../source/news.rst:323
+msgid "We have made several new point releases (2.8.5, 2.7.5, 2.6.7, 2.5.10). They fix various bugs, as well as CVE-2016-1897 and CVE-2016-1898. Please see the changelog for each release for more details."
+msgstr ""
+
+#: ../../source/news.rst:325
+#: ../../source/news.rst:440
+#: ../../source/news.rst:479
+#: ../../source/news.rst:504
+#: ../../source/news.rst:529
+#: ../../source/news.rst:536
+#: ../../source/news.rst:556
+#: ../../source/news.rst:570
+#: ../../source/news.rst:626
+#: ../../source/news.rst:700
+msgid "We recommend users, distributors and system integrators to upgrade unless they use current git master."
+msgstr ""
+
+#: ../../source/news.rst:327
+msgid "December 5th, 2015, The native FFmpeg AAC encoder is now stable! After seven years the native FFmpeg AAC encoder has had its experimental flag removed and declared as ready for general use. The encoder is transparent at 128kbps for most samples tested with artifacts only appearing in extreme cases. Subjective quality tests put the encoder to be of equal or greater quality than most of the other encoders available to the public."
+msgstr ""
+
+#: ../../source/news.rst:330
+msgid "Licensing has always been an issue with encoding AAC audio as most of the encoders have had a license making FFmpeg unredistributable if compiled with support for them. The fact that there now exists a fully open and truly free AAC encoder integrated directly within the project means a lot to those who wish to use accepted and widespread standards."
+msgstr ""
+
+#: ../../source/news.rst:332
+msgid "The majority of the work done to bring the encoder up to quality was started during this year's GSoC by developer Claudio Freire and Rostislav Pehlivanov. Both continued to work on the encoder with the latter joining as a developer and mainainer, working on other parts of the project as well. Also, thanks to Kamedo2 who does comparisons and tests, the original authors and all past and current contributors to the encoder. Users are suggested and encouraged to use the encoder and provide feedback or breakage reports through our bug tracker."
+msgstr ""
+
+#: ../../source/news.rst:335
+msgid "October 13th, 2015, Telepoint & MediaHub are now supporting our project"
+msgstr ""
+
+#: ../../source/news.rst:337
+msgid "A big thank you note goes to our newest supporters: MediaHub and Telepoint. Both companies have donated a dedicated server with free of charge internet connectivity. Here is a little bit about them in their own words:"
+msgstr ""
+
+#: ../../source/news.rst:339
+msgid "Telepoint is the biggest carrier-neutral data center in Bulgaria. Located in the heart of Sofia on a cross-road of many Bulgarian and International networks, the facility is a fully featured Tier 3 data center that provides flexible customer-oriented colocation solutions (ranging from a server to a private collocation hall) and a high level of security."
+msgstr ""
+
+#: ../../source/news.rst:341
+msgid "MediaHub Ltd. is a Bulgarian IPTV platform and services provider which uses FFmpeg heavily since it started operating a year ago. \"Donating to help keep FFmpeg online is our way of giving back to the community\" ."
+msgstr ""
+
+#: ../../source/news.rst:343
+msgid "Thanks Telepoint and MediaHub for their support!"
+msgstr ""
+
+#: ../../source/news.rst:346
+msgid "September 29th, 2015, GSoC 2015 results"
+msgstr ""
+
+#: ../../source/news.rst:348
+msgid "FFmpeg participated to the latest edition of the Google Summer of Code Project. FFmpeg got a total of 8 assigned projects, and 7 of them were successful."
+msgstr ""
+
+#: ../../source/news.rst:350
+msgid "We want to thank Google, the participating students, and especially the mentors who joined this effort. We're looking forward to participating in the next GSoC edition!"
+msgstr ""
+
+#: ../../source/news.rst:352
+msgid "Below you can find a brief description of the final outcome of each single project."
+msgstr ""
+
+#: ../../source/news.rst:354
+msgid "Basic servers for network protocols, mentee: Stephan Holljes, mentor: Nicolas George Stephan Holljes's project for this session of Google Summer of Code was to implement basic HTTP server features for libavformat, to complement the already present HTTP client and RTMP and RTSP server code."
+msgstr ""
+
+#: ../../source/news.rst:357
+msgid "The first part of the project was to make the HTTP code capable of accepting a single client; it was completed partly during the qualification period and partly during the first week of the summer. Thanks to this work, it is now possible to make a simple HTTP stream using the following commands::"
+msgstr ""
+
+#: ../../source/news.rst:365
+msgid "The next part of the project was to extend the code to be able to accept several clients, simultaneously or consecutively. Since libavformat did not have an API for that kind of task, it was necessary to design one. This part was mostly completed before the midterm and applied shortly afterwards. Since the ffmpeg command-line tool is not ready to serve several clients, the test ground for that new API is an example program serving hard-coded content."
+msgstr ""
+
+#: ../../source/news.rst:371
+msgid "The last and most ambitious part of the project was to update ffserver to make use of the new API. It would prove that the API is usable to implement real HTTP servers, and expose the points where more control was needed. By the end of the summer, a first working patch series was undergoing code review."
+msgstr ""
+
+#: ../../source/news.rst:373
+msgid "Browsing content on the server, mentee: Mariusz Szczepańczyk, mentor: Lukasz Marek Mariusz finished an API prepared by the FFmpeg community and implemented Samba directory listing as qualification task."
+msgstr ""
+
+#: ../../source/news.rst:376
+msgid "During the program he extended the API with the possibility to remove and rename files on remote servers. He completed the implementation of these features for file, Samba, SFTP, and FTP protocols."
+msgstr ""
+
+#: ../../source/news.rst:378
+msgid "At the end of the program, Mariusz provided a sketch of an implementation for HTTP directory listening."
+msgstr ""
+
+#: ../../source/news.rst:380
+msgid "Directshow digital video capture, mentee: Mate Sebok, mentor: Roger Pack Mate was working on directshow input from digital video sources. He got working input from ATSC input sources, with specifiable tuner."
+msgstr ""
+
+#: ../../source/news.rst:383
+msgid "The code has not been committed, but a patch of it was sent to the ffmpeg-devel mailing list for future use."
+msgstr ""
+
+#: ../../source/news.rst:385
+msgid "The mentor plans on cleaning it up and committing it, at least for the ATSC side of things. Mate and the mentor are still working trying to finally figure out how to get DVB working."
+msgstr ""
+
+#: ../../source/news.rst:387
+msgid "Implementing full support for 3GPP Timed Text Subtitles, mentee: Niklesh Lalwani, mentor: Philip Langdale Niklesh's project was to expand our support for 3GPP Timed Text subtitles. This is the native subtitle format for mp4 containers, and is interesting because it's usually the only subtitle format supported by the stock playback applications on iOS and Android devices."
+msgstr ""
+
+#: ../../source/news.rst:390
+msgid "ffmpeg already had basic support for these subtitles which ignored all formatting information - it just provided basic plain-text support."
+msgstr ""
+
+#: ../../source/news.rst:392
+msgid "Niklesh did work to add support on both the encode and decode side for text formatting capabilities, such as font size/colour and effects like bold/italics, highlighting, etc."
+msgstr ""
+
+#: ../../source/news.rst:394
+msgid "The main challenge here is that Timed Text handles formatting in a very different way from most common subtitle formats. It uses a binary encoding (based on mp4 boxes, naturally) and stores information separately from the text itself. This requires additional work to track which parts of the text formatting applies to, and explicitly dealing with overlapping formatting (which other formats support but Timed Text does not) so it requires breaking the overlapping sections into separate non-overlapping ones with different formatting."
+msgstr ""
+
+#: ../../source/news.rst:396
+msgid "Finally, Niklesh had to be careful about not trusting any size information in the subtitles - and that's no joke: the now infamous Android stagefright bug was in code for parsing Timed Text subtitles."
+msgstr ""
+
+#: ../../source/news.rst:398
+msgid "All of Niklesh's work is committed and was released in ffmpeg 2.8."
+msgstr ""
+
+#: ../../source/news.rst:400
+msgid "libswscale refactoring, mentee: Pedro Arthur, mentors: Michael Niedermayer, Ramiro Polla Pedro Arthur has modularized the vertical and horizontal scalers. To do this he designed and implemented a generic filter framework and moved the existing scaler code into it. These changes now allow easily adding removing, splitting or merging processing steps. The implementation was benchmarked and several alternatives were tried to avoid speed loss."
+msgstr ""
+
+#: ../../source/news.rst:403
+msgid "He also added gamma corrected scaling support. An example to use gamma corrected scaling would be::"
+msgstr ""
+
+#: ../../source/news.rst:407
+msgid "Pedro has done impressive work considering the short time available, and he is a FFmpeg committer now. He continues to contribute to FFmpeg, and has fixed some bugs in libswscale after GSoC has ended."
+msgstr ""
+
+#: ../../source/news.rst:410
+msgid "AAC Encoder Improvements, mentee: Rostislav Pehlivanov, mentor: Claudio Freire Rostislav Pehlivanov has implemented PNS, TNS, I/S coding and main prediction on the native AAC encoder. Of all those extensions, only TNS was left in a less-than-usable state, but the implementation has been pushed (disabled) anyway since it's a good basis for further improvements."
+msgstr ""
+
+#: ../../source/news.rst:415
+msgid "PNS replaces noisy bands with a single scalefactor representing the energy of that band, gaining in coding efficiency considerably, and the quality improvements on low bitrates are impressive for such a simple feature."
+msgstr ""
+
+#: ../../source/news.rst:417
+msgid "TNS still needs some polishing, but has the potential to reduce coding artifacts by applying noise shaping in the temporal domain (something that is a source of annoying, notable distortion on low-entropy bands)."
+msgstr ""
+
+#: ../../source/news.rst:419
+msgid "Intensity Stereo coding (I/S) can double coding efficiency by exploiting strong correlation between stereo channels, most effective on pop-style tracks that employ panned mixing. The technique is not as effective on classic X-Y recordings though."
+msgstr ""
+
+#: ../../source/news.rst:421
+msgid "Finally, main prediction improves coding efficiency by exploiting correlation among successive frames. While the gains have not been huge at this point, Rostislav has remained active even after the GSoC, and is polishing both TNS and main prediction, as well as looking for further improvements to make."
+msgstr ""
+
+#: ../../source/news.rst:423
+msgid "In the process, the MIPS port of the encoder was broken a few times, something he's also working to fix."
+msgstr ""
+
+#: ../../source/news.rst:425
+msgid "Animated Portable Network Graphics (APNG), mentee: Donny Yang, mentor: Paul B Mahol Donny Yang implemented basic keyframe only APNG encoder as the qualification task. Later he wrote interframe compression via various blend modes. The current implementation tries all blend modes and picks one which takes the smallest amount of memory."
+msgstr ""
+
+#: ../../source/news.rst:429
+msgid "Special care was taken to make sure that the decoder plays correctly all files found in the wild and that the encoder produces files that can be played in browsers that support APNG."
+msgstr ""
+
+#: ../../source/news.rst:431
+msgid "During his work he was tasked to fix any encountered bug in the decoder due to the fact that it doesn't match APNG specifications. Thanks to this work, a long standing bug in the PNG decoder has been fixed."
+msgstr ""
+
+#: ../../source/news.rst:433
+msgid "For latter work he plans to continue working on the encoder, making it possible to select which blend modes will be used in the encoding process. This could speed up encoding of APNG files."
+msgstr ""
+
+#: ../../source/news.rst:436
+msgid "September 9th, 2015, FFmpeg 2.8"
+msgstr ""
+
+#: ../../source/news.rst:438
+msgid "We published release 2.8 as new major version. It contains all features and bug fixes of the git master branch from September 8th. Please see the changelog for a list of the most important changes."
+msgstr ""
+
+#: ../../source/news.rst:443
+msgid "August 1st, 2015, A message from the FFmpeg project"
+msgstr ""
+
+#: ../../source/news.rst:445
+msgid "Dear multimedia community,"
+msgstr ""
+
+#: ../../source/news.rst:447
+msgid "The resignation of Michael Niedermayer as leader of FFmpeg yesterday has come by surprise. He has worked tirelessly on the FFmpeg project for many years and we must thank him for the work that he has done. We hope that in the future he will continue to contribute to the project. In the coming weeks, the FFmpeg project will be managed by the active contributors."
+msgstr ""
+
+#: ../../source/news.rst:452
+msgid "The last four years have not been easy for our multimedia community - both contributors and users. We should now look to the future, try to find solutions to these issues, and to have reconciliation between the forks, which have split the community for so long."
+msgstr ""
+
+#: ../../source/news.rst:456
+msgid "Unfortunately, much of the disagreement has taken place in inappropriate venues so far, which has made finding common ground and solutions difficult. We aim to discuss this in our communities online over the coming weeks, and in person at the VideoLAN Developer Days in Paris in September: a neutral venue for the entire open source multimedia community."
+msgstr ""
+
+#: ../../source/news.rst:461
+msgid "The FFmpeg project."
+msgstr ""
+
+#: ../../source/news.rst:464
+msgid "July 4th, 2015, FFmpeg needs a new host"
+msgstr ""
+
+#: ../../source/news.rst:466
+msgid "UPDATE: We have received more than 7 offers for hosting and servers, thanks a lot to everyone!"
+msgstr ""
+
+#: ../../source/news.rst:468
+msgid "After graciously hosting our projects (FFmpeg, MPlayer and rtmpdump) for 4 years, Arpi (our hoster) has informed us that we have to secure a new host somewhere else immediately."
+msgstr ""
+
+#: ../../source/news.rst:470
+msgid "If you want to host an open source project, please let us know, either on ffmpeg-devel mailing list or irc.freenode.net #ffmpeg-devel."
+msgstr ""
+
+#: ../../source/news.rst:472
+msgid "We use about 4TB of storage and at least 4TB of bandwidth / month for various mailing lists, trac, samples repo, svn, etc."
+msgstr ""
+
+#: ../../source/news.rst:475
+msgid "March 16, 2015, FFmpeg 2.6.1"
+msgstr ""
+
+#: ../../source/news.rst:477
+msgid "We have made a new major release (2.6) and now one week afterward 2.6.1. It contains all features and bugfixes of the git master branch from the 6th March. Please see the Release Notes for a list of note-worthy changes."
+msgstr ""
+
+#: ../../source/news.rst:482
+msgid "March 4, 2015, Google Summer of Code"
+msgstr ""
+
+#: ../../source/news.rst:484
+msgid "FFmpeg has been accepted as a Google Summer of Code Project. If you wish to participate as a student see our project ideas page. You can already get in contact with mentors and start working on qualification tasks. Registration at Google for students will open March 16th. Good luck!"
+msgstr ""
+
+#: ../../source/news.rst:487
+msgid "March 1, 2015, Chemnitzer Linux-Tage"
+msgstr ""
+
+#: ../../source/news.rst:489
+msgid "We happily announce that FFmpeg will be represented at Chemnitzer Linux-Tage (CLT) in Chemnitz, Germany. The event will take place on 21st and 22nd of March."
+msgstr ""
+
+#: ../../source/news.rst:491
+#: ../../source/news.rst:633
+msgid "More information can be found here"
+msgstr ""
+
+#: ../../source/news.rst:493
+msgid "We demonstrate usage of FFmpeg, answer your questions and listen to your problems and wishes. If you have media files that cannot be processed correctly with FFmpeg, be sure to have a sample with you so we can have a look!"
+msgstr ""
+
+#: ../../source/news.rst:495
+msgid "For the first time in our CLT history, there will be an FFmpeg workshop! You can read the details here. The workshop is targeted at FFmpeg beginners. First the basics of multimedia will be covered. Thereafter you will learn how to use that knowledge and the FFmpeg CLI tools to analyse and process media files. The workshop is in German language only and prior registration is necessary. The workshop will be on Saturday starting at 10 o'clock."
+msgstr ""
+
+#: ../../source/news.rst:497
+#: ../../source/news.rst:639
+msgid "We are looking forward to meet you (again)!"
+msgstr ""
+
+#: ../../source/news.rst:500
+msgid "December 5, 2014, FFmpeg 2.5"
+msgstr ""
+
+#: ../../source/news.rst:502
+msgid "We have made a new major release (2.5) It contains all features and bugfixes of the git master branch from the 4th December. Please see the Release Notes for a list of note-worthy changes."
+msgstr ""
+
+#: ../../source/news.rst:507
+msgid "October 10, 2014, FFmpeg is in Debian unstable again"
+msgstr ""
+
+#: ../../source/news.rst:509
+msgid "We wanted you to know there are FFmpeg packages in Debian unstable again. A big thank-you to Andreas Cadhalpun and all the people that made it possible. It has been anything but simple."
+msgstr ""
+
+#: ../../source/news.rst:511
+msgid "Unfortunately that was already the easy part of this news. The bad news is the packages probably won't migrate to Debian testing to be in the upcoming release codenamed jessie. Read the argumentation over at Debian."
+msgstr ""
+
+#: ../../source/news.rst:513
+msgid "However things will come out in the end, we hope for your continued remarkable support!"
+msgstr ""
+
+#: ../../source/news.rst:516
+msgid "October 8, 2014, FFmpeg secured a place in OPW!"
+msgstr ""
+
+#: ../../source/news.rst:518
+msgid "Thanks to a generous 6K USD donation by Samsung (Open Source Group), FFmpeg will be welcoming at least 1 \"Outreach Program for Women\" intern to work with our community for an initial period starting December 2014 (through March 2015)."
+msgstr ""
+
+#: ../../source/news.rst:520
+msgid "We all know FFmpeg is used by the industry, but even while there are countless products building on our code, it is not at all common for companies to step up and help us out when needed. So a big thank-you to Samsung and the OPW program committee!"
+msgstr ""
+
+#: ../../source/news.rst:522
+msgid "If you are thinking on participating in OPW as an intern, please take a look at our OPW wiki page for some initial guidelines. The page is still a work in progress, but there should be enough information there to get you started. If you, on the other hand, are thinking on sponsoring work on FFmpeg through the OPW program, please get in touch with us at opw@ffmpeg.org. With your help, we might be able to secure some extra intern spots for this round!"
+msgstr ""
+
+#: ../../source/news.rst:525
+msgid "September 15, 2014, FFmpeg 2.4"
+msgstr ""
+
+#: ../../source/news.rst:527
+msgid "We have made a new major release (2.4) It contains all features and bugfixes of the git master branch from the 14th September. Please see the Release Notes for a list of note-worthy changes."
+msgstr ""
+
+#: ../../source/news.rst:532
+msgid "August 20, 2014, FFmpeg 2.3.3, 2.2.7, 1.2.8"
+msgstr ""
+
+#: ../../source/news.rst:534
+msgid "We have made several new point releases (2.3.3, 2.2.7, 1.2.8). They fix various bugs, as well as CVE-2014-5271 and CVE-2014-5272. Please see the changelog for more details."
+msgstr ""
+
+#: ../../source/news.rst:539
+msgid "July 29, 2014, Help us out securing our spot in OPW"
+msgstr ""
+
+#: ../../source/news.rst:541
+msgid "Following our previous post regarding our participation on this year's OPW (Outreach Program for Women), we are now reaching out to our users (both individuals and companies) to help us gather the needed money to secure our spot in the program. We need to put together 6K USD as a minimum but securing more funds would help us towards getting more than one intern. You can donate by credit card using Click&Pledge and selecting the \"OPW\" option. If you would like to donate by money transfer or by check, please get in touch by e-mail and we will get back to you with instructions. Thanks!"
+msgstr ""
+
+#: ../../source/news.rst:547
+msgid "July 20, 2014, New website"
+msgstr ""
+
+#: ../../source/news.rst:549
+msgid "The FFmpeg project is proud to announce a brand new version of the website made by db0. While this was initially motivated by the need for a larger menu, the whole website ended up being redesigned, and most pages got reworked to ease navigation. We hope you'll enjoy browsing it."
+msgstr ""
+
+#: ../../source/news.rst:552
+msgid "July 17, 2014, FFmpeg 2.3"
+msgstr ""
+
+#: ../../source/news.rst:554
+msgid "We have made a new major release (2.3) It contains all features and bugfixes of the git master branch from the 16th July. Please see the Release Notes for a list of note-worthy changes."
+msgstr ""
+
+#: ../../source/news.rst:559
+msgid "July 3, 2014, FFmpeg and the Outreach Program For Women"
+msgstr ""
+
+#: ../../source/news.rst:561
+msgid "FFmpeg has started the process to become an OPW includer organization for the next round of the program, with internships starting December 9. The OPW aims to \"Help women (cis and trans) and genderqueer to get involved in free and open source software\". Part of the process requires securing funds to support at least one internship (6K USD), so if you were holding on your donation to FFmpeg, this is a great chance for you to come forward, get in touch and help both the project and a great initiative!"
+msgstr ""
+
+#: ../../source/news.rst:563
+msgid "We have set up an email address you can use to contact us about donations and general inquires regarding our participation in the program. Hope to hear from you soon!"
+msgstr ""
+
+#: ../../source/news.rst:566
+msgid "June 29, 2014, FFmpeg 2.2.4, 2.1.5, 2.0.5, 1.2.7, 1.1.12, 0.10.14"
+msgstr ""
+
+#: ../../source/news.rst:568
+msgid "We have made several new point releases (2.2.4, 2.1.5, 2.0.5, 1.2.7, 1.1.12, 0.10.14). They fix a security issue in the LZO implementation, as well as several other bugs. See the git log for details."
+msgstr ""
+
+#: ../../source/news.rst:573
+msgid "May 1, 2014, LinuxTag"
+msgstr ""
+
+#: ../../source/news.rst:575
+msgid "Once again FFmpeg will be represented at LinuxTag in Berlin, Germany. The event will take place from 8th to 10th of May. Please note that this year's LinuxTag is at a different location closer to the city center."
+msgstr ""
+
+#: ../../source/news.rst:577
+msgid "We will have a shared booth with XBMC and VideoLAN. If you have media files that cannot be processed correctly with FFmpeg, be sure to have a sample with you so we can have a look!"
+msgstr ""
+
+#: ../../source/news.rst:579
+msgid "More information about LinuxTag can be found here"
+msgstr ""
+
+#: ../../source/news.rst:581
+msgid "We are looking forward to see you in Berlin!"
+msgstr ""
+
+#: ../../source/news.rst:584
+msgid "April 18, 2014, OpenSSL Heartbeat bug"
+msgstr ""
+
+#: ../../source/news.rst:586
+msgid "Our server hosting the Trac issue tracker was vulnerable to the attack against OpenSSL known as \"heartbleed\". The OpenSSL software library was updated on 7th of April, shortly after the vulnerability was publicly disclosed. We have changed the private keys (and certificates) for all FFmpeg servers. The details were sent to the mailing lists by Alexander Strasser, who is part of the project server team. Here is a link to the user mailing list archive ."
+msgstr ""
+
+#: ../../source/news.rst:588
+msgid "We encourage you to read up on \"OpenSSL heartbleed\". It is possible that login data for the issue tracker was exposed to people exploiting this security hole. You might want to change your password in the tracker and everywhere else you used that same password."
+msgstr ""
+
+#: ../../source/news.rst:591
+msgid "April 11, 2014, FFmpeg 2.2.1"
+msgstr ""
+
+#: ../../source/news.rst:593
+msgid "We have made a new point releases (2.2.1). It contains bug fixes for Tickets #2893, #3432, #3469, #3486, #3495 and #3540 as well as several other fixes. See the git log for details."
+msgstr ""
+
+#: ../../source/news.rst:596
+msgid "March 24, 2014, FFmpeg 2.2"
+msgstr ""
+
+#: ../../source/news.rst:598
+msgid "We have made a new major release (2.2) It contains all features and bugfixes of the git master branch from 1st March. A partial list of new stuff is below:"
+msgstr ""
+
+#: ../../source/news.rst:600
+msgid "HNM version 4 demuxer and video decoder"
+msgstr ""
+
+#: ../../source/news.rst:601
+msgid "Live HDS muxer"
+msgstr ""
+
+#: ../../source/news.rst:602
+msgid "setsar/setdar filters now support variables in ratio expressions"
+msgstr ""
+
+#: ../../source/news.rst:603
+msgid "elbg filter"
+msgstr ""
+
+#: ../../source/news.rst:604
+msgid "string validation in ffprobe"
+msgstr ""
+
+#: ../../source/news.rst:605
+msgid "support for decoding through VDPAU in ffmpeg (the -hwaccel option)"
+msgstr ""
+
+#: ../../source/news.rst:606
+msgid "complete Voxware MetaSound decoder"
+msgstr ""
+
+#: ../../source/news.rst:607
+msgid "remove mp3_header_compress bitstream filter"
+msgstr ""
+
+#: ../../source/news.rst:608
+msgid "Windows resource files for shared libraries"
+msgstr ""
+
+#: ../../source/news.rst:609
+msgid "aeval filter"
+msgstr ""
+
+#: ../../source/news.rst:610
+msgid "stereoscopic 3d metadata handling"
+msgstr ""
+
+#: ../../source/news.rst:611
+msgid "WebP encoding via libwebp"
+msgstr ""
+
+#: ../../source/news.rst:612
+msgid "ATRAC3+ decoder"
+msgstr ""
+
+#: ../../source/news.rst:613
+msgid "VP8 in Ogg demuxing"
+msgstr ""
+
+#: ../../source/news.rst:614
+msgid "side & metadata support in NUT"
+msgstr ""
+
+#: ../../source/news.rst:615
+msgid "framepack filter"
+msgstr ""
+
+#: ../../source/news.rst:616
+msgid "XYZ12 rawvideo support in NUT"
+msgstr ""
+
+#: ../../source/news.rst:617
+msgid "Exif metadata support in WebP decoder"
+msgstr ""
+
+#: ../../source/news.rst:618
+msgid "OpenGL device"
+msgstr ""
+
+#: ../../source/news.rst:619
+msgid "Use metadata_header_padding to control padding in ID3 tags (currently used in MP3, AIFF, and OMA files), FLAC header, and the AVI \"junk\" block."
+msgstr ""
+
+#: ../../source/news.rst:620
+msgid "Mirillis FIC video decoder"
+msgstr ""
+
+#: ../../source/news.rst:621
+msgid "Support DNx444"
+msgstr ""
+
+#: ../../source/news.rst:622
+msgid "libx265 encoder"
+msgstr ""
+
+#: ../../source/news.rst:623
+msgid "dejudder filter"
+msgstr ""
+
+#: ../../source/news.rst:624
+msgid "Autodetect VDA like all other hardware accelerations"
+msgstr ""
+
+#: ../../source/news.rst:629
+msgid "February 3, 2014, Chemnitzer Linux-Tage"
+msgstr ""
+
+#: ../../source/news.rst:631
+msgid "We happily announce that FFmpeg will be represented at `Chemnitzer Linux-Tage` in Chemnitz, Germany. The event will take place on 15th and 16th of March."
+msgstr ""
+
+#: ../../source/news.rst:635
+msgid "We invite you to visit us at our booth located in the Linux-Live area! There we will demonstrate usage of FFmpeg, answer your questions and listen to your problems and wishes."
+msgstr ""
+
+#: ../../source/news.rst:637
+msgid "If you have media files that cannot be processed correctly with FFmpeg, be sure to have a sample with you so we can have a look!"
+msgstr ""
+
+#: ../../source/news.rst:642
+msgid "February 9, 2014, trac.ffmpeg.org / trac.mplayerhq.hu Security Breach"
+msgstr ""
+
+#: ../../source/news.rst:644
+msgid "The server on which FFmpeg and MPlayer Trac issue trackers were installed was compromised. The affected server was taken offline and has been replaced and all software reinstalled. FFmpeg Git, releases, FATE, web and mailinglists are on other servers and were not affected. We believe that the original compromise happened to a server, unrelated to FFmpeg and MPlayer, several months ago. That server was used as a source to clone the VM that we recently moved Trac to. It is not known if anyone used the backdoor that was found."
+msgstr ""
+
+#: ../../source/news.rst:646
+msgid "We recommend all users to change their passwords. Especially users who use a password on Trac that they also use elsewhere, should change that password at least elsewhere."
+msgstr ""
+
+#: ../../source/news.rst:649
+msgid "November 12, 2013, FFmpeg RFP in Debian"
+msgstr ""
+
+#: ../../source/news.rst:651
+msgid "Since the splitting of Libav the Debian/Ubuntu maintainers have followed the Libav fork. Many people have requested the packaging of ffmpeg in Debian, as it is more feature-complete and in many cases less buggy."
+msgstr ""
+
+#: ../../source/news.rst:653
+msgid "Rogério Brito, a Debian developer, has proposed a Request For Package (RFP) in the Debian bug tracking system."
+msgstr ""
+
+#: ../../source/news.rst:655
+msgid "Please let the Debian and Ubuntu developers know that you support packaging of the real FFmpeg! See Debian ticket #729203 for more details."
+msgstr ""
+
+#: ../../source/news.rst:658
+msgid "October 28, 2013, FFmpeg 2.1"
+msgstr ""
+
+#: ../../source/news.rst:660
+msgid "We have made a new major release (2.1) It contains all features and bugfixes of the git master branch from 28th October. A partial list of new stuff is below:"
+msgstr ""
+
+#: ../../source/news.rst:662
+msgid "aecho filter"
+msgstr ""
+
+#: ../../source/news.rst:663
+msgid "perspective filter ported from libmpcodecs"
+msgstr ""
+
+#: ../../source/news.rst:664
+msgid "ffprobe -show_programs option"
+msgstr ""
+
+#: ../../source/news.rst:665
+msgid "compand filter"
+msgstr ""
+
+#: ../../source/news.rst:666
+msgid "RTMP seek support"
+msgstr ""
+
+#: ../../source/news.rst:667
+msgid "when transcoding with ffmpeg (i.e. not streamcopying), -ss is now accurate even when used as an input option. Previous behavior can be restored with the -noaccurate_seek option."
+msgstr ""
+
+#: ../../source/news.rst:668
+msgid "ffmpeg -t option can now be used for inputs, to limit the duration of data read from an input file"
+msgstr ""
+
+#: ../../source/news.rst:669
+msgid "incomplete Voxware MetaSound decoder"
+msgstr ""
+
+#: ../../source/news.rst:670
+msgid "read EXIF metadata from JPEG"
+msgstr ""
+
+#: ../../source/news.rst:671
+msgid "DVB teletext decoder"
+msgstr ""
+
+#: ../../source/news.rst:672
+msgid "phase filter ported from libmpcodecs"
+msgstr ""
+
+#: ../../source/news.rst:673
+msgid "w3fdif filter"
+msgstr ""
+
+#: ../../source/news.rst:674
+msgid "Opus support in Matroska"
+msgstr ""
+
+#: ../../source/news.rst:675
+msgid "FFV1 version 1.3 is stable and no longer experimental"
+msgstr ""
+
+#: ../../source/news.rst:676
+msgid "FFV1: YUVA(444,422,420) 9, 10 and 16 bit support"
+msgstr ""
+
+#: ../../source/news.rst:677
+msgid "changed DTS stream id in lavf mpeg ps muxer from 0x8a to 0x88, to be more consistent with other muxers."
+msgstr ""
+
+#: ../../source/news.rst:678
+msgid "adelay filter"
+msgstr ""
+
+#: ../../source/news.rst:679
+msgid "pullup filter ported from libmpcodecs"
+msgstr ""
+
+#: ../../source/news.rst:680
+msgid "ffprobe -read_intervals option"
+msgstr ""
+
+#: ../../source/news.rst:681
+msgid "Lossless and alpha support for WebP decoder"
+msgstr ""
+
+#: ../../source/news.rst:682
+msgid "Error Resilient AAC syntax (ER AAC LC) decoding"
+msgstr ""
+
+#: ../../source/news.rst:683
+msgid "Low Delay AAC (ER AAC LD) decoding"
+msgstr ""
+
+#: ../../source/news.rst:684
+msgid "mux chapters in ASF files"
+msgstr ""
+
+#: ../../source/news.rst:685
+msgid "SFTP protocol (via libssh)"
+msgstr ""
+
+#: ../../source/news.rst:686
+msgid "libx264: add ability to encode in YUVJ422P and YUVJ444P"
+msgstr ""
+
+#: ../../source/news.rst:687
+msgid "Fraps: use BT.709 colorspace by default for yuv, as reference fraps decoder does"
+msgstr ""
+
+#: ../../source/news.rst:688
+msgid "make decoding alpha optional for prores, ffv1 and vp6 by setting the skip_alpha flag."
+msgstr ""
+
+#: ../../source/news.rst:689
+msgid "ladspa wrapper filter"
+msgstr ""
+
+#: ../../source/news.rst:690
+msgid "native VP9 decoder"
+msgstr ""
+
+#: ../../source/news.rst:691
+msgid "dpx parser"
+msgstr ""
+
+#: ../../source/news.rst:692
+msgid "max_error_rate parameter in ffmpeg"
+msgstr ""
+
+#: ../../source/news.rst:693
+msgid "PulseAudio output device"
+msgstr ""
+
+#: ../../source/news.rst:694
+msgid "ReplayGain scanner"
+msgstr ""
+
+#: ../../source/news.rst:695
+msgid "Enhanced Low Delay AAC (ER AAC ELD) decoding (no LD SBR support)"
+msgstr ""
+
+#: ../../source/news.rst:696
+msgid "Linux framebuffer output device"
+msgstr ""
+
+#: ../../source/news.rst:697
+msgid "HEVC decoder, raw HEVC demuxer, HEVC demuxing in TS, Matroska and MP4"
+msgstr ""
+
+#: ../../source/news.rst:698
+msgid "mergeplanes filter"
+msgstr ""
+

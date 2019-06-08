@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the ffmpeg-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ffmpeg-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/consulting.rst:2
+msgid "FFmpeg-related consulting and employment opportunities"
+msgstr ""
+
+#: ../../source/consulting.rst:4
+msgid "If you're running a business that uses FFmpeg or would like to use FFmpeg, you will sometimes want to have an expert, i.e. one of the original developers, work with you to figure out an issue, fix a bug or add some new feature."
+msgstr ""
+
+#: ../../source/consulting.rst:7
+msgid "This page is a list of those FFmpeg developers that are available for employment or consulting. The FFmpeg project highly recommends these people to be hired by your business. All developers on this list maintain some code in FFmpeg, which serves as a testimony for their competence. By hiring one of these developers, your business can also (indirectly) support the development of FFmpeg."
+msgstr ""
+
+#: ../../source/consulting.rst:12
+msgid "If you do not know whom to hire in particular or if none of the listed areas of expertise fits your requirements, you can send an email to the ffmpeg-devel mailing list, where it will reach a wider audience."
+msgstr ""
+
+#: ../../source/consulting.rst:18
+msgid "Baptiste Coudurier"
+msgstr ""
+
+#: ../../source/consulting.rst:20
+msgid "Baptiste Coudurier is located in Los Angeles, California and is available for contracting work. He has worked on FFmpeg since 2005 and has been a maintainer since 2006. He has special expertise in broadcast codecs (ProRes, DNxHD, IMX/D-10, AVC-Intra), formats (MXF, GXF, MOV) and usages (Avid, FCP, Interlacing, Time Code, Metadata). You can contact him by email at baptiste.coudurier@gmail.com."
+msgstr ""
+
+#: ../../source/consulting.rst:26
+msgid "Carl Eugen Hoyos"
+msgstr ""
+
+#: ../../source/consulting.rst:28
+msgid "Carl Eugen is located in Austria and is available for contracting work. He has worked on FFmpeg since 2007 and has been a maintainer since 2007. He has experience with software license issues, and currently maintains the FFmpeg bug tracker. You can contact him by email at ce at hoyos dot ws."
+msgstr ""
+
+#: ../../source/consulting.rst:34
+msgid "Michael Niedermayer"
+msgstr ""
+
+#: ../../source/consulting.rst:36
+msgid "Michael is located in Vienna, Austria and is available for contracting work. He is an expert in all areas of video coding as well as x86 assembly. You can contact him by email at michael@niedermayer.cc."
+msgstr ""
+
+#: ../../source/consulting.rst:41
+msgid "Paul B Mahol"
+msgstr ""
+
+#: ../../source/consulting.rst:43
+msgid "Paul is located in Croatia and is available for contracting work. He has worked on FFmpeg since 2011 and has been a maintainer since 2012. He has experience with various codecs, containers, filters and reverse engineering. You can contact him by email at onemda at gmail dot com."
+msgstr ""
+
+#: ../../source/consulting.rst:49
+msgid "Thilo Borgmann"
+msgstr ""
+
+#: ../../source/consulting.rst:51
+msgid "Thilo is located in Berlin, Germany and is available for contract work. He has worked on FFmpeg since 2009 and has been a maintainer since 2010. He has special expertise with decoders, metadata, input devices and filters. You can contact him by email at thilo.borgmann@mail.de."
+msgstr ""
+
+#: ../../source/consulting.rst:57
+msgid "Stefano Sabatini"
+msgstr ""
+
+#: ../../source/consulting.rst:59
+msgid "Stefano is located in Italy and is available for contracting work. He has worked on FFmpeg since 2007 and has been a maintainer since 2008. He has special expertise in libavfilter, ff* tools usage and usability issues. You can contact him by email at stefasab@gmail.com."
+msgstr ""
+
+#: ../../source/consulting.rst:65
+msgid "Thomas Volkert"
+msgstr ""
+
+#: ../../source/consulting.rst:67
+msgid "Thomas is located near Stuttgart, Germany. He works with FFmpeg since 2008 and is a maintainer since 2014. The focus of his work is on network protocols and all areas of audio/video streaming. He has special expertise with RTP, RTCP, RTSP, RTMP, HLS and also SDP. You can contact him by email at thomas@homer-conferencing.com."
+msgstr ""
+
+#: ../../source/consulting.rst:74
+msgid "Steven Liu"
+msgstr ""
+
+#: ../../source/consulting.rst:76
+msgid "Steven is located in BeiJing, China. He works with FFmpeg since 2010 and is a maintainer since 2016. The focus of his work is on network protocols and all areas of audio/video streaming. He has special expertise with HTTP, RTMP, HLS, MP4, FLV, MPEGTS, libavformat, ff* tools usage and usability issues. You can contact him by email at lq@chinaffmpeg.org."
+msgstr ""
+
+#: ../../source/consulting.rst:83
+msgid "Gyan Doshi"
+msgstr ""
+
+#: ../../source/consulting.rst:85
+msgid "Gyan is located in Mumbai, India and is available for consulting work. He has been a maintainer since 2018, and has expertise in ff* tools usage and troubleshooting. You can contact him by email at ffmpeg at gyani dot pro."
+msgstr ""
+

@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the ffmpeg-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ffmpeg-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/documentation.rst:2
+msgid "Documentation"
+msgstr "文档"
+
+#: ../../source/documentation.rst:4
+msgid ""
+"The following documentation is regenerated nightly, and corresponds to "
+"the newest FFmpeg revision. Consult your locally installed documentation "
+"for older versions."
+msgstr ""
+
+#: ../../source/documentation.rst:8
+msgid "Command Line Tools Documentation"
+msgstr ""
+
+#: ../../source/documentation.rst:10
+msgid "ffmpeg: ffmpeg tool"
+msgstr ""
+
+#: ../../source/documentation.rst:11
+msgid "ffmpeg-all: ffmpeg tool and FFmpeg components"
+msgstr ""
+
+#: ../../source/documentation.rst:12
+msgid "ffplay: ffplay tool"
+msgstr ""
+
+#: ../../source/documentation.rst:13
+msgid "ffplay-all: ffplay tool and FFmpeg components"
+msgstr ""
+
+#: ../../source/documentation.rst:14
+msgid "ffprobe: ffprobe tool"
+msgstr ""
+
+#: ../../source/documentation.rst:15
+msgid "ffprobe-all: ffprobe tool and FFmpeg components"
+msgstr ""
+
+#: ../../source/documentation.rst:18
+#, fuzzy
+msgid "Components Documentation"
+msgstr "文档"
+
+#: ../../source/documentation.rst:20
+msgid "Utilities"
+msgstr ""
+
+#: ../../source/documentation.rst:21
+msgid "Video scaling and pixel format converter"
+msgstr ""
+
+#: ../../source/documentation.rst:22
+msgid "Audio resampler"
+msgstr ""
+
+#: ../../source/documentation.rst:23
+msgid "Encoders and decoders (codecs)"
+msgstr ""
+
+#: ../../source/documentation.rst:24
+msgid "Bitstream filters"
+msgstr ""
+
+#: ../../source/documentation.rst:25
+msgid "Muxers and demuxers (formats)"
+msgstr ""
+
+#: ../../source/documentation.rst:26
+msgid "Protocols"
+msgstr ""
+
+#: ../../source/documentation.rst:27
+msgid "Input and output devices"
+msgstr ""
+
+#: ../../source/documentation.rst:28
+msgid "Filters"
+msgstr ""
+
+#: ../../source/documentation.rst:31
+#, fuzzy
+msgid "Libraries Documentation"
+msgstr "文档"
+
+#: ../../source/documentation.rst:33
+msgid "libavutil"
+msgstr ""
+
+#: ../../source/documentation.rst:34
+msgid "libswscale"
+msgstr ""
+
+#: ../../source/documentation.rst:35
+msgid "libswresample"
+msgstr ""
+
+#: ../../source/documentation.rst:36
+msgid "libavcodec"
+msgstr ""
+
+#: ../../source/documentation.rst:37
+msgid "libavformat"
+msgstr ""
+
+#: ../../source/documentation.rst:38
+msgid "libavdevice"
+msgstr ""
+
+#: ../../source/documentation.rst:39
+msgid "libavfilter"
+msgstr ""
+
+#: ../../source/documentation.rst:42
+#, fuzzy
+msgid "General Documentation"
+msgstr "文档"
+
+#: ../../source/documentation.rst:44
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../../source/documentation.rst:45
+msgid "Supported External Libraries, Formats, Codecs or Features"
+msgstr ""
+
+#: ../../source/documentation.rst:46
+msgid "Platform Specific Information"
+msgstr ""
+
+#: ../../source/documentation.rst:47
+#, fuzzy
+msgid "Developer Documentation"
+msgstr "文档"
+
+#: ../../source/documentation.rst:48
+msgid "Git How-To"
+msgstr ""
+
+#: ../../source/documentation.rst:49
+msgid "FATE FFmpeg Automated Testing Environment"
+msgstr ""
+
+#: ../../source/documentation.rst:52
+#, fuzzy
+msgid "API Documentation"
+msgstr "文档"
+
+#: ../../source/documentation.rst:54
+msgid ""
+"Doxygen documentation for current trunk (regenerated nightly); "
+"documentation for the 4.1, 4.0, 3.4, 3.3, 3.2, 3.1, 3.0, 2.8, 2.7, 2.6, "
+"2.5, 2.4, 2.3, 2.2, 2.1, 2.0, 1.2, 1.1, 1.0, 0.11, 0.10, 0.9, 0.8, 0.7, "
+"0.6 and 0.5 branches is also available."
+msgstr ""
+
+#: ../../source/documentation.rst:57
+msgid "Community Contributed Documentation"
+msgstr ""
+
+#: ../../source/documentation.rst:59
+msgid "Official FFmpeg Wiki"
+msgstr ""
+
+#: ../../source/documentation.rst:60
+msgid "MultimediaWiki"
+msgstr ""
+
+#: ../../source/documentation.rst:61
+msgid ""
+"An FFmpeg and SDL Tutorial by Stephen Dranger, explains how to write a "
+"video player based on FFmpeg."
+msgstr ""
+
+#: ../../source/documentation.rst:64
+msgid "Books about FFmpeg"
+msgstr ""
+
+#: ../../source/documentation.rst:66
+msgid ""
+"FFmpeg Basics by Frantisek Korbel, describes various FFmpeg features and "
+"common tasks."
+msgstr ""
+
+#: ../../source/documentation.rst:67
+msgid ""
+"FFmpeg Beginner's handbook Chinese Version by Steven Liu, describes "
+"FFmpeg common use method in Chinese, from command line to API usage."
+msgstr ""
+
+#~ msgid ""
+#~ "Command Line Tools Documentation ffmpeg: "
+#~ "ffmpeg tool ffmpeg-all: ffmpeg tool "
+#~ "and FFmpeg components ffplay: ffplay "
+#~ "tool ffplay-all: ffplay tool and "
+#~ "FFmpeg components ffprobe: ffprobe tool "
+#~ "ffprobe-all: ffprobe tool and FFmpeg "
+#~ "components Components Documentation Utilities "
+#~ "Video scaling and pixel format converter"
+#~ " Audio resampler Encoders and decoders "
+#~ "(codecs) Bitstream filters Muxers and "
+#~ "demuxers (formats) Protocols Input and "
+#~ "output devices Filters Libraries Documentation"
+#~ " libavutil libswscale libswresample libavcodec"
+#~ " libavformat libavdevice libavfilter General "
+#~ "Documentation Frequently Asked Questions "
+#~ "Supported External Libraries, Formats, Codecs"
+#~ " or Features Platform Specific Information"
+#~ " Developer Documentation Git How-To "
+#~ "FATE FFmpeg Automated Testing Environment "
+#~ "API Documentation Doxygen documentation for"
+#~ " current trunk (regenerated nightly); "
+#~ "documentation for the 4.1, 4.0, 3.4, "
+#~ "3.3, 3.2, 3.1, 3.0, 2.8, 2.7, 2.6,"
+#~ " 2.5, 2.4, 2.3, 2.2, 2.1, 2.0, "
+#~ "1.2, 1.1, 1.0, 0.11, 0.10, 0.9, "
+#~ "0.8, 0.7, 0.6 and 0.5 branches is"
+#~ " also available. Community Contributed "
+#~ "Documentation Official FFmpeg Wiki "
+#~ "MultimediaWiki An FFmpeg and SDL "
+#~ "Tutorial by Stephen Dranger, explains "
+#~ "how to write a video player based"
+#~ " on FFmpeg. Books about FFmpeg FFmpeg"
+#~ " Basics by Frantisek Korbel, describes "
+#~ "various FFmpeg features and common "
+#~ "tasks. FFmpeg Beginner's handbook Chinese "
+#~ "Version by Steven Liu, describes FFmpeg"
+#~ " common use method in Chinese, from"
+#~ " command line to API usage."
+#~ msgstr ""
+
