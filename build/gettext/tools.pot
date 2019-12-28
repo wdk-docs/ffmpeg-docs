@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ffmpeg-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"POT-Creation-Date: 2019-06-12 20:05+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2257,6 +2257,10 @@ msgstr ""
 msgid "This document was generated on June 8, 2019 using makeinfo."
 msgstr ""
 
+#: ../../source/tools/ffmpeg-all.rst:2
+msgid "ffmpeg-all"
+msgstr ""
+
 #: ../../source/tools/ffplay.rst:4
 msgid "ffplay Documentation"
 msgstr ""
@@ -2572,6 +2576,10 @@ msgstr ""
 
 #: ../../source/tools/ffplay.rst:503
 msgid "5 Authors The FFmpeg developers."
+msgstr ""
+
+#: ../../source/tools/ffplay-all.rst:2
+msgid "ffplay-all"
 msgstr ""
 
 #: ../../source/tools/ffprobe.rst:4
@@ -3085,9 +3093,8 @@ msgstr ""
 msgid "7 Authors The FFmpeg developers."
 msgstr ""
 
-#: ../../source/tools/index.rst:4
-#: ../../source/tools/index.rst:4
-msgid "Contents:"
+#: ../../source/tools/ffprobe-all.rst:2
+msgid "ffprobe-all"
 msgstr ""
 
 #: ../../source/tools/index.rst:2

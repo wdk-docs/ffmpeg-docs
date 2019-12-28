@@ -1,0 +1,1579 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the ffmpeg-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ffmpeg-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-12 20:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/components/ffmpeg-utils.rst:2
+msgid "FFmpeg Utilities Documentation"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:4
+msgid "Table of Contents 1 Description 2 Syntax 2.1 Quoting and escaping 2.1.1 Examples 2.2 Date 2.3 Time duration 2.3.1 Examples 2.4 Video size 2.5 Video rate 2.6 Ratio 2.7 Color 2.8 Channel Layout 3 Expression Evaluation 4 See Also 5 Authors 1 Description This document describes some generic features and utilities provided by the libavutil library."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:23
+msgid "2 Syntax This section documents the syntax and formats employed by the FFmpeg libraries and tools."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:26
+msgid "2.1 Quoting and escaping FFmpeg adopts the following quoting and escaping mechanism, unless explicitly specified. The following rules are applied:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:29
+msgid "‘'’ and ‘\\’ are special characters (respectively used for quoting and escaping). In addition to them, there might be other special characters depending on the specific syntax where the escaping and quoting are employed. A special character is escaped by prefixing it with a ‘\\’. All characters enclosed between ‘''’ are included literally in the parsed string. The quote character ‘'’ itself cannot be quoted, so you may need to close the quote and escape it. Leading and trailing whitespaces, unless escaped or quoted, are removed from the parsed string. Note that you may need to add a second level of escaping when using the command line or a script, which depends on the syntax of the adopted shell language."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:35
+msgid "The function av_get_token defined in libavutil/avstring.h can be used to parse a token quoted or escaped according to the rules defined above."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:37
+msgid "The tool tools/ffescape in the FFmpeg source tree can be used to automatically quote or escape a string in a script."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:39
+msgid "2.1.1 Examples Escape the string Crime d'Amour containing the ' special character: Crime d\\'Amour The string above contains a quote, so the ' needs to be escaped when quoting it: 'Crime d'\\''Amour' Include leading or trailing whitespaces using quoting: '  this string starts and ends with whitespaces  ' Escaping and quoting can be mixed together: ' The string '\\'string\\'' is a string ' To include a literal ‘\\’ you can use either escaping or quoting: 'c:\\foo' can be written as c:\\\\foo 2.2 Date The accepted syntax is:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:53
+msgid "[(YYYY-MM-DD|YYYYMMDD)[T|t| ]]((HH:MM:SS[.m...]]])|(HHMMSS[.m...]]]))[Z] now If the value is \"now\" it takes the current time."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:57
+msgid "Time is local time unless Z is appended, in which case it is interpreted as UTC. If the year-month-day part is not specified it takes the current year-month-day."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:59
+msgid "2.3 Time duration There are two accepted syntaxes for expressing time duration."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:62
+msgid "[-][HH:]MM:SS[.m...] HH expresses the number of hours, MM the number of minutes for a maximum of 2 digits, and SS the number of seconds for a maximum of 2 digits. The m at the end expresses decimal value for SS."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:65
+msgid "or"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:67
+msgid "[-]S+[.m...] S expresses the number of seconds, with the optional decimal part m."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:70
+msgid "In both expressions, the optional ‘-’ indicates negative duration."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:72
+msgid "2.3.1 Examples The following examples are all valid time duration:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:75
+msgid "‘55’ 55 seconds"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:78
+msgid "‘12:03:45’ 12 hours, 03 minutes and 45 seconds"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:81
+msgid "‘23.189’ 23.189 seconds"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:84
+msgid "2.4 Video size Specify the size of the sourced video, it may be a string of the form widthxheight, or the name of a size abbreviation."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:87
+#: ../../source/components/ffmpeg-utils.rst:251
+msgid "The following abbreviations are recognized:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:89
+msgid "‘ntsc’ 720x480"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:92
+msgid "‘pal’ 720x576"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:95
+msgid "‘qntsc’ 352x240"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:98
+msgid "‘qpal’ 352x288"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:101
+msgid "‘sntsc’ 640x480"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:104
+msgid "‘spal’ 768x576"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:107
+msgid "‘film’ 352x240"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:110
+msgid "‘ntsc-film’ 352x240"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:113
+msgid "‘sqcif’ 128x96"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:116
+msgid "‘qcif’ 176x144"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:119
+msgid "‘cif’ 352x288"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:122
+msgid "‘4cif’ 704x576"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:125
+msgid "‘16cif’ 1408x1152"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:128
+msgid "‘qqvga’ 160x120"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:131
+msgid "‘qvga’ 320x240"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:134
+msgid "‘vga’ 640x480"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:137
+msgid "‘svga’ 800x600"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:140
+msgid "‘xga’ 1024x768"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:143
+msgid "‘uxga’ 1600x1200"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:146
+msgid "‘qxga’ 2048x1536"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:149
+msgid "‘sxga’ 1280x1024"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:152
+msgid "‘qsxga’ 2560x2048"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:155
+msgid "‘hsxga’ 5120x4096"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:158
+msgid "‘wvga’ 852x480"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:161
+msgid "‘wxga’ 1366x768"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:164
+msgid "‘wsxga’ 1600x1024"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:167
+msgid "‘wuxga’ 1920x1200"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:170
+msgid "‘woxga’ 2560x1600"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:173
+msgid "‘wqsxga’ 3200x2048"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:176
+msgid "‘wquxga’ 3840x2400"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:179
+msgid "‘whsxga’ 6400x4096"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:182
+msgid "‘whuxga’ 7680x4800"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:185
+msgid "‘cga’ 320x200"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:188
+msgid "‘ega’ 640x350"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:191
+msgid "‘hd480’ 852x480"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:194
+msgid "‘hd720’ 1280x720"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:197
+msgid "‘hd1080’ 1920x1080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:200
+msgid "‘2k’ 2048x1080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:203
+msgid "‘2kflat’ 1998x1080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:206
+msgid "‘2kscope’ 2048x858"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:209
+msgid "‘4k’ 4096x2160"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:212
+msgid "‘4kflat’ 3996x2160"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:215
+msgid "‘4kscope’ 4096x1716"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:218
+msgid "‘nhd’ 640x360"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:221
+msgid "‘hqvga’ 240x160"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:224
+msgid "‘wqvga’ 400x240"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:227
+msgid "‘fwqvga’ 432x240"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:230
+msgid "‘hvga’ 480x320"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:233
+msgid "‘qhd’ 960x540"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:236
+msgid "‘2kdci’ 2048x1080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:239
+msgid "‘4kdci’ 4096x2160"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:242
+msgid "‘uhd2160’ 3840x2160"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:245
+msgid "‘uhd4320’ 7680x4320"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:248
+msgid "2.5 Video rate Specify the frame rate of a video, expressed as the number of frames generated per second. It has to be a string in the format frame_rate_num/frame_rate_den, an integer number, a float number or a valid video frame rate abbreviation."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:253
+msgid "‘ntsc’ 30000/1001"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:256
+msgid "‘pal’ 25/1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:259
+msgid "‘qntsc’ 30000/1001"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:262
+msgid "‘qpal’ 25/1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:265
+msgid "‘sntsc’ 30000/1001"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:268
+msgid "‘spal’ 25/1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:271
+msgid "‘film’ 24/1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:274
+msgid "‘ntsc-film’ 24000/1001"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:277
+msgid "2.6 Ratio A ratio can be expressed as an expression, or in the form numerator:denominator."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:280
+msgid "Note that a ratio with infinite (1/0) or negative value is considered valid, so you should check on the returned value if you want to exclude those values."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:282
+msgid "The undefined value can be expressed using the \"0:0\" string."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:284
+msgid "2.7 Color It can be the name of a color as defined below (case insensitive match) or a [0x|#]RRGGBB[AA] sequence, possibly followed by @ and a string representing the alpha component."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:287
+msgid "The alpha component may be a string composed by \"0x\" followed by an hexadecimal number or a decimal number between 0.0 and 1.0, which represents the opacity value (‘0x00’ or ‘0.0’ means completely transparent, ‘0xff’ or ‘1.0’ completely opaque). If the alpha component is not specified then ‘0xff’ is assumed."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:289
+msgid "The string ‘random’ will result in a random color."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:291
+msgid "The following names of colors are recognized:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:293
+msgid "‘AliceBlue’ 0xF0F8FF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:296
+msgid "‘AntiqueWhite’ 0xFAEBD7"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:299
+msgid "‘Aqua’ 0x00FFFF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:302
+msgid "‘Aquamarine’ 0x7FFFD4"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:305
+msgid "‘Azure’ 0xF0FFFF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:308
+msgid "‘Beige’ 0xF5F5DC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:311
+msgid "‘Bisque’ 0xFFE4C4"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:314
+msgid "‘Black’ 0x000000"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:317
+msgid "‘BlanchedAlmond’ 0xFFEBCD"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:320
+msgid "‘Blue’ 0x0000FF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:323
+msgid "‘BlueViolet’ 0x8A2BE2"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:326
+msgid "‘Brown’ 0xA52A2A"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:329
+msgid "‘BurlyWood’ 0xDEB887"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:332
+msgid "‘CadetBlue’ 0x5F9EA0"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:335
+msgid "‘Chartreuse’ 0x7FFF00"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:338
+msgid "‘Chocolate’ 0xD2691E"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:341
+msgid "‘Coral’ 0xFF7F50"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:344
+msgid "‘CornflowerBlue’ 0x6495ED"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:347
+msgid "‘Cornsilk’ 0xFFF8DC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:350
+msgid "‘Crimson’ 0xDC143C"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:353
+msgid "‘Cyan’ 0x00FFFF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:356
+msgid "‘DarkBlue’ 0x00008B"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:359
+msgid "‘DarkCyan’ 0x008B8B"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:362
+msgid "‘DarkGoldenRod’ 0xB8860B"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:365
+msgid "‘DarkGray’ 0xA9A9A9"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:368
+msgid "‘DarkGreen’ 0x006400"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:371
+msgid "‘DarkKhaki’ 0xBDB76B"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:374
+msgid "‘DarkMagenta’ 0x8B008B"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:377
+msgid "‘DarkOliveGreen’ 0x556B2F"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:380
+msgid "‘Darkorange’ 0xFF8C00"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:383
+msgid "‘DarkOrchid’ 0x9932CC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:386
+msgid "‘DarkRed’ 0x8B0000"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:389
+msgid "‘DarkSalmon’ 0xE9967A"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:392
+msgid "‘DarkSeaGreen’ 0x8FBC8F"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:395
+msgid "‘DarkSlateBlue’ 0x483D8B"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:398
+msgid "‘DarkSlateGray’ 0x2F4F4F"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:401
+msgid "‘DarkTurquoise’ 0x00CED1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:404
+msgid "‘DarkViolet’ 0x9400D3"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:407
+msgid "‘DeepPink’ 0xFF1493"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:410
+msgid "‘DeepSkyBlue’ 0x00BFFF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:413
+msgid "‘DimGray’ 0x696969"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:416
+msgid "‘DodgerBlue’ 0x1E90FF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:419
+msgid "‘FireBrick’ 0xB22222"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:422
+msgid "‘FloralWhite’ 0xFFFAF0"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:425
+msgid "‘ForestGreen’ 0x228B22"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:428
+msgid "‘Fuchsia’ 0xFF00FF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:431
+msgid "‘Gainsboro’ 0xDCDCDC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:434
+msgid "‘GhostWhite’ 0xF8F8FF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:437
+msgid "‘Gold’ 0xFFD700"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:440
+msgid "‘GoldenRod’ 0xDAA520"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:443
+msgid "‘Gray’ 0x808080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:446
+msgid "‘Green’ 0x008000"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:449
+msgid "‘GreenYellow’ 0xADFF2F"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:452
+msgid "‘HoneyDew’ 0xF0FFF0"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:455
+msgid "‘HotPink’ 0xFF69B4"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:458
+msgid "‘IndianRed’ 0xCD5C5C"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:461
+msgid "‘Indigo’ 0x4B0082"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:464
+msgid "‘Ivory’ 0xFFFFF0"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:467
+msgid "‘Khaki’ 0xF0E68C"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:470
+msgid "‘Lavender’ 0xE6E6FA"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:473
+msgid "‘LavenderBlush’ 0xFFF0F5"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:476
+msgid "‘LawnGreen’ 0x7CFC00"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:479
+msgid "‘LemonChiffon’ 0xFFFACD"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:482
+msgid "‘LightBlue’ 0xADD8E6"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:485
+msgid "‘LightCoral’ 0xF08080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:488
+msgid "‘LightCyan’ 0xE0FFFF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:491
+msgid "‘LightGoldenRodYellow’ 0xFAFAD2"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:494
+msgid "‘LightGreen’ 0x90EE90"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:497
+msgid "‘LightGrey’ 0xD3D3D3"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:500
+msgid "‘LightPink’ 0xFFB6C1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:503
+msgid "‘LightSalmon’ 0xFFA07A"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:506
+msgid "‘LightSeaGreen’ 0x20B2AA"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:509
+msgid "‘LightSkyBlue’ 0x87CEFA"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:512
+msgid "‘LightSlateGray’ 0x778899"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:515
+msgid "‘LightSteelBlue’ 0xB0C4DE"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:518
+msgid "‘LightYellow’ 0xFFFFE0"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:521
+msgid "‘Lime’ 0x00FF00"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:524
+msgid "‘LimeGreen’ 0x32CD32"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:527
+msgid "‘Linen’ 0xFAF0E6"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:530
+msgid "‘Magenta’ 0xFF00FF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:533
+msgid "‘Maroon’ 0x800000"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:536
+msgid "‘MediumAquaMarine’ 0x66CDAA"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:539
+msgid "‘MediumBlue’ 0x0000CD"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:542
+msgid "‘MediumOrchid’ 0xBA55D3"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:545
+msgid "‘MediumPurple’ 0x9370D8"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:548
+msgid "‘MediumSeaGreen’ 0x3CB371"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:551
+msgid "‘MediumSlateBlue’ 0x7B68EE"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:554
+msgid "‘MediumSpringGreen’ 0x00FA9A"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:557
+msgid "‘MediumTurquoise’ 0x48D1CC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:560
+msgid "‘MediumVioletRed’ 0xC71585"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:563
+msgid "‘MidnightBlue’ 0x191970"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:566
+msgid "‘MintCream’ 0xF5FFFA"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:569
+msgid "‘MistyRose’ 0xFFE4E1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:572
+msgid "‘Moccasin’ 0xFFE4B5"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:575
+msgid "‘NavajoWhite’ 0xFFDEAD"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:578
+msgid "‘Navy’ 0x000080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:581
+msgid "‘OldLace’ 0xFDF5E6"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:584
+msgid "‘Olive’ 0x808000"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:587
+msgid "‘OliveDrab’ 0x6B8E23"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:590
+msgid "‘Orange’ 0xFFA500"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:593
+msgid "‘OrangeRed’ 0xFF4500"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:596
+msgid "‘Orchid’ 0xDA70D6"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:599
+msgid "‘PaleGoldenRod’ 0xEEE8AA"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:602
+msgid "‘PaleGreen’ 0x98FB98"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:605
+msgid "‘PaleTurquoise’ 0xAFEEEE"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:608
+msgid "‘PaleVioletRed’ 0xD87093"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:611
+msgid "‘PapayaWhip’ 0xFFEFD5"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:614
+msgid "‘PeachPuff’ 0xFFDAB9"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:617
+msgid "‘Peru’ 0xCD853F"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:620
+msgid "‘Pink’ 0xFFC0CB"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:623
+msgid "‘Plum’ 0xDDA0DD"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:626
+msgid "‘PowderBlue’ 0xB0E0E6"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:629
+msgid "‘Purple’ 0x800080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:632
+msgid "‘Red’ 0xFF0000"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:635
+msgid "‘RosyBrown’ 0xBC8F8F"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:638
+msgid "‘RoyalBlue’ 0x4169E1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:641
+msgid "‘SaddleBrown’ 0x8B4513"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:644
+msgid "‘Salmon’ 0xFA8072"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:647
+msgid "‘SandyBrown’ 0xF4A460"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:650
+msgid "‘SeaGreen’ 0x2E8B57"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:653
+msgid "‘SeaShell’ 0xFFF5EE"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:656
+msgid "‘Sienna’ 0xA0522D"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:659
+msgid "‘Silver’ 0xC0C0C0"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:662
+msgid "‘SkyBlue’ 0x87CEEB"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:665
+msgid "‘SlateBlue’ 0x6A5ACD"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:668
+msgid "‘SlateGray’ 0x708090"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:671
+msgid "‘Snow’ 0xFFFAFA"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:674
+msgid "‘SpringGreen’ 0x00FF7F"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:677
+msgid "‘SteelBlue’ 0x4682B4"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:680
+msgid "‘Tan’ 0xD2B48C"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:683
+msgid "‘Teal’ 0x008080"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:686
+msgid "‘Thistle’ 0xD8BFD8"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:689
+msgid "‘Tomato’ 0xFF6347"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:692
+msgid "‘Turquoise’ 0x40E0D0"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:695
+msgid "‘Violet’ 0xEE82EE"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:698
+msgid "‘Wheat’ 0xF5DEB3"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:701
+msgid "‘White’ 0xFFFFFF"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:704
+msgid "‘WhiteSmoke’ 0xF5F5F5"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:707
+msgid "‘Yellow’ 0xFFFF00"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:710
+msgid "‘YellowGreen’ 0x9ACD32"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:713
+msgid "2.8 Channel Layout A channel layout specifies the spatial disposition of the channels in a multi-channel audio stream. To specify a channel layout, FFmpeg makes use of a special syntax."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:716
+msgid "Individual channels are identified by an id, as given by the table below:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:718
+msgid "‘FL’ front left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:721
+msgid "‘FR’ front right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:724
+msgid "‘FC’ front center"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:727
+msgid "‘LFE’ low frequency"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:730
+msgid "‘BL’ back left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:733
+msgid "‘BR’ back right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:736
+msgid "‘FLC’ front left-of-center"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:739
+msgid "‘FRC’ front right-of-center"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:742
+msgid "‘BC’ back center"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:745
+msgid "‘SL’ side left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:748
+msgid "‘SR’ side right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:751
+msgid "‘TC’ top center"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:754
+msgid "‘TFL’ top front left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:757
+msgid "‘TFC’ top front center"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:760
+msgid "‘TFR’ top front right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:763
+msgid "‘TBL’ top back left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:766
+msgid "‘TBC’ top back center"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:769
+msgid "‘TBR’ top back right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:772
+msgid "‘DL’ downmix left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:775
+msgid "‘DR’ downmix right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:778
+msgid "‘WL’ wide left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:781
+msgid "‘WR’ wide right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:784
+msgid "‘SDL’ surround direct left"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:787
+msgid "‘SDR’ surround direct right"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:790
+msgid "‘LFE2’ low frequency 2"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:793
+msgid "Standard channel layout compositions can be specified by using the following identifiers:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:795
+msgid "‘mono’ FC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:798
+msgid "‘stereo’ FL+FR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:801
+msgid "‘2.1’ FL+FR+LFE"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:804
+msgid "‘3.0’ FL+FR+FC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:807
+msgid "‘3.0(back)’ FL+FR+BC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:810
+msgid "‘4.0’ FL+FR+FC+BC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:813
+msgid "‘quad’ FL+FR+BL+BR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:816
+msgid "‘quad(side)’ FL+FR+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:819
+msgid "‘3.1’ FL+FR+FC+LFE"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:822
+msgid "‘5.0’ FL+FR+FC+BL+BR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:825
+msgid "‘5.0(side)’ FL+FR+FC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:828
+msgid "‘4.1’ FL+FR+FC+LFE+BC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:831
+msgid "‘5.1’ FL+FR+FC+LFE+BL+BR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:834
+msgid "‘5.1(side)’ FL+FR+FC+LFE+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:837
+msgid "‘6.0’ FL+FR+FC+BC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:840
+msgid "‘6.0(front)’ FL+FR+FLC+FRC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:843
+msgid "‘hexagonal’ FL+FR+FC+BL+BR+BC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:846
+msgid "‘6.1’ FL+FR+FC+LFE+BC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:849
+msgid "‘6.1’ FL+FR+FC+LFE+BL+BR+BC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:852
+msgid "‘6.1(front)’ FL+FR+LFE+FLC+FRC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:855
+msgid "‘7.0’ FL+FR+FC+BL+BR+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:858
+msgid "‘7.0(front)’ FL+FR+FC+FLC+FRC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:861
+msgid "‘7.1’ FL+FR+FC+LFE+BL+BR+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:864
+msgid "‘7.1(wide)’ FL+FR+FC+LFE+BL+BR+FLC+FRC"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:867
+msgid "‘7.1(wide-side)’ FL+FR+FC+LFE+FLC+FRC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:870
+msgid "‘octagonal’ FL+FR+FC+BL+BR+BC+SL+SR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:873
+msgid "‘downmix’ DL+DR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:876
+msgid "A custom channel layout can be specified as a sequence of terms, separated by ’+’ or ’|’. Each term can be:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:878
+msgid "the name of a standard channel layout (e.g. ‘mono’, ‘stereo’, ‘4.0’, ‘quad’, ‘5.0’, etc.) the name of a single channel (e.g. ‘FL’, ‘FR’, ‘FC’, ‘LFE’, etc.) a number of channels, in decimal, followed by ’c’, yielding the default channel layout for that number of channels (see the function av_get_default_channel_layout). Note that not all channel counts have a default layout. a number of channels, in decimal, followed by ’C’, yielding an unknown channel layout with the specified number of channels. Note that not all channel layout specification strings support unknown channel layouts. a channel layout mask, in hexadecimal starting with \"0x\" (see the AV_CH_* macros in libavutil/channel_layout.h. Before libavutil version 53 the trailing character \"c\" to specify a number of channels was optional, but now it is required, while a channel layout mask can also be specified as a decimal number (if and only if not followed by \"c\" or \"C\")."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:885
+msgid "See also the function av_get_channel_layout defined in libavutil/channel_layout.h."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:887
+msgid "3 Expression Evaluation When evaluating an arithmetic expression, FFmpeg uses an internal formula evaluator, implemented through the libavutil/eval.h interface."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:890
+msgid "An expression may contain unary, binary operators, constants, and functions."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:892
+msgid "Two expressions expr1 and expr2 can be combined to form another expression \"expr1;expr2\". expr1 and expr2 are evaluated in turn, and the new expression evaluates to the value of expr2."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:894
+msgid "The following binary operators are available: +, -, *, /, ^."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:896
+msgid "The following unary operators are available: +, -."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:898
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:900
+msgid "abs(x) Compute absolute value of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:903
+msgid "acos(x) Compute arccosine of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:906
+msgid "asin(x) Compute arcsine of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:909
+msgid "atan(x) Compute arctangent of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:912
+msgid "atan2(x, y) Compute principal value of the arc tangent of y/x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:915
+msgid "between(x, min, max) Return 1 if x is greater than or equal to min and lesser than or equal to max, 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:918
+msgid "bitand(x, y) bitor(x, y) Compute bitwise and/or operation on x and y."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:922
+msgid "The results of the evaluation of x and y are converted to integers before executing the bitwise operation."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:924
+msgid "Note that both the conversion to integer and the conversion back to floating point can lose precision. Beware of unexpected results for large numbers (usually 2^53 and larger)."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:926
+msgid "ceil(expr) Round the value of expression expr upwards to the nearest integer. For example, \"ceil(1.5)\" is \"2.0\"."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:929
+msgid "clip(x, min, max) Return the value of x clipped between min and max."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:932
+msgid "cos(x) Compute cosine of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:935
+msgid "cosh(x) Compute hyperbolic cosine of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:938
+msgid "eq(x, y) Return 1 if x and y are equivalent, 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:941
+msgid "exp(x) Compute exponential of x (with base e, the Euler’s number)."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:944
+msgid "floor(expr) Round the value of expression expr downwards to the nearest integer. For example, \"floor(-1.5)\" is \"-2.0\"."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:947
+msgid "gauss(x) Compute Gauss function of x, corresponding to exp(-x*x/2) / sqrt(2*PI)."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:950
+msgid "gcd(x, y) Return the greatest common divisor of x and y. If both x and y are 0 or either or both are less than zero then behavior is undefined."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:953
+msgid "gt(x, y) Return 1 if x is greater than y, 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:956
+msgid "gte(x, y) Return 1 if x is greater than or equal to y, 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:959
+msgid "hypot(x, y) This function is similar to the C function with the same name; it returns \"sqrt(x*x + y*y)\", the length of the hypotenuse of a right triangle with sides of length x and y, or the distance of the point (x, y) from the origin."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:962
+msgid "if(x, y) Evaluate x, and if the result is non-zero return the result of the evaluation of y, return 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:965
+msgid "if(x, y, z) Evaluate x, and if the result is non-zero return the evaluation result of y, otherwise the evaluation result of z."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:968
+msgid "ifnot(x, y) Evaluate x, and if the result is zero return the result of the evaluation of y, return 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:971
+msgid "ifnot(x, y, z) Evaluate x, and if the result is zero return the evaluation result of y, otherwise the evaluation result of z."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:974
+msgid "isinf(x) Return 1.0 if x is +/-INFINITY, 0.0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:977
+msgid "isnan(x) Return 1.0 if x is NAN, 0.0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:980
+msgid "ld(var) Load the value of the internal variable with number var, which was previously stored with st(var, expr). The function returns the loaded value."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:983
+msgid "lerp(x, y, z) Return linear interpolation between x and y by amount of z."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:986
+msgid "log(x) Compute natural logarithm of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:989
+msgid "lt(x, y) Return 1 if x is lesser than y, 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:992
+msgid "lte(x, y) Return 1 if x is lesser than or equal to y, 0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:995
+msgid "max(x, y) Return the maximum between x and y."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:998
+msgid "min(x, y) Return the minimum between x and y."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1001
+msgid "mod(x, y) Compute the remainder of division of x by y."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1004
+msgid "not(expr) Return 1.0 if expr is zero, 0.0 otherwise."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1007
+msgid "pow(x, y) Compute the power of x elevated y, it is equivalent to \"(x)^(y)\"."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1010
+msgid "print(t) print(t, l) Print the value of expression t with loglevel l. If l is not specified then a default log level is used. Returns the value of the expression printed."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1014
+msgid "Prints t with loglevel l"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1016
+msgid "random(x) Return a pseudo random value between 0.0 and 1.0. x is the index of the internal variable which will be used to save the seed/state."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1019
+msgid "root(expr, max) Find an input value for which the function represented by expr with argument ld(0) is 0 in the interval 0..max."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1022
+msgid "The expression in expr must denote a continuous function or the result is undefined."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1024
+msgid "ld(0) is used to represent the function input value, which means that the given expression will be evaluated multiple times with various input values that the expression can access through ld(0). When the expression evaluates to 0 then the corresponding input value will be returned."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1026
+msgid "round(expr) Round the value of expression expr to the nearest integer. For example, \"round(1.5)\" is \"2.0\"."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1029
+msgid "sin(x) Compute sine of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1032
+msgid "sinh(x) Compute hyperbolic sine of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1035
+msgid "sqrt(expr) Compute the square root of expr. This is equivalent to \"(expr)^.5\"."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1038
+msgid "squish(x) Compute expression 1/(1 + exp(4*x))."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1041
+msgid "st(var, expr) Store the value of the expression expr in an internal variable. var specifies the number of the variable where to store the value, and it is a value ranging from 0 to 9. The function returns the value stored in the internal variable. Note, Variables are currently not shared between expressions."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1044
+msgid "tan(x) Compute tangent of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1047
+msgid "tanh(x) Compute hyperbolic tangent of x."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1050
+msgid "taylor(expr, x) taylor(expr, x, id) Evaluate a Taylor series at x, given an expression representing the ld(id)-th derivative of a function at 0."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1054
+msgid "When the series does not converge the result is undefined."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1056
+msgid "ld(id) is used to represent the derivative order in expr, which means that the given expression will be evaluated multiple times with various input values that the expression can access through ld(id). If id is not specified then 0 is assumed."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1058
+msgid "Note, when you have the derivatives at y instead of 0, taylor(expr, x-y) can be used."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1060
+msgid "time(0) Return the current (wallclock) time in seconds."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1063
+msgid "trunc(expr) Round the value of expression expr towards zero to the nearest integer. For example, \"trunc(-1.5)\" is \"-1.0\"."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1066
+msgid "while(cond, expr) Evaluate expression expr while the expression cond is non-zero, and returns the value of the last expr evaluation, or NAN if cond was always false."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1069
+msgid "The following constants are available:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1071
+msgid "PI area of the unit disc, approximately 3.14"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1074
+msgid "E exp(1) (Euler’s number), approximately 2.718"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1077
+msgid "PHI golden ratio (1+sqrt(5))/2, approximately 1.618"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1080
+msgid "Assuming that an expression is considered \"true\" if it has a non-zero value, note that:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1082
+msgid "works like AND"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1084
+msgid "works like OR"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1086
+msgid "For example the construct:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1088
+msgid "if (A AND B) then C is equivalent to:"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1091
+msgid "if(A*B, C) In your C code, you can extend the list of unary and binary functions, and define recognized constants, so that they are available for your expressions."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1094
+msgid "The evaluator also recognizes the International System unit prefixes. If ’i’ is appended after the prefix, binary prefixes are used, which are based on powers of 1024 instead of powers of 1000. The ’B’ postfix multiplies the value by 8, and can be appended after a unit prefix or used alone. This allows using for example ’KB’, ’MiB’, ’G’ and ’B’ as number postfix."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1096
+msgid "The list of available International System prefixes follows, with indication of the corresponding powers of 10 and of 2."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1098
+msgid "y 10^-24 / 2^-80"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1101
+msgid "z 10^-21 / 2^-70"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1104
+msgid "a 10^-18 / 2^-60"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1107
+msgid "f 10^-15 / 2^-50"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1110
+msgid "p 10^-12 / 2^-40"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1113
+msgid "n 10^-9 / 2^-30"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1116
+msgid "u 10^-6 / 2^-20"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1119
+msgid "m 10^-3 / 2^-10"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1122
+msgid "c 10^-2"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1125
+msgid "d 10^-1"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1128
+msgid "h 10^2"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1131
+msgid "k 10^3 / 2^10"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1134
+msgid "K 10^3 / 2^10"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1137
+msgid "M 10^6 / 2^20"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1140
+msgid "G 10^9 / 2^30"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1143
+msgid "T 10^12 / 2^40"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1146
+msgid "P 10^15 / 2^40"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1149
+msgid "E 10^18 / 2^50"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1152
+msgid "Z 10^21 / 2^60"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1155
+msgid "Y 10^24 / 2^70"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1158
+msgid "4 See Also ffmpeg, ffplay, ffprobe, libavutil"
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1161
+msgid "5 Authors The FFmpeg developers."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1164
+msgid "For details about the authorship, see the Git history of the project (git://source.ffmpeg.org/ffmpeg), e.g. by typing the command git log in the FFmpeg source directory, or browsing the online repository at http://source.ffmpeg.org."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1166
+msgid "Maintainers for the specific components are listed in the file MAINTAINERS in the source code tree."
+msgstr ""
+
+#: ../../source/components/ffmpeg-utils.rst:1168
+msgid "This document was generated on June 11, 2019 using makeinfo."
+msgstr ""
+
+#: ../../source/components/index.rst:2
+msgid "LIbraries Documentation"
+msgstr ""
+

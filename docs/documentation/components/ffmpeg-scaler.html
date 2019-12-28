@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FFmpeg Scaler Documentation &mdash; ffmpeg-docs v2019.06.09 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="关于这些文档" href="../../about.html" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="FFmpeg Resampler Documentation" href="ffmpeg-resampler.html" />
+    <link rel="prev" title="FFmpeg Utilities Documentation" href="ffmpeg-utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> ffmpeg-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">关于FFmpeg</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#command-line-tools-documentation">Command Line Tools Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#components-documentation">Components Documentation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-utils.html">FFmpeg Utilities Documentation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">FFmpeg Scaler Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">1 Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scaler-options">2 Scaler Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#see-also">3 See Also</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#authors">4 Authors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-resampler.html">FFmpeg Resampler Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-codecs.html">FFmpeg Codecs Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-bitstream-filters.html">FFmpeg Bitstream Filters Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-formats.html">FFmpeg Formats Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-protocols.html">FFmpeg Protocols Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-devices.html">FFmpeg Devices Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-filters.html">FFmpeg Filters Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#libraries-documentation">Libraries Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#general-documentation">General Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#api-documentation">API Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#community-contributed-documentation">Community Contributed Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#books-about-ffmpeg">Books about FFmpeg</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../download.html">下载FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../news.html">新闻</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bugreports.html">错误报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wiki.html">欢迎来到FFmpeg Bug Tracker和Wiki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donations.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../consulting.html">与FFmpeg相关的咨询和就业机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security.html">FFmpeg安全</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legal.html">FFmpeg许可和法律注意事项</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">ffmpeg-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+      <li>FFmpeg Scaler Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/documentation/components/ffmpeg-scaler.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ffmpeg-scaler-documentation">
+<h1>FFmpeg Scaler Documentation<a class="headerlink" href="#ffmpeg-scaler-documentation" title="永久链接至标题">¶</a></h1>
+<p>Table of Contents
+1 Description
+2 Scaler Options
+3 See Also
+4 Authors</p>
+<div class="section" id="description">
+<h2>1 Description<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>The FFmpeg rescaler provides a high-level interface to the libswscale library image conversion utilities. In particular it allows one to perform image rescaling and pixel format conversion.</p>
+</div>
+<div class="section" id="scaler-options">
+<h2>2 Scaler Options<a class="headerlink" href="#scaler-options" title="永久链接至标题">¶</a></h2>
+<p>The video scaler supports the following named options.</p>
+<p>Options may be set by specifying -option value in the FFmpeg tools, with a few API-only exceptions noted below. For programmatic use, they can be set explicitly in the SwsContext options or through the libavutil/opt.h API.</p>
+<p>sws_flags
+Set the scaler flags. This is also used to set the scaling algorithm. Only a single algorithm should be selected. Default value is ‘bicubic’.</p>
+<p>It accepts the following values:</p>
+<p>‘fast_bilinear’
+Select fast bilinear scaling algorithm.</p>
+<p>‘bilinear’
+Select bilinear scaling algorithm.</p>
+<p>‘bicubic’
+Select bicubic scaling algorithm.</p>
+<p>‘experimental’
+Select experimental scaling algorithm.</p>
+<p>‘neighbor’
+Select nearest neighbor rescaling algorithm.</p>
+<p>‘area’
+Select averaging area rescaling algorithm.</p>
+<p>‘bicublin’
+Select bicubic scaling algorithm for the luma component, bilinear for chroma components.</p>
+<p>‘gauss’
+Select Gaussian rescaling algorithm.</p>
+<p>‘sinc’
+Select sinc rescaling algorithm.</p>
+<p>‘lanczos’
+Select Lanczos rescaling algorithm. The default width (alpha) is 3 and can be changed by setting param0.</p>
+<p>‘spline’
+Select natural bicubic spline rescaling algorithm.</p>
+<p>‘print_info’
+Enable printing/debug logging.</p>
+<p>‘accurate_rnd’
+Enable accurate rounding.</p>
+<p>‘full_chroma_int’
+Enable full chroma interpolation.</p>
+<p>‘full_chroma_inp’
+Select full chroma input.</p>
+<p>‘bitexact’
+Enable bitexact output.</p>
+<p>srcw (API only)
+Set source width.</p>
+<p>srch (API only)
+Set source height.</p>
+<p>dstw (API only)
+Set destination width.</p>
+<p>dsth (API only)
+Set destination height.</p>
+<p>src_format (API only)
+Set source pixel format (must be expressed as an integer).</p>
+<p>dst_format (API only)
+Set destination pixel format (must be expressed as an integer).</p>
+<p>src_range (boolean)
+If value is set to 1, indicates source is full range. Default value is 0, which indicates source is limited range.</p>
+<p>dst_range (boolean)
+If value is set to 1, enable full range for destination. Default value is 0, which enables limited range.</p>
+<p>param0, param1
+Set scaling algorithm parameters. The specified values are specific of some scaling algorithms and ignored by others. The specified values are floating point number values.</p>
+<p>sws_dither
+Set the dithering algorithm. Accepts one of the following values. Default value is ‘auto’.</p>
+<p>‘auto’
+automatic choice</p>
+<p>‘none’
+no dithering</p>
+<p>‘bayer’
+bayer dither</p>
+<p>‘ed’
+error diffusion dither</p>
+<p>‘a_dither’
+arithmetic dither, based using addition</p>
+<p>‘x_dither’
+arithmetic dither, based using xor (more random/less apparent patterning that a_dither).</p>
+<p>alphablend
+Set the alpha blending to use when the input has alpha but the output does not. Default value is ‘none’.</p>
+<p>‘uniform_color’
+Blend onto a uniform background color</p>
+<p>‘checkerboard’
+Blend onto a checkerboard</p>
+<p>‘none’
+No blending</p>
+</div>
+<div class="section" id="see-also">
+<h2>3 See Also<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<p>ffmpeg, ffplay, ffprobe, libswscale</p>
+</div>
+<div class="section" id="authors">
+<h2>4 Authors<a class="headerlink" href="#authors" title="永久链接至标题">¶</a></h2>
+<p>The FFmpeg developers.</p>
+<p>For details about the authorship, see the Git history of the project (git://source.ffmpeg.org/ffmpeg), e.g. by typing the command git log in the FFmpeg source directory, or browsing the online repository at http://source.ffmpeg.org.</p>
+<p>Maintainers for the specific components are listed in the file MAINTAINERS in the source code tree.</p>
+<p>This document was generated on June 11, 2019 using makeinfo.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ffmpeg-resampler.html" class="btn btn-neutral float-right" title="FFmpeg Resampler Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ffmpeg-utils.html" class="btn btn-neutral float-left" title="FFmpeg Utilities Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1048 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FFmpeg Utilities Documentation &mdash; ffmpeg-docs v2019.06.09 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="关于这些文档" href="../../about.html" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="FFmpeg Scaler Documentation" href="ffmpeg-scaler.html" />
+    <link rel="prev" title="ffprobe-all" href="../tools/ffprobe-all.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> ffmpeg-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">关于FFmpeg</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#command-line-tools-documentation">Command Line Tools Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#components-documentation">Components Documentation</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">FFmpeg Utilities Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">1 Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#syntax">2 Syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quoting-and-escaping">2.1 Quoting and escaping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">2.1.1 Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#date">2.2 Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#time-duration">2.3 Time duration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratio">2.6 Ratio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#see-also">4 See Also</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#authors">5 Authors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-scaler.html">FFmpeg Scaler Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-resampler.html">FFmpeg Resampler Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-codecs.html">FFmpeg Codecs Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-bitstream-filters.html">FFmpeg Bitstream Filters Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-formats.html">FFmpeg Formats Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-protocols.html">FFmpeg Protocols Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-devices.html">FFmpeg Devices Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ffmpeg-filters.html">FFmpeg Filters Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#libraries-documentation">Libraries Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#general-documentation">General Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#api-documentation">API Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#community-contributed-documentation">Community Contributed Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#books-about-ffmpeg">Books about FFmpeg</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../download.html">下载FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../news.html">新闻</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bugreports.html">错误报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wiki.html">欢迎来到FFmpeg Bug Tracker和Wiki</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donations.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../consulting.html">与FFmpeg相关的咨询和就业机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security.html">FFmpeg安全</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../legal.html">FFmpeg许可和法律注意事项</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">ffmpeg-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+      <li>FFmpeg Utilities Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/documentation/components/ffmpeg-utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ffmpeg-utilities-documentation">
+<h1>FFmpeg Utilities Documentation<a class="headerlink" href="#ffmpeg-utilities-documentation" title="永久链接至标题">¶</a></h1>
+<p>Table of Contents
+1 Description
+2 Syntax
+2.1 Quoting and escaping
+2.1.1 Examples
+2.2 Date
+2.3 Time duration
+2.3.1 Examples
+2.4 Video size
+2.5 Video rate
+2.6 Ratio
+2.7 Color
+2.8 Channel Layout
+3 Expression Evaluation
+4 See Also
+5 Authors</p>
+<div class="section" id="description">
+<h2>1 Description<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>This document describes some generic features and utilities provided by the libavutil library.</p>
+</div>
+<div class="section" id="syntax">
+<h2>2 Syntax<a class="headerlink" href="#syntax" title="永久链接至标题">¶</a></h2>
+<p>This section documents the syntax and formats employed by the FFmpeg libraries and tools.</p>
+</div>
+<div class="section" id="quoting-and-escaping">
+<h2>2.1 Quoting and escaping<a class="headerlink" href="#quoting-and-escaping" title="永久链接至标题">¶</a></h2>
+<p>FFmpeg adopts the following quoting and escaping mechanism, unless explicitly specified. The following rules are applied:</p>
+<p>‘’’ and ‘’ are special characters (respectively used for quoting and escaping). In addition to them, there might be other special characters depending on the specific syntax where the escaping and quoting are employed.
+A special character is escaped by prefixing it with a ‘’.
+All characters enclosed between ‘’‘’ are included literally in the parsed string. The quote character ‘’’ itself cannot be quoted, so you may need to close the quote and escape it.
+Leading and trailing whitespaces, unless escaped or quoted, are removed from the parsed string.
+Note that you may need to add a second level of escaping when using the command line or a script, which depends on the syntax of the adopted shell language.</p>
+<p>The function av_get_token defined in libavutil/avstring.h can be used to parse a token quoted or escaped according to the rules defined above.</p>
+<p>The tool tools/ffescape in the FFmpeg source tree can be used to automatically quote or escape a string in a script.</p>
+</div>
+<div class="section" id="examples">
+<h2>2.1.1 Examples<a class="headerlink" href="#examples" title="永久链接至标题">¶</a></h2>
+<p>Escape the string Crime d’Amour containing the ‘ special character:
+Crime d’Amour
+The string above contains a quote, so the ‘ needs to be escaped when quoting it:
+‘Crime d’‘’Amour’
+Include leading or trailing whitespaces using quoting:
+‘  this string starts and ends with whitespaces  ‘
+Escaping and quoting can be mixed together:
+‘ The string ‘’string’’ is a string ‘
+To include a literal ‘’ you can use either escaping or quoting:
+‘c:foo’ can be written as c:\foo</p>
+</div>
+<div class="section" id="date">
+<h2>2.2 Date<a class="headerlink" href="#date" title="永久链接至标题">¶</a></h2>
+<p>The accepted syntax is:</p>
+<p>[(YYYY-MM-DD|YYYYMMDD)[T|t| ]]((HH:MM:SS[.m…]]])|(HHMMSS[.m…]]]))[Z]
+now
+If the value is “now” it takes the current time.</p>
+<p>Time is local time unless Z is appended, in which case it is interpreted as UTC. If the year-month-day part is not specified it takes the current year-month-day.</p>
+</div>
+<div class="section" id="time-duration">
+<h2>2.3 Time duration<a class="headerlink" href="#time-duration" title="永久链接至标题">¶</a></h2>
+<p>There are two accepted syntaxes for expressing time duration.</p>
+<p>[-][HH:]MM:SS[.m…]
+HH expresses the number of hours, MM the number of minutes for a maximum of 2 digits, and SS the number of seconds for a maximum of 2 digits. The m at the end expresses decimal value for SS.</p>
+<p>or</p>
+<p>[-]S+[.m…]
+S expresses the number of seconds, with the optional decimal part m.</p>
+<p>In both expressions, the optional ‘-’ indicates negative duration.</p>
+<p>2.3.1 Examples
+The following examples are all valid time duration:</p>
+<p>‘55’
+55 seconds</p>
+<p>‘12:03:45’
+12 hours, 03 minutes and 45 seconds</p>
+<p>‘23.189’
+23.189 seconds</p>
+<p>2.4 Video size
+Specify the size of the sourced video, it may be a string of the form widthxheight, or the name of a size abbreviation.</p>
+<p>The following abbreviations are recognized:</p>
+<p>‘ntsc’
+720x480</p>
+<p>‘pal’
+720x576</p>
+<p>‘qntsc’
+352x240</p>
+<p>‘qpal’
+352x288</p>
+<p>‘sntsc’
+640x480</p>
+<p>‘spal’
+768x576</p>
+<p>‘film’
+352x240</p>
+<p>‘ntsc-film’
+352x240</p>
+<p>‘sqcif’
+128x96</p>
+<p>‘qcif’
+176x144</p>
+<p>‘cif’
+352x288</p>
+<p>‘4cif’
+704x576</p>
+<p>‘16cif’
+1408x1152</p>
+<p>‘qqvga’
+160x120</p>
+<p>‘qvga’
+320x240</p>
+<p>‘vga’
+640x480</p>
+<p>‘svga’
+800x600</p>
+<p>‘xga’
+1024x768</p>
+<p>‘uxga’
+1600x1200</p>
+<p>‘qxga’
+2048x1536</p>
+<p>‘sxga’
+1280x1024</p>
+<p>‘qsxga’
+2560x2048</p>
+<p>‘hsxga’
+5120x4096</p>
+<p>‘wvga’
+852x480</p>
+<p>‘wxga’
+1366x768</p>
+<p>‘wsxga’
+1600x1024</p>
+<p>‘wuxga’
+1920x1200</p>
+<p>‘woxga’
+2560x1600</p>
+<p>‘wqsxga’
+3200x2048</p>
+<p>‘wquxga’
+3840x2400</p>
+<p>‘whsxga’
+6400x4096</p>
+<p>‘whuxga’
+7680x4800</p>
+<p>‘cga’
+320x200</p>
+<p>‘ega’
+640x350</p>
+<p>‘hd480’
+852x480</p>
+<p>‘hd720’
+1280x720</p>
+<p>‘hd1080’
+1920x1080</p>
+<p>‘2k’
+2048x1080</p>
+<p>‘2kflat’
+1998x1080</p>
+<p>‘2kscope’
+2048x858</p>
+<p>‘4k’
+4096x2160</p>
+<p>‘4kflat’
+3996x2160</p>
+<p>‘4kscope’
+4096x1716</p>
+<p>‘nhd’
+640x360</p>
+<p>‘hqvga’
+240x160</p>
+<p>‘wqvga’
+400x240</p>
+<p>‘fwqvga’
+432x240</p>
+<p>‘hvga’
+480x320</p>
+<p>‘qhd’
+960x540</p>
+<p>‘2kdci’
+2048x1080</p>
+<p>‘4kdci’
+4096x2160</p>
+<p>‘uhd2160’
+3840x2160</p>
+<p>‘uhd4320’
+7680x4320</p>
+<p>2.5 Video rate
+Specify the frame rate of a video, expressed as the number of frames generated per second. It has to be a string in the format frame_rate_num/frame_rate_den, an integer number, a float number or a valid video frame rate abbreviation.</p>
+<p>The following abbreviations are recognized:</p>
+<p>‘ntsc’
+30000/1001</p>
+<p>‘pal’
+25/1</p>
+<p>‘qntsc’
+30000/1001</p>
+<p>‘qpal’
+25/1</p>
+<p>‘sntsc’
+30000/1001</p>
+<p>‘spal’
+25/1</p>
+<p>‘film’
+24/1</p>
+<p>‘ntsc-film’
+24000/1001</p>
+</div>
+<div class="section" id="ratio">
+<h2>2.6 Ratio<a class="headerlink" href="#ratio" title="永久链接至标题">¶</a></h2>
+<p>A ratio can be expressed as an expression, or in the form numerator:denominator.</p>
+<p>Note that a ratio with infinite (1/0) or negative value is considered valid, so you should check on the returned value if you want to exclude those values.</p>
+<p>The undefined value can be expressed using the “0:0” string.</p>
+<p>2.7 Color
+It can be the name of a color as defined below (case insensitive match) or a [0x|#]RRGGBB[AA] sequence, possibly followed by &#64; and a string representing the alpha component.</p>
+<p>The alpha component may be a string composed by “0x” followed by an hexadecimal number or a decimal number between 0.0 and 1.0, which represents the opacity value (‘0x00’ or ‘0.0’ means completely transparent, ‘0xff’ or ‘1.0’ completely opaque). If the alpha component is not specified then ‘0xff’ is assumed.</p>
+<p>The string ‘random’ will result in a random color.</p>
+<p>The following names of colors are recognized:</p>
+<p>‘AliceBlue’
+0xF0F8FF</p>
+<p>‘AntiqueWhite’
+0xFAEBD7</p>
+<p>‘Aqua’
+0x00FFFF</p>
+<p>‘Aquamarine’
+0x7FFFD4</p>
+<p>‘Azure’
+0xF0FFFF</p>
+<p>‘Beige’
+0xF5F5DC</p>
+<p>‘Bisque’
+0xFFE4C4</p>
+<p>‘Black’
+0x000000</p>
+<p>‘BlanchedAlmond’
+0xFFEBCD</p>
+<p>‘Blue’
+0x0000FF</p>
+<p>‘BlueViolet’
+0x8A2BE2</p>
+<p>‘Brown’
+0xA52A2A</p>
+<p>‘BurlyWood’
+0xDEB887</p>
+<p>‘CadetBlue’
+0x5F9EA0</p>
+<p>‘Chartreuse’
+0x7FFF00</p>
+<p>‘Chocolate’
+0xD2691E</p>
+<p>‘Coral’
+0xFF7F50</p>
+<p>‘CornflowerBlue’
+0x6495ED</p>
+<p>‘Cornsilk’
+0xFFF8DC</p>
+<p>‘Crimson’
+0xDC143C</p>
+<p>‘Cyan’
+0x00FFFF</p>
+<p>‘DarkBlue’
+0x00008B</p>
+<p>‘DarkCyan’
+0x008B8B</p>
+<p>‘DarkGoldenRod’
+0xB8860B</p>
+<p>‘DarkGray’
+0xA9A9A9</p>
+<p>‘DarkGreen’
+0x006400</p>
+<p>‘DarkKhaki’
+0xBDB76B</p>
+<p>‘DarkMagenta’
+0x8B008B</p>
+<p>‘DarkOliveGreen’
+0x556B2F</p>
+<p>‘Darkorange’
+0xFF8C00</p>
+<p>‘DarkOrchid’
+0x9932CC</p>
+<p>‘DarkRed’
+0x8B0000</p>
+<p>‘DarkSalmon’
+0xE9967A</p>
+<p>‘DarkSeaGreen’
+0x8FBC8F</p>
+<p>‘DarkSlateBlue’
+0x483D8B</p>
+<p>‘DarkSlateGray’
+0x2F4F4F</p>
+<p>‘DarkTurquoise’
+0x00CED1</p>
+<p>‘DarkViolet’
+0x9400D3</p>
+<p>‘DeepPink’
+0xFF1493</p>
+<p>‘DeepSkyBlue’
+0x00BFFF</p>
+<p>‘DimGray’
+0x696969</p>
+<p>‘DodgerBlue’
+0x1E90FF</p>
+<p>‘FireBrick’
+0xB22222</p>
+<p>‘FloralWhite’
+0xFFFAF0</p>
+<p>‘ForestGreen’
+0x228B22</p>
+<p>‘Fuchsia’
+0xFF00FF</p>
+<p>‘Gainsboro’
+0xDCDCDC</p>
+<p>‘GhostWhite’
+0xF8F8FF</p>
+<p>‘Gold’
+0xFFD700</p>
+<p>‘GoldenRod’
+0xDAA520</p>
+<p>‘Gray’
+0x808080</p>
+<p>‘Green’
+0x008000</p>
+<p>‘GreenYellow’
+0xADFF2F</p>
+<p>‘HoneyDew’
+0xF0FFF0</p>
+<p>‘HotPink’
+0xFF69B4</p>
+<p>‘IndianRed’
+0xCD5C5C</p>
+<p>‘Indigo’
+0x4B0082</p>
+<p>‘Ivory’
+0xFFFFF0</p>
+<p>‘Khaki’
+0xF0E68C</p>
+<p>‘Lavender’
+0xE6E6FA</p>
+<p>‘LavenderBlush’
+0xFFF0F5</p>
+<p>‘LawnGreen’
+0x7CFC00</p>
+<p>‘LemonChiffon’
+0xFFFACD</p>
+<p>‘LightBlue’
+0xADD8E6</p>
+<p>‘LightCoral’
+0xF08080</p>
+<p>‘LightCyan’
+0xE0FFFF</p>
+<p>‘LightGoldenRodYellow’
+0xFAFAD2</p>
+<p>‘LightGreen’
+0x90EE90</p>
+<p>‘LightGrey’
+0xD3D3D3</p>
+<p>‘LightPink’
+0xFFB6C1</p>
+<p>‘LightSalmon’
+0xFFA07A</p>
+<p>‘LightSeaGreen’
+0x20B2AA</p>
+<p>‘LightSkyBlue’
+0x87CEFA</p>
+<p>‘LightSlateGray’
+0x778899</p>
+<p>‘LightSteelBlue’
+0xB0C4DE</p>
+<p>‘LightYellow’
+0xFFFFE0</p>
+<p>‘Lime’
+0x00FF00</p>
+<p>‘LimeGreen’
+0x32CD32</p>
+<p>‘Linen’
+0xFAF0E6</p>
+<p>‘Magenta’
+0xFF00FF</p>
+<p>‘Maroon’
+0x800000</p>
+<p>‘MediumAquaMarine’
+0x66CDAA</p>
+<p>‘MediumBlue’
+0x0000CD</p>
+<p>‘MediumOrchid’
+0xBA55D3</p>
+<p>‘MediumPurple’
+0x9370D8</p>
+<p>‘MediumSeaGreen’
+0x3CB371</p>
+<p>‘MediumSlateBlue’
+0x7B68EE</p>
+<p>‘MediumSpringGreen’
+0x00FA9A</p>
+<p>‘MediumTurquoise’
+0x48D1CC</p>
+<p>‘MediumVioletRed’
+0xC71585</p>
+<p>‘MidnightBlue’
+0x191970</p>
+<p>‘MintCream’
+0xF5FFFA</p>
+<p>‘MistyRose’
+0xFFE4E1</p>
+<p>‘Moccasin’
+0xFFE4B5</p>
+<p>‘NavajoWhite’
+0xFFDEAD</p>
+<p>‘Navy’
+0x000080</p>
+<p>‘OldLace’
+0xFDF5E6</p>
+<p>‘Olive’
+0x808000</p>
+<p>‘OliveDrab’
+0x6B8E23</p>
+<p>‘Orange’
+0xFFA500</p>
+<p>‘OrangeRed’
+0xFF4500</p>
+<p>‘Orchid’
+0xDA70D6</p>
+<p>‘PaleGoldenRod’
+0xEEE8AA</p>
+<p>‘PaleGreen’
+0x98FB98</p>
+<p>‘PaleTurquoise’
+0xAFEEEE</p>
+<p>‘PaleVioletRed’
+0xD87093</p>
+<p>‘PapayaWhip’
+0xFFEFD5</p>
+<p>‘PeachPuff’
+0xFFDAB9</p>
+<p>‘Peru’
+0xCD853F</p>
+<p>‘Pink’
+0xFFC0CB</p>
+<p>‘Plum’
+0xDDA0DD</p>
+<p>‘PowderBlue’
+0xB0E0E6</p>
+<p>‘Purple’
+0x800080</p>
+<p>‘Red’
+0xFF0000</p>
+<p>‘RosyBrown’
+0xBC8F8F</p>
+<p>‘RoyalBlue’
+0x4169E1</p>
+<p>‘SaddleBrown’
+0x8B4513</p>
+<p>‘Salmon’
+0xFA8072</p>
+<p>‘SandyBrown’
+0xF4A460</p>
+<p>‘SeaGreen’
+0x2E8B57</p>
+<p>‘SeaShell’
+0xFFF5EE</p>
+<p>‘Sienna’
+0xA0522D</p>
+<p>‘Silver’
+0xC0C0C0</p>
+<p>‘SkyBlue’
+0x87CEEB</p>
+<p>‘SlateBlue’
+0x6A5ACD</p>
+<p>‘SlateGray’
+0x708090</p>
+<p>‘Snow’
+0xFFFAFA</p>
+<p>‘SpringGreen’
+0x00FF7F</p>
+<p>‘SteelBlue’
+0x4682B4</p>
+<p>‘Tan’
+0xD2B48C</p>
+<p>‘Teal’
+0x008080</p>
+<p>‘Thistle’
+0xD8BFD8</p>
+<p>‘Tomato’
+0xFF6347</p>
+<p>‘Turquoise’
+0x40E0D0</p>
+<p>‘Violet’
+0xEE82EE</p>
+<p>‘Wheat’
+0xF5DEB3</p>
+<p>‘White’
+0xFFFFFF</p>
+<p>‘WhiteSmoke’
+0xF5F5F5</p>
+<p>‘Yellow’
+0xFFFF00</p>
+<p>‘YellowGreen’
+0x9ACD32</p>
+<p>2.8 Channel Layout
+A channel layout specifies the spatial disposition of the channels in a multi-channel audio stream. To specify a channel layout, FFmpeg makes use of a special syntax.</p>
+<p>Individual channels are identified by an id, as given by the table below:</p>
+<p>‘FL’
+front left</p>
+<p>‘FR’
+front right</p>
+<p>‘FC’
+front center</p>
+<p>‘LFE’
+low frequency</p>
+<p>‘BL’
+back left</p>
+<p>‘BR’
+back right</p>
+<p>‘FLC’
+front left-of-center</p>
+<p>‘FRC’
+front right-of-center</p>
+<p>‘BC’
+back center</p>
+<p>‘SL’
+side left</p>
+<p>‘SR’
+side right</p>
+<p>‘TC’
+top center</p>
+<p>‘TFL’
+top front left</p>
+<p>‘TFC’
+top front center</p>
+<p>‘TFR’
+top front right</p>
+<p>‘TBL’
+top back left</p>
+<p>‘TBC’
+top back center</p>
+<p>‘TBR’
+top back right</p>
+<p>‘DL’
+downmix left</p>
+<p>‘DR’
+downmix right</p>
+<p>‘WL’
+wide left</p>
+<p>‘WR’
+wide right</p>
+<p>‘SDL’
+surround direct left</p>
+<p>‘SDR’
+surround direct right</p>
+<p>‘LFE2’
+low frequency 2</p>
+<p>Standard channel layout compositions can be specified by using the following identifiers:</p>
+<p>‘mono’
+FC</p>
+<p>‘stereo’
+FL+FR</p>
+<p>‘2.1’
+FL+FR+LFE</p>
+<p>‘3.0’
+FL+FR+FC</p>
+<p>‘3.0(back)’
+FL+FR+BC</p>
+<p>‘4.0’
+FL+FR+FC+BC</p>
+<p>‘quad’
+FL+FR+BL+BR</p>
+<p>‘quad(side)’
+FL+FR+SL+SR</p>
+<p>‘3.1’
+FL+FR+FC+LFE</p>
+<p>‘5.0’
+FL+FR+FC+BL+BR</p>
+<p>‘5.0(side)’
+FL+FR+FC+SL+SR</p>
+<p>‘4.1’
+FL+FR+FC+LFE+BC</p>
+<p>‘5.1’
+FL+FR+FC+LFE+BL+BR</p>
+<p>‘5.1(side)’
+FL+FR+FC+LFE+SL+SR</p>
+<p>‘6.0’
+FL+FR+FC+BC+SL+SR</p>
+<p>‘6.0(front)’
+FL+FR+FLC+FRC+SL+SR</p>
+<p>‘hexagonal’
+FL+FR+FC+BL+BR+BC</p>
+<p>‘6.1’
+FL+FR+FC+LFE+BC+SL+SR</p>
+<p>‘6.1’
+FL+FR+FC+LFE+BL+BR+BC</p>
+<p>‘6.1(front)’
+FL+FR+LFE+FLC+FRC+SL+SR</p>
+<p>‘7.0’
+FL+FR+FC+BL+BR+SL+SR</p>
+<p>‘7.0(front)’
+FL+FR+FC+FLC+FRC+SL+SR</p>
+<p>‘7.1’
+FL+FR+FC+LFE+BL+BR+SL+SR</p>
+<p>‘7.1(wide)’
+FL+FR+FC+LFE+BL+BR+FLC+FRC</p>
+<p>‘7.1(wide-side)’
+FL+FR+FC+LFE+FLC+FRC+SL+SR</p>
+<p>‘octagonal’
+FL+FR+FC+BL+BR+BC+SL+SR</p>
+<p>‘downmix’
+DL+DR</p>
+<p>A custom channel layout can be specified as a sequence of terms, separated by ’+’ or ’|’. Each term can be:</p>
+<p>the name of a standard channel layout (e.g. ‘mono’, ‘stereo’, ‘4.0’, ‘quad’, ‘5.0’, etc.)
+the name of a single channel (e.g. ‘FL’, ‘FR’, ‘FC’, ‘LFE’, etc.)
+a number of channels, in decimal, followed by ’c’, yielding the default channel layout for that number of channels (see the function av_get_default_channel_layout). Note that not all channel counts have a default layout.
+a number of channels, in decimal, followed by ’C’, yielding an unknown channel layout with the specified number of channels. Note that not all channel layout specification strings support unknown channel layouts.
+a channel layout mask, in hexadecimal starting with “0x” (see the AV_CH_* macros in libavutil/channel_layout.h.
+Before libavutil version 53 the trailing character “c” to specify a number of channels was optional, but now it is required, while a channel layout mask can also be specified as a decimal number (if and only if not followed by “c” or “C”).</p>
+<p>See also the function av_get_channel_layout defined in libavutil/channel_layout.h.</p>
+<p>3 Expression Evaluation
+When evaluating an arithmetic expression, FFmpeg uses an internal formula evaluator, implemented through the libavutil/eval.h interface.</p>
+<p>An expression may contain unary, binary operators, constants, and functions.</p>
+<p>Two expressions expr1 and expr2 can be combined to form another expression “expr1;expr2”. expr1 and expr2 are evaluated in turn, and the new expression evaluates to the value of expr2.</p>
+<p>The following binary operators are available: +, -, <a href="#id1"><span class="problematic" id="id2">*</span></a>, /, ^.</p>
+<p>The following unary operators are available: +, -.</p>
+<p>The following functions are available:</p>
+<p>abs(x)
+Compute absolute value of x.</p>
+<p>acos(x)
+Compute arccosine of x.</p>
+<p>asin(x)
+Compute arcsine of x.</p>
+<p>atan(x)
+Compute arctangent of x.</p>
+<p>atan2(x, y)
+Compute principal value of the arc tangent of y/x.</p>
+<p>between(x, min, max)
+Return 1 if x is greater than or equal to min and lesser than or equal to max, 0 otherwise.</p>
+<p>bitand(x, y)
+bitor(x, y)
+Compute bitwise and/or operation on x and y.</p>
+<p>The results of the evaluation of x and y are converted to integers before executing the bitwise operation.</p>
+<p>Note that both the conversion to integer and the conversion back to floating point can lose precision. Beware of unexpected results for large numbers (usually 2^53 and larger).</p>
+<p>ceil(expr)
+Round the value of expression expr upwards to the nearest integer. For example, “ceil(1.5)” is “2.0”.</p>
+<p>clip(x, min, max)
+Return the value of x clipped between min and max.</p>
+<p>cos(x)
+Compute cosine of x.</p>
+<p>cosh(x)
+Compute hyperbolic cosine of x.</p>
+<p>eq(x, y)
+Return 1 if x and y are equivalent, 0 otherwise.</p>
+<p>exp(x)
+Compute exponential of x (with base e, the Euler’s number).</p>
+<p>floor(expr)
+Round the value of expression expr downwards to the nearest integer. For example, “floor(-1.5)” is “-2.0”.</p>
+<p>gauss(x)
+Compute Gauss function of x, corresponding to exp(-x*x/2) / sqrt(2*PI).</p>
+<p>gcd(x, y)
+Return the greatest common divisor of x and y. If both x and y are 0 or either or both are less than zero then behavior is undefined.</p>
+<p>gt(x, y)
+Return 1 if x is greater than y, 0 otherwise.</p>
+<p>gte(x, y)
+Return 1 if x is greater than or equal to y, 0 otherwise.</p>
+<p>hypot(x, y)
+This function is similar to the C function with the same name; it returns “sqrt(x*x + y*y)”, the length of the hypotenuse of a right triangle with sides of length x and y, or the distance of the point (x, y) from the origin.</p>
+<p>if(x, y)
+Evaluate x, and if the result is non-zero return the result of the evaluation of y, return 0 otherwise.</p>
+<p>if(x, y, z)
+Evaluate x, and if the result is non-zero return the evaluation result of y, otherwise the evaluation result of z.</p>
+<p>ifnot(x, y)
+Evaluate x, and if the result is zero return the result of the evaluation of y, return 0 otherwise.</p>
+<p>ifnot(x, y, z)
+Evaluate x, and if the result is zero return the evaluation result of y, otherwise the evaluation result of z.</p>
+<p>isinf(x)
+Return 1.0 if x is +/-INFINITY, 0.0 otherwise.</p>
+<p>isnan(x)
+Return 1.0 if x is NAN, 0.0 otherwise.</p>
+<p>ld(var)
+Load the value of the internal variable with number var, which was previously stored with st(var, expr). The function returns the loaded value.</p>
+<p>lerp(x, y, z)
+Return linear interpolation between x and y by amount of z.</p>
+<p>log(x)
+Compute natural logarithm of x.</p>
+<p>lt(x, y)
+Return 1 if x is lesser than y, 0 otherwise.</p>
+<p>lte(x, y)
+Return 1 if x is lesser than or equal to y, 0 otherwise.</p>
+<p>max(x, y)
+Return the maximum between x and y.</p>
+<p>min(x, y)
+Return the minimum between x and y.</p>
+<p>mod(x, y)
+Compute the remainder of division of x by y.</p>
+<p>not(expr)
+Return 1.0 if expr is zero, 0.0 otherwise.</p>
+<p>pow(x, y)
+Compute the power of x elevated y, it is equivalent to “(x)^(y)”.</p>
+<p>print(t)
+print(t, l)
+Print the value of expression t with loglevel l. If l is not specified then a default log level is used. Returns the value of the expression printed.</p>
+<p>Prints t with loglevel l</p>
+<p>random(x)
+Return a pseudo random value between 0.0 and 1.0. x is the index of the internal variable which will be used to save the seed/state.</p>
+<p>root(expr, max)
+Find an input value for which the function represented by expr with argument ld(0) is 0 in the interval 0..max.</p>
+<p>The expression in expr must denote a continuous function or the result is undefined.</p>
+<p>ld(0) is used to represent the function input value, which means that the given expression will be evaluated multiple times with various input values that the expression can access through ld(0). When the expression evaluates to 0 then the corresponding input value will be returned.</p>
+<p>round(expr)
+Round the value of expression expr to the nearest integer. For example, “round(1.5)” is “2.0”.</p>
+<p>sin(x)
+Compute sine of x.</p>
+<p>sinh(x)
+Compute hyperbolic sine of x.</p>
+<p>sqrt(expr)
+Compute the square root of expr. This is equivalent to “(expr)^.5”.</p>
+<p>squish(x)
+Compute expression 1/(1 + exp(4*x)).</p>
+<p>st(var, expr)
+Store the value of the expression expr in an internal variable. var specifies the number of the variable where to store the value, and it is a value ranging from 0 to 9. The function returns the value stored in the internal variable. Note, Variables are currently not shared between expressions.</p>
+<p>tan(x)
+Compute tangent of x.</p>
+<p>tanh(x)
+Compute hyperbolic tangent of x.</p>
+<p>taylor(expr, x)
+taylor(expr, x, id)
+Evaluate a Taylor series at x, given an expression representing the ld(id)-th derivative of a function at 0.</p>
+<p>When the series does not converge the result is undefined.</p>
+<p>ld(id) is used to represent the derivative order in expr, which means that the given expression will be evaluated multiple times with various input values that the expression can access through ld(id). If id is not specified then 0 is assumed.</p>
+<p>Note, when you have the derivatives at y instead of 0, taylor(expr, x-y) can be used.</p>
+<p>time(0)
+Return the current (wallclock) time in seconds.</p>
+<p>trunc(expr)
+Round the value of expression expr towards zero to the nearest integer. For example, “trunc(-1.5)” is “-1.0”.</p>
+<p>while(cond, expr)
+Evaluate expression expr while the expression cond is non-zero, and returns the value of the last expr evaluation, or NAN if cond was always false.</p>
+<p>The following constants are available:</p>
+<p>PI
+area of the unit disc, approximately 3.14</p>
+<p>E
+exp(1) (Euler’s number), approximately 2.718</p>
+<p>PHI
+golden ratio (1+sqrt(5))/2, approximately 1.618</p>
+<p>Assuming that an expression is considered “true” if it has a non-zero value, note that:</p>
+<ul class="simple">
+<li><p>works like AND</p></li>
+</ul>
+<ul class="simple">
+<li><p>works like OR</p></li>
+</ul>
+<p>For example the construct:</p>
+<p>if (A AND B) then C
+is equivalent to:</p>
+<p>if(A*B, C)
+In your C code, you can extend the list of unary and binary functions, and define recognized constants, so that they are available for your expressions.</p>
+<p>The evaluator also recognizes the International System unit prefixes. If ’i’ is appended after the prefix, binary prefixes are used, which are based on powers of 1024 instead of powers of 1000. The ’B’ postfix multiplies the value by 8, and can be appended after a unit prefix or used alone. This allows using for example ’KB’, ’MiB’, ’G’ and ’B’ as number postfix.</p>
+<p>The list of available International System prefixes follows, with indication of the corresponding powers of 10 and of 2.</p>
+<p>y
+10^-24 / 2^-80</p>
+<p>z
+10^-21 / 2^-70</p>
+<p>a
+10^-18 / 2^-60</p>
+<p>f
+10^-15 / 2^-50</p>
+<p>p
+10^-12 / 2^-40</p>
+<p>n
+10^-9 / 2^-30</p>
+<p>u
+10^-6 / 2^-20</p>
+<p>m
+10^-3 / 2^-10</p>
+<p>c
+10^-2</p>
+<p>d
+10^-1</p>
+<p>h
+10^2</p>
+<p>k
+10^3 / 2^10</p>
+<p>K
+10^3 / 2^10</p>
+<p>M
+10^6 / 2^20</p>
+<p>G
+10^9 / 2^30</p>
+<p>T
+10^12 / 2^40</p>
+<p>P
+10^15 / 2^40</p>
+<p>E
+10^18 / 2^50</p>
+<p>Z
+10^21 / 2^60</p>
+<p>Y
+10^24 / 2^70</p>
+</div>
+<div class="section" id="see-also">
+<h2>4 See Also<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<p>ffmpeg, ffplay, ffprobe, libavutil</p>
+</div>
+<div class="section" id="authors">
+<h2>5 Authors<a class="headerlink" href="#authors" title="永久链接至标题">¶</a></h2>
+<p>The FFmpeg developers.</p>
+<p>For details about the authorship, see the Git history of the project (git://source.ffmpeg.org/ffmpeg), e.g. by typing the command git log in the FFmpeg source directory, or browsing the online repository at http://source.ffmpeg.org.</p>
+<p>Maintainers for the specific components are listed in the file MAINTAINERS in the source code tree.</p>
+<p>This document was generated on June 11, 2019 using makeinfo.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ffmpeg-scaler.html" class="btn btn-neutral float-right" title="FFmpeg Scaler Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../tools/ffprobe-all.html" class="btn btn-neutral float-left" title="ffprobe-all" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

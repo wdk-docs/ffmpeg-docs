@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/wiki.rst:2
 msgid "Welcome to the FFmpeg Bug Tracker and Wiki"
-msgstr ""
+msgstr "欢迎来到FFmpeg Bug Tracker和Wiki"
 
 #: ../../source/wiki.rst:4
 msgid ""

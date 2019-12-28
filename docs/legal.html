@@ -85,23 +85,24 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">FFmpeg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">关于FFmpeg</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documentation.html">文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools/index.html">Tools Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="libraries/index.html">LIbraries Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="news.html">新闻</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/index.html">文档</a></li>
 <li class="toctree-l1"><a class="reference internal" href="download.html">下载FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">新闻</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bugreports.html">Bug Reports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wiki.html">Welcome to the FFmpeg Bug Tracker and Wiki</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developer.html">开发者文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreports.html">错误报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wiki.html">欢迎来到FFmpeg Bug Tracker和Wiki</a></li>
 <li class="toctree-l1"><a class="reference internal" href="donations.html">捐赠</a></li>
 <li class="toctree-l1"><a class="reference internal" href="consulting.html">与FFmpeg相关的咨询和就业机会</a></li>
 <li class="toctree-l1"><a class="reference internal" href="security.html">FFmpeg安全</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">FFmpeg许可和法律注意事项</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-license">FFmpeg License</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#license-compliance-checklist">License Compliance Checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#trademark">Trademark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#patent-mini-faq">Patent Mini-FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ffmpeg-license">FFmpeg许可证</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license-compliance-checklist">许可证合规性检查表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#trademark">商标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#patent-mini-faq">专利Mini-FAQ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#for-h-264">For H.264:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#and-for-mpeg-4">而对于MPEG-4</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,13 +173,13 @@
 <h1>FFmpeg许可和法律注意事项<a class="headerlink" href="#ffmpeg-license-and-legal-considerations" title="永久链接至标题">¶</a></h1>
 <p>Legal issues are a constant source of questions and confusion. This is an attempt to clarify the most important issues. The usual disclaimers apply, this is not legal advice.</p>
 <div class="section" id="ffmpeg-license">
-<h2>FFmpeg License<a class="headerlink" href="#ffmpeg-license" title="永久链接至标题">¶</a></h2>
+<h2>FFmpeg许可证<a class="headerlink" href="#ffmpeg-license" title="永久链接至标题">¶</a></h2>
 <p>FFmpeg is licensed under the GNU Lesser General Public License (LGPL) version 2.1 or later. However, FFmpeg incorporates several optional parts and optimizations that are covered by the GNU General Public License (GPL) version 2 or later. If those parts get used the GPL applies to all of FFmpeg.</p>
 <p>Read the license texts to learn how this affects programs built on top of FFmpeg or reusing FFmpeg. You may also wish to have a look at the GPL FAQ.</p>
 <p>Note that FFmpeg is not available under any other licensing terms, especially not proprietary/commercial ones, not even in exchange for payment.</p>
 </div>
 <div class="section" id="license-compliance-checklist">
-<h2>License Compliance Checklist<a class="headerlink" href="#license-compliance-checklist" title="永久链接至标题">¶</a></h2>
+<h2>许可证合规性检查表<a class="headerlink" href="#license-compliance-checklist" title="永久链接至标题">¶</a></h2>
 <p>The following is a checklist for LGPL compliance when linking against the FFmpeg libraries.
 It is not the only way to comply with the license, but we think it is the easiest.
 There are also a few items that are not really related to LGPL compliance but are good ideas anyway.</p>
@@ -202,24 +203,32 @@ There are also a few items that are not really related to LGPL compliance but ar
 1. Make sure your program is not using any GPL libraries (notably libx264).</p>
 </div>
 <div class="section" id="trademark">
-<h2>Trademark<a class="headerlink" href="#trademark" title="永久链接至标题">¶</a></h2>
+<h2>商标<a class="headerlink" href="#trademark" title="永久链接至标题">¶</a></h2>
 <p>FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.</p>
 </div>
 <div class="section" id="patent-mini-faq">
-<h2>Patent Mini-FAQ<a class="headerlink" href="#patent-mini-faq" title="永久链接至标题">¶</a></h2>
+<h2>专利Mini-FAQ<a class="headerlink" href="#patent-mini-faq" title="永久链接至标题">¶</a></h2>
 <p>A lot of legal questions surrounding patents arise when discussing multimedia technology. This mini-FAQ attempts to address these issues. Note that much of this discussion is based on precedent, or what has happened in the past under similar circumstances. Very little consideration is given to what could happen. If you use your imagination, you can visualize any dire scenario and cease doing any productive work.</p>
-<p>Q: Does FFmpeg use patented algorithms?
-A: We do not know, we are not lawyers so we are not qualified to answer this. Also we have never read patents to implement any part of FFmpeg, so even if we were qualified we could not answer it as we do not know what is patented. Furthermore the sheer number of software patents makes it impossible to read them all so no one (lawyer or not) could answer such a question with a definite no, those who do lie. What we do know is that various standards FFmpeg supports contain vague hints that any conforming implementation might be subject to some patent rights in some jurisdictions, examples for such statements are:
-For H.264:</p>
+<dl class="simple">
+<dt>… Q: Does FFmpeg use patented algorithms?</dt><dd><p>A: We do not know, we are not lawyers so we are not qualified to answer this. Also we have never read patents to implement any part of FFmpeg, so even if we were qualified we could not answer it as we do not know what is patented. Furthermore the sheer number of software patents makes it impossible to read them all so no one (lawyer or not) could answer such a question with a definite no, those who do lie. What we do know is that various standards FFmpeg supports contain vague hints that any conforming implementation might be subject to some patent rights in some jurisdictions, examples for such statements are:</p>
+</dd>
+</dl>
+<div class="section" id="for-h-264">
+<h3>For H.264:<a class="headerlink" href="#for-h-264" title="永久链接至标题">¶</a></h3>
 <p>ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
-<p>And for MPEG-4:</p>
+</div>
+<div class="section" id="and-for-mpeg-4">
+<h3>而对于MPEG-4<a class="headerlink" href="#and-for-mpeg-4" title="永久链接至标题">¶</a></h3>
 <p>The user’s attention is called to the possibility that, for some of the processes specified in this part of ISO/IEC 14496, conformance with this specification may require use of an invention covered by patent rights. By publication of this part of ISO/IEC 14496, no position is taken with respect to the validity of this claim or of any patent rights in connection therewith.</p>
-<p>Q: Is it safe to use such patented algorithms?
-A: Patent laws vary wildly between jurisdictions, and in many countries patents on algorithms are not recognized. Plus the use of patents to prevent the usage of a format or codec on a specific operating system or together with specific other software might violate antitrust laws. So whether you are safe or not depends on where you live and how judges interpret the law in your jurisdiction.</p>
-<p>Q: Bottom line: Should I be worried about patent issues if I use FFmpeg?
-A: Are you a private user working with FFmpeg for your own personal purposes? If so, there is remarkably little reason to be concerned. Are you using FFmpeg in a commercial software product? Read on to the next question…</p>
-<p>Q: Is it perfectly alright to incorporate the whole FFmpeg core into my own commercial product?
-A: You might have a problem here. There have been cases where companies have used FFmpeg in their products. These companies found out that once you start trying to make money from patented technologies, the owners of the patents will come after their licensing fees. Notably, MPEG LA is vigilant and diligent about collecting for MPEG-related technologies.</p>
+<dl class="simple">
+<dt>… Q: Is it safe to use such patented algorithms?</dt><dd><p>A: Patent laws vary wildly between jurisdictions, and in many countries patents on algorithms are not recognized. Plus the use of patents to prevent the usage of a format or codec on a specific operating system or together with specific other software might violate antitrust laws. So whether you are safe or not depends on where you live and how judges interpret the law in your jurisdiction.</p>
+</dd>
+<dt>… Q: Bottom line: Should I be worried about patent issues if I use FFmpeg?</dt><dd><p>A: Are you a private user working with FFmpeg for your own personal purposes? If so, there is remarkably little reason to be concerned. Are you using FFmpeg in a commercial software product? Read on to the next question…</p>
+</dd>
+<dt>… Q: Is it perfectly alright to incorporate the whole FFmpeg core into my own commercial product?</dt><dd><p>A: You might have a problem here. There have been cases where companies have used FFmpeg in their products. These companies found out that once you start trying to make money from patented technologies, the owners of the patents will come after their licensing fees. Notably, MPEG LA is vigilant and diligent about collecting for MPEG-related technologies.</p>
+</dd>
+</dl>
+</div>
 </div>
 </div>
 

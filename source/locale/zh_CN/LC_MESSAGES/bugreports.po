@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/bugreports.rst:2
 msgid "Bug Reports"
-msgstr ""
+msgstr "错误报告"
 
 #: ../../source/bugreports.rst:4
 msgid "Before reporting a bug, please consider the following:"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ffmpeg-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"POT-Creation-Date: 2019-06-12 20:05+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-
-#: ../../source/libraries/index.rst:4
-msgid "Contents:"
-msgstr ""
 
 #: ../../source/libraries/index.rst:2
 msgid "LIbraries Documentation"
@@ -264,4 +260,7 @@ msgstr ""
 #: ../../source/libraries/libswscale.rst:19
 msgid "2 See Also ffmpeg, ffplay, ffprobe, ffmpeg-scaler, libavutil"
 msgstr ""
+
+#~ msgid "Contents:"
+#~ msgstr ""
 

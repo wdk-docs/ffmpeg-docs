@@ -36,9 +36,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="author" title="关于这些文档" href="about.html" />
     <link rel="index" title="索引" href="genindex.html" />
-    <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="捐赠" href="donations.html" />
-    <link rel="prev" title="Welcome to the FFmpeg Bug Tracker and Wiki" href="wiki.html" /> 
+    <link rel="search" title="搜索" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,51 +81,15 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html">FFmpeg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">关于FFmpeg</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documentation.html">文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools/index.html">Tools Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="libraries/index.html">LIbraries Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="news.html">新闻</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/index.html">文档</a></li>
 <li class="toctree-l1"><a class="reference internal" href="download.html">下载FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">新闻</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bugreports.html">Bug Reports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wiki.html">Welcome to the FFmpeg Bug Tracker and Wiki</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">开发者文档</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#notes-for-external-developers">1 Notes for external developers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#contributing">2 Contributing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coding-rules">3 Coding Rules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#code-formatting-conventions">3.1 Code formatting conventions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#comments">3.2 Comments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#c-language-features">3.3 C language features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#naming-conventions">3.4 Naming conventions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#miscellaneous-conventions">3.5 Miscellaneous conventions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#development-policy">4 Development Policy</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#patches-committing">4.1 Patches/Committing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#code">4.2 Code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#documentation-other">4.3 Documentation/Other</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#code-of-conduct">5 Code of conduct</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#submitting-patches">6 Submitting patches</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-codecs-or-formats-checklist">7 New codecs or formats checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#patch-submission-checklist">8 Patch submission checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#patch-review-process">9 Patch review process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#regression-tests">10 Regression tests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#adding-files-to-the-fate-suite-dataset">10.1 Adding files to the fate-suite dataset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#visualizing-test-coverage">10.2 Visualizing Test Coverage</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#release-process">11 Release process</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#criteria-for-point-releases">11.1 Criteria for Point Releases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#release-checklist">11.2 Release Checklist</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="bugreports.html">错误报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wiki.html">欢迎来到FFmpeg Bug Tracker和Wiki</a></li>
 <li class="toctree-l1"><a class="reference internal" href="donations.html">捐赠</a></li>
 <li class="toctree-l1"><a class="reference internal" href="consulting.html">与FFmpeg相关的咨询和就业机会</a></li>
 <li class="toctree-l1"><a class="reference internal" href="security.html">FFmpeg安全</a></li>
@@ -522,15 +484,6 @@ This document was generated on June 8, 2019 using makeinfo.</p>
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="donations.html" class="btn btn-neutral float-right" title="捐赠" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="wiki.html" class="btn btn-neutral float-left" title="Welcome to the FFmpeg Bug Tracker and Wiki" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

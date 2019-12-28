@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ffmpeg-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-09 04:11+0800\n"
+"POT-Creation-Date: 2019-06-12 21:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,19 +25,19 @@ msgstr ""
 msgid "Welcome to ffmpeg-docs's documentation!"
 msgstr ""
 
-#: ../../source/contents.rst:29
+#: ../../source/contents.rst:27
 msgid "Indices and tables"
 msgstr ""
 
-#: ../../source/contents.rst:31
+#: ../../source/contents.rst:29
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../source/contents.rst:32
+#: ../../source/contents.rst:30
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../source/contents.rst:33
+#: ../../source/contents.rst:31
 msgid ":ref:`search`"
 msgstr ""
 

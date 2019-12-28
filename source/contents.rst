@@ -12,15 +12,12 @@ Welcome to ffmpeg-docs's documentation!
 
    index
    about
-   documentation
-   tools/index
-   libraries/index
-   news
+   documentation/index
    download
+   news
    contact
    bugreports
    wiki
-   developer
    donations
    consulting
    security

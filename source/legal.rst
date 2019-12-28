@@ -48,21 +48,24 @@ Patent Mini-FAQ
 
 A lot of legal questions surrounding patents arise when discussing multimedia technology. This mini-FAQ attempts to address these issues. Note that much of this discussion is based on precedent, or what has happened in the past under similar circumstances. Very little consideration is given to what could happen. If you use your imagination, you can visualize any dire scenario and cease doing any productive work.
 
-Q: Does FFmpeg use patented algorithms?
-A: We do not know, we are not lawyers so we are not qualified to answer this. Also we have never read patents to implement any part of FFmpeg, so even if we were qualified we could not answer it as we do not know what is patented. Furthermore the sheer number of software patents makes it impossible to read them all so no one (lawyer or not) could answer such a question with a definite no, those who do lie. What we do know is that various standards FFmpeg supports contain vague hints that any conforming implementation might be subject to some patent rights in some jurisdictions, examples for such statements are:
+... Q: Does FFmpeg use patented algorithms?
+    A: We do not know, we are not lawyers so we are not qualified to answer this. Also we have never read patents to implement any part of FFmpeg, so even if we were qualified we could not answer it as we do not know what is patented. Furthermore the sheer number of software patents makes it impossible to read them all so no one (lawyer or not) could answer such a question with a definite no, those who do lie. What we do know is that various standards FFmpeg supports contain vague hints that any conforming implementation might be subject to some patent rights in some jurisdictions, examples for such statements are:
+
 For H.264:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.
 
 And for MPEG-4:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The user's attention is called to the possibility that, for some of the processes specified in this part of ISO/IEC 14496, conformance with this specification may require use of an invention covered by patent rights. By publication of this part of ISO/IEC 14496, no position is taken with respect to the validity of this claim or of any patent rights in connection therewith.
 
-Q: Is it safe to use such patented algorithms?
-A: Patent laws vary wildly between jurisdictions, and in many countries patents on algorithms are not recognized. Plus the use of patents to prevent the usage of a format or codec on a specific operating system or together with specific other software might violate antitrust laws. So whether you are safe or not depends on where you live and how judges interpret the law in your jurisdiction.
+... Q: Is it safe to use such patented algorithms?
+    A: Patent laws vary wildly between jurisdictions, and in many countries patents on algorithms are not recognized. Plus the use of patents to prevent the usage of a format or codec on a specific operating system or together with specific other software might violate antitrust laws. So whether you are safe or not depends on where you live and how judges interpret the law in your jurisdiction.
 
-Q: Bottom line: Should I be worried about patent issues if I use FFmpeg?
-A: Are you a private user working with FFmpeg for your own personal purposes? If so, there is remarkably little reason to be concerned. Are you using FFmpeg in a commercial software product? Read on to the next question...
+... Q: Bottom line: Should I be worried about patent issues if I use FFmpeg?
+    A: Are you a private user working with FFmpeg for your own personal purposes? If so, there is remarkably little reason to be concerned. Are you using FFmpeg in a commercial software product? Read on to the next question...
 
-Q: Is it perfectly alright to incorporate the whole FFmpeg core into my own commercial product?
-A: You might have a problem here. There have been cases where companies have used FFmpeg in their products. These companies found out that once you start trying to make money from patented technologies, the owners of the patents will come after their licensing fees. Notably, MPEG LA is vigilant and diligent about collecting for MPEG-related technologies.
+... Q: Is it perfectly alright to incorporate the whole FFmpeg core into my own commercial product?
+    A: You might have a problem here. There have been cases where companies have used FFmpeg in their products. These companies found out that once you start trying to make money from patented technologies, the owners of the patents will come after their licensing fees. Notably, MPEG LA is vigilant and diligent about collecting for MPEG-related technologies.
